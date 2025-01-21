@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-back fnOpenPop" data-name="alert"><span class="blind">뒤로가기</span></button>
+        <p class="header-tit__center"></p>
+      </div>
+    </header>
+
+    <div class="container__wrap payment__wrap">
+      <!-- 결제 정보 타이틀 -->
+      <div class="payment__top">
+        <div class="tit__wrap">
+          <p class="sub-name">라마다앙코르 바이윈덤 김포한강호텔</p>
+          <p class="name">디럭스 트윈 (오션뷰)</p>
+        </div>
+        <div class="date-box">
+          <div class="start-date">
+            <p class="tit">체크인</p>
+            <p class="date">2024-09-06 (목)</p>
+          </div>
+          <div class="end-date">
+            <p class="tit">체크아웃</p>
+            <p class="date">2024-09-14 (목)</p>
+          </div>
+        </div>
+        <p class="txt-primary">2024-09-25 (수) 17시까지 무료취소 가능 (숙박시설 현지 시간 기준)</p>
+      </div>
+      <!-- //결제 정보 타이틀 -->
+      <hr class="divide">
+      <!-- 결제 정보  -->
+      <div class="payment__con">
+        <!-- 비로그인 시 노출 -->
+        <div class="payment__list">
+          <div class="tit__wrap type2">
+            <p class="title">할인 혜택</p>
+          </div>
+          <a href="" class="box-yellow__wrap">
+            <div>
+              <p class="ft-s">로그인 후 할인받아 예약해보세요.</p>
+              <p class="ft-xxs">로그인만 해도 5만원 쿠폰백을 선물해드려요.</p>
+            </div>
+            <i class="ico ico-arrow__right__black"></i>
+          </a>
+        </div>
+        <!-- //비로그인 시 노출 -->
+        <div class="payment__list">
+          <div class="tit__wrap">
+            <p class="title">예약자 정보</p>
+            <p class="desc">*정확한 실명 및 연락처를 입력해주세요. 예약관련 중요 안내 알림톡 / 이메일이 발송됩니다.</p>
+          </div>
+          <div class="input__wrap">
+            <div class="input__con">
+              <label for="name" class="input-label">성명</label>
+              <input id="name" type="text" class="input-default" placeholder="성명을 입력해주세요">
+            </div>
+            <div class="input__con">
+              <label for="tel" class="input-label">전화번호</label>
+              <input id="tel" type="tel" class="input-default" placeholder="전화번호를 입력해주세요">
+            </div>
+            <div class="input__con">
+              <label for="email" class="input-label">이메일</label>
+              <input id="email" type="email" class="input-default" placeholder="이메일을 입력해주세요">
+            </div>
+          </div>
+        </div>
+        <div class="payment__list">
+          <div class="tit__wrap flex-between">
+            <p class="title">이용자 정보</p>
+            <div class="checkbox__wrap">
+              <div class="checkbox">
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1">
+                  <span class="ft-xxs">예약자와 동일</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="input__wrap">
+            <div class="input__con">
+              <label for="name" class="input-label">성명</label>
+              <input id="name" type="text" class="input-default" placeholder="성명을 입력해주세요">
+            </div>
+            <div class="input__con">
+              <label for="tel" class="input-label">전화번호</label>
+              <input id="tel" type="tel" class="input-default" placeholder="전화번호를 입력해주세요">
+            </div>
+            <div class="input__con">
+              <label for="email" class="input-label">이메일</label>
+              <input id="email" type="email" class="input-default" placeholder="이메일을 입력해주세요">
+            </div>
+            <div class="input__con flex-between">
+              <label for="way" class="input-label">방문수단</label>
+              <div class="checkbox__wrap">
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox2" />
+                  <label for="checkbox2">
+                    <span class="ft-default">차량</span>
+                  </label>
+                </div>
+                <div class="checkbox">
+                  <input type="checkbox" id="checkbox3" />
+                  <label for="checkbox3">
+                    <span class="ft-default">도보</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="payment__list">
+          <div class="tit__wrap">
+            <p class="title">할인 혜택</p>
+          </div>
+          <div class="payment__sale input__wrap">
+            <button type="button" class="btn-payment__coupon fnOpenPop" data-name="couponList">
+              <span class="tit">쿠폰</span>
+              <div class="flex-center">
+                <span class="txt">사용 가능 <em>2</em>장</span>
+                <i class="ico ico-arrow__down"></i>
+              </div>
+            </button>
+            <div class="input__con input-point">
+              <div>
+                <label for="point" class="input-label">포인트</label>
+                <input id="point" type="text" class="input-default" placeholder="0">
+                <span class="unit">원</span>
+              </div>
+              <button type="button" class="btn-full__black">모두 사용</button>
+            </div>
+            <p class="txt-point">
+              <span>사용 가능 : 1,000원</span>
+              <span class="divider">|</span>
+              <span class="txt-gray">보유 포인트 : 1,011원</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="payment__total">
+          <p class="title">결제 금액</p>
+          <ul class="pay-list">
+            <li>
+              <span class="tit">일반요금</span>
+              <span class="money">94,000원</span>
+            </li>
+            <li>
+              <span class="tit">뭉클 특가</span>
+              <span class="money txt-primary">-10,000원</span>
+            </li>
+            <li>
+              <span class="tit">쿠폰 할인</span>
+              <span class="money txt-primary">-0원</span>
+            </li>
+            <li>
+              <span class="tit">포인트 할인</span>
+              <span class="money txt-primary">-0원</span>
+            </li>
+            <li class="total">
+              <span class="tit">총 결제 금액</span>
+              <span class="money">81,370원</span>
+            </li>
+          </ul>
+        </div>
+        <div class="payment__list">
+          <div class="tit__wrap type2">
+            <p class="title">결제 수단</p>
+          </div>
+          <div></div>
+
+          <!-- 전체 동의 -->
+          <div class="checkbox__wrap check-list__wrap agree__list">
+            <div class="check-list__all">
+              <div class="checkbox">
+                <input type="checkbox" id="agree_chk1" />
+                <label for="agree_chk1">
+                  <span class="ft-default">전체 동의</span>
+                </label>
+              </div>
+            </div>
+            <div class="check-list__con">
+              <div class="checkbox">
+                <input type="checkbox" id="agree_chk2" />
+                <label for="agree_chk2">
+                  <p class="flex-between">
+                    <span class="ft-s">[필수] 취소 및 환불 규정 동의</span>
+                    <a href="" class="btn-checkbox__more"><i class="ico ico-arrow__right"></i></a>
+                  </p>
+                </label>
+              </div>
+              <div class="checkbox">
+                <input type="checkbox" id="agree_chk3" />
+                <label for="agree_chk3">
+                  <p class="flex-between">
+                    <span class="ft-s">[필수] 취소 및 환불 규정 동의</span>
+                    <a href="" class="btn-checkbox__more"><i class="ico ico-arrow__right"></i></a>
+                  </p>
+                </label>
+              </div>
+            </div>
+          </div>
+          <!-- //전체 동의 -->
+        </div>
+      </div>
+      <!-- //결제 정보  -->
+      <!-- 하단 버튼 영역 -->
+      <div class="bottom-fixed__wrap">
+        <div class="btn__wrap">
+          <button class="btn-full__primary disabled" disabled>
+            <span>81,370원</span> 결제하기
+          </button>
+        </div>
+        <p class="bottom-txt">(주)호놀룰루컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련된 의무와 책임은 각 판매자에게 있습니다.</p>
+      </div>
+      <!-- //하단 버튼 영역 -->
+    </div>
+
+    <!-- 알럿 팝업 -->
+    <div id="alert" class="layerpop__wrap type-alert">
+      <div class="layerpop__container">
+        <div class="layerpop__contents">
+          <div class="tit__wrap">
+            <p class="title">예약을 중단하시겠어요?</p>
+            <p class="desc">
+              입력하신 정보가 모두 사라집니다.
+            </p>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__secondary fnClosePop">아니요</button>
+            <button class="btn-full__primary">중단하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //알럿 팝업 -->
+
+    <!-- 쿠폰 팝업 -->
+    <div id="couponList" class="layerpop__wrap type-full">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <button class="btn-back fnClosePop"><span class="blind">뒤로가기</span></button>
+          <p class="title">쿠폰</p>
+        </div>
+        <div class="layerpop__contents">
+          <div class="coupon-list__wrap">
+            <a href="" class="coupon-list__con">
+              <p class="coupon-name">웰컴쿠폰팩 (3만원 할인)</p>
+              <p class="coupon-sub">30,000원 할인</p>
+              <p class="coupon-use">최소 490,000원 이상 구매시에만 적용 가능</p>
+              <p class="coupon-period">2024년 09월 26일 (목) 부터 2024년 10월 31일 (목) 까지</p>
+            </a>
+            <div class="coupon-list__con disabled">
+              <p class="coupon-name">웰컴쿠폰팩 (3만원 할인)</p>
+              <p class="coupon-sub">30,000원 할인</p>
+              <p class="coupon-use">최소 490,000원 이상 구매시에만 적용 가능</p>
+              <p class="coupon-period">2024년 09월 26일 (목) 부터 2024년 10월 31일 (목) 까지</p>
+            </div>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          
+        </div>
+      </div>
+    </div>
+    <!-- // 쿠폰 팝업 -->
+  </div>
+
+  <script>
+    $('.input-point input').on('input', function() {
+      if ($(this).val()) {
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });
+    if ($('.input-point input').val()) {
+      $('.input-point input').addClass('active');
+    }
+  </script>
+
+</body>
+
+</html>

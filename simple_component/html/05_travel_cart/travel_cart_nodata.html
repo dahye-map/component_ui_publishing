@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-back"><span class="blind">뒤로가기</span></button>
+        <p class="header-tit__center">
+          2024년 10월 <i class="ico ico-arrow__down"></i>
+        </p>
+        <div class="checkbox__wrap">
+          <div class="checkbox">
+            <input type="checkbox" id="all_view" />
+            <label for="all_view">
+              <span class="ft-xxs">전체 보기</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container__wrap travelcart__wrap">
+      <!-- 주간 보기 -->
+      <div class="weekly__wrap">
+        <div class="weekly__day">
+          <div class="weekly__day-header">일</div>
+          <div class="weekly__day-header">월</div>
+          <div class="weekly__day-header">화</div>
+          <div class="weekly__day-header">수</div>
+          <div class="weekly__day-header">목</div>
+          <div class="weekly__day-header">금</div>
+          <div class="weekly__day-header">토</div>
+        </div>
+        <!-- data-reserved 예약 갯수 입력 -->
+        <div class="weekly__day">
+          <div class="weekly__day-content" data-reserved="1">13</div>
+          <div class="weekly__day-content" data-reserved="2">14</div>
+          <div class="weekly__day-content">15</div>
+          <div class="weekly__day-content today" data-reserved="5">16</div>
+          <div class="weekly__day-content">17</div>
+          <div class="weekly__day-content" data-reserved="4">18</div>
+          <div class="weekly__day-content" data-reserved="3">19</div>
+        </div>
+      </div>
+      <!-- //주간 보기 -->
+      
+      <!-- 상품 없음 -->
+      <div class="travelcart__nodata">
+        <i class="ico ico-cart"></i>
+        <p class="ft-default">아직 트래블카트가 비어있어요</p>
+        <p class="ft-xxs">원하는 상품을 담아두면 한 번에 예약할 수 있어요</p>
+
+        <button type="button" class="btn-full__line__primary">상품 검색하기</button>
+      </div>
+      <!-- //상품 없음 -->
+    </div>
+  </div>
+
+</body>
+
+</html>

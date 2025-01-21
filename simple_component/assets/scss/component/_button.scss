@@ -1,0 +1,349 @@
+/* 버튼 */
+.btn__wrap {
+  @include flexbox();
+  [class^="btn-full"]:first-child {
+    width: 28%;
+    margin-right: 1.2rem;
+  }
+  [class^="btn-full"]:last-child {
+    width: 72%;
+  }
+  [class^="btn-full"]:only-child {
+    width: 100%;
+    margin-right: 0;
+  }
+  [class^="btn-md"]:first-child  {
+    width: 50%;
+    margin-right: 1.2rem;
+  }
+  [class^="btn-md"]:last-child  {
+    width: 50%;
+  }
+  [class^="btn-md"]:only-child {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+.btn-fixed__wrap {
+  position: fixed;
+  left: 50%;
+  bottom: calc(env(safe-area-inset-bottom) + 8.6rem);
+  transform: translateX(-50%);
+  z-index: 50;
+}
+[class^='btn-'] {
+  @include flexbox();
+  &.disabled,
+  &:disabled {
+    background-color: $bg_lightgray;
+    color: #C7C7CC;
+  }
+}
+[class^='btn-full'] {
+  width: 100%;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 1.6rem;
+  font-size: $font_size_default;
+  font-weight: 400;
+  padding: 0 1.2rem;
+}
+.btn-full {
+  &__primary {
+    background: $primary_color;
+    color:#fff;
+    span {
+      padding: 0 .4rem;
+    }
+  }
+  &__black {
+    background: $primary_black;
+    color:#fff;
+  }
+  &__secondary {
+    background: $primary_enable;
+    color:$gray_02;
+  }
+  &__line {
+    background: $white_color;
+    box-shadow: 0 0 0 1px $primary_black inset;
+    &__primary {
+      background: $white_color;
+      box-shadow: 0 0 0 1px $primary_color inset;
+      color: $primary_color;
+    }
+    &__gray {
+      width: 4.8rem !important;
+      padding: 0;
+      background: $white_color;
+      box-shadow: 0 0 0 1px $bg_lightgray inset;
+      border-radius: .8rem;
+      .ico-cart {
+        width: 3.2rem;
+        height: 3.2rem
+      }
+      & + .btn-full__primary {
+        flex: 1
+      }
+    }
+  }
+  &__small {
+    height: 4rem;
+    font-size: $font_size_xxs;
+    border-radius: 1.2rem;
+  }
+  
+}
+
+.btn-txt {
+  @include flexbox();
+  &__default {
+    color: #C7C7CC;
+    font-size: $font_size_s;
+    line-height: 1.42;
+  }
+  &__primary {
+    color: $primary_color;
+    font-size: $font_size_s;
+    line-height: 1.42;
+  }
+  &__gray {
+    color: $primary_gray;
+    font-size: $font_size_s;
+    line-height: 1.42;
+  }
+  &__underline {
+    color: $primary_gray;
+    font-size: $font_size_s;
+    line-height: 1.42;
+    text-decoration: underline;
+    text-underline-position: under;
+  }
+  &__small {
+    font-size: $font_size_xxs;
+    font-weight: 400;
+  }
+  &__arrow {
+    @include flexbox();
+    font-size: $font_size_xxs;
+    color: $primary_color;
+    &:after {
+      content:'';
+      width: .8rem;
+      height: 1.6rem;
+      margin-left: .4rem;
+      @include bgimage($url:$image_root+'common/ico_arrow_right_purple.svg');
+    }
+  }
+}
+
+[class^='btn-md'] {
+  height: 3.8rem;
+  padding: 1.2rem;
+  border-radius: .8rem;
+  font-size: $font_size_xxs;
+}
+.btn-md {
+  &__line {
+    background-color: #fff;
+    box-shadow: 0 0 0 1px $primary_black inset;
+    color: $primary_black;
+  }
+  &__primary {
+    width: 100%;
+    background-color: $primary_color;
+    color: #fff;
+  }
+  &__black {
+    width: 100%;
+    background-color: $primary_black;
+    color: #fff;
+  }
+}
+
+[class^='btn-sm'] {
+  height: 3rem;
+  padding: .8rem 1.2rem;
+  border-radius: .8rem;
+  font-size: $font_size_xxs;
+}
+.btn-sm {
+  &__line {
+    box-shadow: 0 0 0 1px $primary_color inset;
+    color: $primary_color;
+    &__gray {
+      background-color: #fff;
+      box-shadow: 0 0 0 1px #EEF0F2 inset;
+    }
+  }
+  &__primary {
+    width: 100%;
+    background-color: $primary_color;
+    color: #fff;
+  }
+  &__black {
+    width: 100%;
+    background-color: $primary_black;
+    color: #fff;
+  }
+  &__round {
+    border-radius: 2rem;
+  }
+  &__gray{
+    background-color: $bg_lightgray;
+    color: $primary_gray
+  }
+}
+
+.btn-sns {
+  &__kakao {
+    background-color: #FFDE32;
+    color: $primary_black;
+    &:before{
+      content:'';
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: .8rem;
+      @include bgimage($url:$image_root+'common/ico_kakao.svg');
+    }
+  }
+  &__naver {
+    background-color: #20CA31;
+    &:before{
+      content:'';
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: .8rem;
+      @include bgimage($url:$image_root+'common/ico_naver.svg');
+    }
+  }
+  &__apple {
+    background-color: #30333E;
+    &:before{
+      content:'';
+      width: 2.4rem;
+      height: 2.4rem;
+      margin-right: .8rem;
+      @include bgimage($url:$image_root+'common/ico_apple.svg');
+    }
+  }
+}
+
+.btn-filter {
+  @include flexbox();
+  height: 2.8rem;
+  padding: 0 .8rem;
+  line-height: 2.8rem;
+  box-shadow: 0 0 0 1px #EEF0F2 inset;
+  border-radius: 2rem;
+  font-size: $font_size_xxs;
+  color: $primary_gray;
+  &::before {
+    content:'';
+    width: 2rem;
+    height: 2rem;
+    margin-right: .4rem;
+    @include bgimage($url:$image_root+'common/ico_filter.svg', $pos:left center);
+  }
+}
+.btn-map {
+  @include flexbox();
+  background-color: $primary_black;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  padding: 0 1.4rem;
+  font-size: $font_size_default;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 3rem;
+  &::before {
+    content:'';
+    width: 1.4rem;
+    height: 1.4rem;
+    margin-right: .6rem;
+    @include bgimage($url:$image_root+'common/ico_map.svg', $pos:left center);
+  }
+}
+.btn-product__like {
+  position: absolute;
+  right: 1.2rem;
+  bottom: 1.2rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  z-index: 11;
+  @include bgimage($url:$image_root+'common/ico_heart.svg');
+  &.type-black {
+    @include bgimage($url:$image_root+'common/ico_heart_black.svg');
+  }
+  &.active {
+    @include bgimage($url:$image_root+'common/ico_heart_active.svg');
+  }
+}
+.btn-copy {
+  width: 2.4rem;
+  height: 2.4rem;
+  @include bgimage($url:$image_root+'common/btn_copy.png');
+}
+.btn-more {
+  font-size: $font_size_xxs;
+  color: $primary_gray;
+  &::after {
+    content:'';
+    width: 1rem;
+    height: 1.4rem;
+    margin-left: .4rem;
+    @include bgimage($url:$image_root+'common/ico_arrow_down_small.svg', $pos:right center);
+  }
+}
+
+.btn-payment__coupon {
+  background-color: #F8F8F8;
+  @include flexbox($js:between);
+  width: 100%;
+  border-radius: 1.6rem;
+  padding: 1.4rem 1.2rem;
+  .tit {
+    font-size: $font_size_s;
+    font-weight: 600;
+  }
+  .txt {
+    padding-right: .8rem;
+    font-size: $font_size_xxs;
+    color: $primary_gray;
+  }
+}
+
+.btn-write {
+  position: fixed;
+  right: 2rem;
+  bottom: calc(env(safe-area-inset-bottom) + 8.6rem);
+  background-color: $highlight_color;
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  @include bgimage($url:$image_root+'layout/ico_write.png', $size:3rem 3rem);
+  box-shadow: 0px 3px 10px 0px #F7E0A7B2;
+}
+
+.btn-reservation {
+  height: 3.3rem;
+  line-height: 3.3rem;
+  padding: 0 2rem;
+  font-size: $font_size_s;
+  font-weight: 400;
+  border-radius: .8rem;
+  &__cancle {
+    background-color: #EEF0F2;
+    color: $primary_gray;
+  }
+  &__review {
+    background-color: $primary_black;
+    color: #fff;
+  }
+  &.disabled, &:disabled {
+    background-color: #C7C7CC;
+    color: #fff;
+  }
+}

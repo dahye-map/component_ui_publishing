@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-back"><span class="blind">뒤로가기</span></button>
+        <p class="header-product-name"></p>
+        <div class="btn__wrap">
+          <button class="btn-share"><span class="blind">공유하기</span></button>
+          <button type="button" class="btn-product__like type-black"><span class="blind">찜하기</span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container__wrap">
+
+      <div class="product-detail__wrap">
+        <!-- 상품 이미지 슬라이드 -->
+        <div class="product-detail__img">
+          <div class="splide splide__product">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="slide-counter">
+              <span class="current-slide">1</span> / <span class="total-slides"></span>
+            </div>
+          </div>
+        </div>
+        <!-- //상품 이미지 슬라이드 -->
+        <!-- 상품 타이틀 -->
+        <div class="product-detail__tit">
+          
+          <a href="" class="seller-name">판매자명</a>
+          <div class="product-tit">
+            <p class="product-name">다낭 썬월드 바나힐 입장권 & 왕복 케이블카</p>
+          </div>
+          <div class="flex-between">
+            <div class="product-category">
+              <p class="badge badge__yellow">상시상품</p>
+              <p class="ft-xxs">액티비티&체험</p>
+            </div>
+            <p class="review-con">
+              <i class="ico ico-star"></i>
+              <span class="rating-num">4.5</span>
+              <span class="review-num"><a href="">리뷰 <span>199</span>개</a></span>
+            </p>
+          </div>
+          <div class="product-price">
+            <span class="sale-percent">+ 30%</span>
+            <span class="default-price">90,000원</span>
+            <span class="sale-price"><em>50,000</em>원</span>
+          </div>
+          <div class="box-gray__wrap">
+            <p class="ft-default ft-bold">평균 <span class="txt-primary">000,000원</span> 할인</p>
+            <button type="button" class="btn-sm__primary btn-sm__round">
+              <i class="ico ico-logo__tiny"></i>
+              뭉클딜받기
+            </button>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">상품 정보</p>
+            <div class="amenities__list">
+              <ul>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>패밀리룸 보유(3인)</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>레스토랑</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>바(bar)라운지</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>장애인객실</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>조식운영</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>키즈카페/룸</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>피트니스 센터</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>비즈니스 센터</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">필수 확인 사항</p>
+            <p class="ft-s">
+              베트남 국/공휴일에는 인건비, 차량비 등이 인상되는 관계로 추가금(현지지불 등)이 발생될 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <!-- //상품 타이틀 -->
+        <!-- 뭉클한 혜택 -->
+        <div class="product-detail__benefit">
+          <div class="box-white__list">
+            <div class="box-white__wrap">
+              <p class="title">뭉클딜명 자리</p>
+              <div class="thumb__wrap">
+                <div class="thumb__gift">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="box-white__wrap flex-between">
+              <p class="ft-default ft-bold"><span class="txt-primary">50,000원</span> 선착순 쿠폰백 받기</p>
+              <button type="button" class="btn-sm__primary btn-sm__round">
+                <i class="ico ico-download"></i>
+                다운로드
+              </button>
+            </div>
+            <div class="box-white__wrap">
+              <div class="badge__wrap">
+                <div class="badge badge__gray">#8월 1일</div>
+                <div class="badge badge__gray">#8월 2일</div>
+                <div class="badge badge__gray">#2명</div>
+                <div class="badge badge__gray">#연인과</div>
+                <div class="badge badge__gray">#제주</div>
+                <div class="badge badge__gray">#여유로운 힐링</div>
+                <div class="badge badge__gray">#도심 속 호캉스</div>
+                <div class="badge badge__gray">#전망좋은 곳</div>
+              </div>
+            </div>
+          </div>
+          <p class="txt-warning mt8">뭉클딜은 상황에 따라 조기종료 될 수 있습니다.</p>
+        </div>
+        <!-- //뭉클한 혜택 -->
+        <!-- 뭉클포인트 -->
+        <div class="product-detail__point">
+          <div class="box-white__wrap">
+            <div class="tit__wrap">
+              <p class="title">뭉클포인트</p>
+              <p class="desc">
+                다낭의 마지막을 체크아웃 투어로 알차게 보내보세요. 단독 투어로 필수 여행지인 오행산과 까오다이교를 보고 맛있는 식사도 즐기고, 두 손 가득 빈마트에서 맛있는 간식도 구입할 수 있어요. 알차게 다낭 시내를 돌아본 다음 다낭 공항으로 이동할 수 있는 투어예요.
+                마지막 날을 알차게 보내고 싶다면 체크아웃 굿바이 투어를 추천해요. 마지막 날을 아쉽지 않게 보낼 수 있거든요.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- //뭉클포인트 -->
+        <!-- 상품 상세 이미지 -->
+        <div class="product-detail__con">
+          <div class="tit__wrap">
+            <p class="ft-default">프로그램</p>
+          </div>
+          <div class="product-detail__img" style="height:1000px; background-color:#D9D9D9;">
+            <p>상세 이미지</p>
+          </div>
+          <div class="btn__wrap btn-product__more">
+            <button type="button" class="btn-full__black">상품 정보 더보기</button>
+          </div>
+        </div>
+        <!-- //상품 상세 이미지 -->
+        <!-- 숙소 공지사항 및 정보 -->
+        <div class="product-detail__notice">
+          <div class="bullet__wrap">
+            <p class="title">포함 사항</p>
+            <ul>
+              <li>단독 프라이빗 차량</li>
+              <li>석식 비용</li>
+              <li>커피 비용</li>
+              <li>생수</li>
+              <li>일체의 입장료</li>
+              <li>영어 가이드 해설</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">불포함 사항</p>
+            <ul>
+              <li>개인경비 및 음료</li>
+              <li>마사지</li>
+              <li>매너팁 (1인2달러)</li>
+              <li>여행자보험 가입하기</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">사용방법</p>
+            <ul>
+              <li>이메일로 모바일 바우처 발송</li>
+              <li>지정일에 픽업 가이드 미팅시 바우처 제시 후 이용</li>
+              <li>지정한 날짜에만 유효해요.</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">미팅 포인트</p>
+            <ul>
+              <li>투숙하는 호텔 로비에서 진행돼요.</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">미팅시간</p>
+            <ul>
+              <li>오후 13:00</li>
+              <li>미팅시간 10분 전까지 도착해주세요.</li>
+              <li>단독 투어이므로 출발 시간은 자유롭게 선택 가능합니다. (추가 요청 사항에 기재 바랍니다.)</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">투어 일정</p>
+            <ul>
+              <li>오후 13:00 - 호텔 단독 차량 픽업 서비스</li>
+              <li>자유관광 - 오행산 투어</li>
+              <li>자유관광 - 다낭 박물관 투어</li>
+              <li>자유관광 - 까오다이교 사원</li>
+              <li>자유관광 - 다낭 대성당</li>
+              <li>자유관광 - 콩카페</li>
+              <li>오후 17:00 - 저녁 식사</li>
+              <li>오후 19:00 - 롯데마트 쇼핑</li>
+              <li>오후 21:00 - 다낭 국제 공항으로 이동</li>
+              <li>호텔 장소에 따라 동선은 변경될 수 있습니다.</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">꼭 알아두세요</p>
+            <ul>
+              <li>최소 2인 이상 이용 가능한 상품 입니다.</li>
+              <li>단독 프라이빗 투어 프로그램입니다.</li>
+              <li>만 6세 미만의 소아는 무료로 이용할 수 있어요.</li>
+              <li>만 6세 미만의 소아는 생년월일도 기재 바랍니다.</li>
+              <li>옵션(2인, 3인, 4인)은 성인 수 기준입니다.</li>
+              <li>베트남 공휴일은 추가 비용 발생합니다.</li>
+              <li>동행자의 영문 성함과 귀국 항공편명을 기재 바랍니다.</li>
+              <li>베트남은 팁 문화가 있습니다. 정해진 금액은 없으나 자유롭게 챙겨주시기 바랍니다.</li>
+              <li>
+                베트남 연휴기간 내 예약시 아래와 같이 추가요금이 발생되며 "베트남스토리"에서 개별적으로 추가금 문자 안내 드립니다.
+                <ul>
+                  <li>신년 연휴: 12/31-1/2 (추가금 20%)</li>
+                  <li>설 연휴: 2/8-2/14 (추가금 40%)</li>
+                  <li>베트남 남부해방 & 국제노동절 연휴: 4/30-5/1 (추가금 20%)</li>
+                  <li>베트남 독립기념일 연휴: 9/2 (추가금 20%)</li>
+                  <li>크리스마스 연휴: 12/24-25 (추가금 20%)</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="box-purple__wrap type2">
+              <div class="bullet__wrap">
+                <ul>
+                  <li>한국/베트남 휴일 및 평일 업무종료 (오후5시) 후 취소는 출발일 기준에서 제외됩니다.</li>
+                  <li>예약 확정 바우처를 받기 전까지는 예약 확정이 아닙니다.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">취소 및 환불 규정</p>
+            <ul>
+              <li>
+                15일 전 취소 : 100% 환불 <br>
+                10일 전 취소 : 15% 수수료 부과 <br>
+                5일 전 취소 : 50% 수수료 부과 <br>
+                3일 전 취소 시 환불 불가
+              </li>
+              <li>취소/환불 요청은 영업시간 (월~금요일 10:00~18:00 / 토요일,일요일,공휴일 제외) 내에 접수된 건에 한하며, 영업시간 외에 취소 접수 시 다음 영업일(영업시간 기준) 접수로 처리됩니다.</li>
+              <li>예약 취소 및 환불 요청은 영업시간 내에 요청해 주신 후 취소 확인을 받으셔야 합니다.</li>
+            </ul>
+          </div>
+        </div>
+        <!-- //숙소 공지사항 및 정보 -->
+        <!-- 이 지역의 추천 투어/티켓-->
+        <div class="product-detail__similar">
+          <p class="title">이 지역의 추천 투어/티켓</p>
+
+          <div class="splide splide__default">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <!-- //이 지역의 추천 투어/티켓 -->
+      </div>
+
+      <!-- 하단 버튼 영역 -->
+      <div class="bottom-fixed__wrap">
+        <div class="btn__wrap">
+          <button type="button" class="btn-full__line__gray"><i class="ico ico-cart"></i></button>
+          <button class="btn-full__primary fnOpenPop" data-name="popupGuest">바로 예약</button>
+        </div>
+      </div>
+      <!-- //하단 버튼 영역 -->
+    </div>
+
+    <!-- 바텀 팝업(일정 선택) -->
+    <div id="popupDate" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">일정 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <!-- 날짜 선택 -->
+          <div class="tab__wrap tab-switch__wrap">
+            <ul class="tab__inner">
+              <li class="tab-switch__con active">
+                <a href="#none">날짜 선택</a>
+              </li>
+              <li class="tab-switch__con">
+                <a href="#none">월 선택</a>
+              </li>
+            </ul>
+            <div class="tab-contents__wrap">
+              <!-- 날짜 선택 탭 -->
+              <div class="tab-contents active">
+                <div class="calendar-wrap">
+                  <div class="placeholder"></div>
+                </div>
+              </div>
+              <!-- //날짜 선택 탭 -->
+              <!-- 월 선택 탭 -->
+              <div class="tab-contents">
+                <div class="select__wrap col-3 multi-select">
+                  <p class="title">2024년</p>
+                  <ul>
+                    <li><a href="#none">9월</a></li>
+                    <li><a href="#none">10월</a></li>
+                    <li><a href="#none">11월</a></li>
+                    <li><a href="#none">12월</a></li>
+                  </ul>
+
+                  <p class="title">2025년</p>
+                  <ul>
+                    <li><a href="#none">1월</a></li>
+                    <li><a href="#none">1월</a></li>
+                    <li><a href="#none">3월</a></li>
+                    <li><a href="#none">4월</a></li>
+                    <li><a href="#none">5월</a></li>
+                    <li><a href="#none">6월</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //월 선택 탭 -->
+            </div>
+          </div>
+          <!-- //날짜 선택 -->
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__primary">다음</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(일정 선택) -->
+
+    <!-- 바텀 팝업(인원 선택) -->
+    <div id="popupGuest" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">인원 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="count__wrap">
+            <ul>
+              <li>
+                <p class="ft-default">성인 <span>100,000원</span></p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+              </li>
+              <li>
+                <p class="ft-default">아동 <span>80,000원</span></p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+
+                <div class="count-age__wrap"></div>
+              </li>
+              <li>
+                <p class="ft-default">유아 <span>50,000원</span></p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+
+                <div class="count-age__wrap"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button type="button" class="btn-full__line__gray"><i class="ico ico-cart"></i></button>
+            <button class="btn-full__primary">예약하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(인원 선택) -->
+
+    <!-- 바텀 팝업(나이 선택) -->
+    <div id="popupAge" class="layerpop__wrap layerpop__select">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">나이 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="select__wrap type-list single-select">
+            <ul>
+              <li><a href="#none">만 1세</a></li>
+              <li><a href="#none">만 2세</a></li>
+              <li><a href="#none">만 3세</a></li>
+              <li><a href="#none">만 4세</a></li>
+              <li><a href="#none">만 5세</a></li>
+              <li><a href="#none">만 6세</a></li>
+              <li><a href="#none">만 7세</a></li>
+              <li><a href="#none">만 8세</a></li>
+              <li><a href="#none">만 9세</a></li>
+              <li><a href="#none">만 10세</a></li>
+              <li><a href="#none">만 11세</a></li>
+              <li><a href="#none">만 12세</a></li>
+              <li><a href="#none">만 13세</a></li>
+              <li><a href="#none">만 14세</a></li>
+              <li><a href="#none">만 15세</a></li>
+              <li><a href="#none">만 16세</a></li>
+              <li><a href="#none">만 17세</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(나이 선택) -->
+  </div>
+
+  <script>
+    flatpickr('.calendar-wrap .placeholder', {
+      inline: true,
+      minDate: 'today',
+      mode: "range",
+      "locale": "ko",
+    });
+    
+    $(window).scroll(function() {
+      var $prdNameTop = $('.product-detail__tit .product-name').offset().top - $('.header__wrap').height() + 1;
+      var $prdName = $('.product-detail__tit .product-name').text();
+      var $scrollTop = $(window).scrollTop();
+      if( $scrollTop >= $prdNameTop) {
+        $('.header-product-name').text($prdName);
+      } else {
+        $('.header-product-name').text('');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

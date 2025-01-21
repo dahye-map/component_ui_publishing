@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../assets/css/ui.css">
+
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/splide.min.js"></script>
+  <script src="../assets/js/flatpickr.js"></script>
+  <script src="../assets/js/flatpickr.ko.js"></script>
+  <script src="../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <!-- only publishing index style -->
+	<style>
+		b {
+			margin-left: 10px;
+		}
+
+		h1.test-title {
+			font-size: 30px;
+			font-weight: bold;
+			margin: 50px 50px;
+		}
+
+		h2.test-title {
+			margin: 0 0 20px;
+			font-size: 22px;
+			font-weight: bold;
+			padding-bottom: 10px;
+			border-bottom: 2px solid #888;
+		}
+
+		h3.test-title {
+			margin: 0 0 10px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+
+		.test-section {
+			border-top: 2px solid #ccc;
+			padding: 50px 50px 100px;
+		}
+
+		.test-section-sub+.test-section-sub {
+			margin-top: 20px;
+			border-top: 2px dashed #ccc;
+			padding-top: 20px;
+		}
+
+		.test-code {
+			border: 2px solid #ccc;
+			margin: 10px 0;
+			background: #101737;
+			padding: 10px;
+		}
+
+		.test-code:before {
+			content: 'ex.';
+			display: block;
+			font-size: 12px;
+		}
+
+		.test-description {
+			margin: 10px 0;
+			padding: 0 12px;
+		}
+
+		.test-links {
+			margin-left: -20px;
+		}
+
+		.test-links:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		.test-links a {
+			display: block;
+			margin: 20px 0 0 20px;
+			float: left;
+			padding: 5px 15px;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			background: #333;
+		}
+
+		.test-links+h2.test-title {
+			margin-top: 20px;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: var(--white);
+		}
+
+		.test-section-button .button {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			vertical-align: top;
+			margin: 10px;
+		}
+
+		.test-section-button .button:not(.ui-basic-button--icon-only) {
+			width: auto;
+		}
+
+		.test-section-form .ui-input-block+.ui-input-block {
+			margin-top: 10px;
+		}
+	</style>
+	<!-- //only publishing index style -->
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+		<div style="display: table"></div>
+
+		<h1 class="test-title">Component</h1>
+
+		<div class="test-section">
+			<h2 class="test-title">Basic Button</h2>
+			<div class="test-section-sub">
+				<h3 class="test-title">button big tag</h3>
+        <button type="button" class="btn-full__primary">버튼</button>
+        <button type="button" class="btn-full__black">버튼</button>
+        <button type="button" class="btn-full__line">버튼</button>
+        <button type="button" class="btn-full__line__primary">버튼</button>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">button medium tag</h3>
+        <button type="button" class="btn-md__primary">버튼</button>
+        <button type="button" class="btn-md__black">버튼</button>
+        <button type="button" class="btn-md__line">버튼</button>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">button small tag</h3>
+        <button type="button" class="btn-sm__primary">버튼</button>
+        <button type="button" class="btn-sm__black">버튼</button>
+        <button type="button" class="btn-sm__gray">버튼</button>
+        <button type="button" class="btn-sm__primary btn-sm__round">버튼</button>
+        <button type="button" class="btn-sm__black btn-sm__round">버튼</button>
+        <button type="button" class="btn-sm__line">버튼</button>
+        <button type="button" class="btn-sm__line__gray">버튼</button>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">button disable</h3>
+        <p class="ft-default">버튼 class에 disabled 추가 & disabled attribute 추가</p>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">button text tag</h3>
+        <button type="button" class="btn-txt__default">버튼</button>
+        <button type="button" class="btn-txt__primary">버튼</button>
+        <button type="button" class="btn-txt__gray">버튼</button>
+        <button type="button" class="btn-txt__underline">버튼</button>
+        <button type="button" class="btn-txt__small">버튼</button>
+        <button type="button" class="btn-txt__arrow">버튼</button>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">button icon tag</h3>
+        <button type="button" class="btn-filter">필터</button>
+        <button type="button" class="btn-map"><span class="blind">지도</span></button>
+        <button type="button" class="btn-copy"><span class="blind">복사하기</span></button>
+        <button type="button" class="btn-more">더보기</button>
+			</div>
+		</div>
+
+    <div class="test-section">
+			<h2 class="test-title">Font</h2>
+			<div class="test-section-sub">
+				<h3 class="test-title">text</h3>
+        <p class="ft-xxs">12px</p>
+        <p class="ft-xs">13px</p>
+        <p class="ft-s">14px</p>
+        <p class="ft-m">15px</p>
+        <p class="ft-default">16px</p>
+        <p class="ft-l">17px</p>
+        <p class="ft-xl">18px</p>
+        <p class="ft-xxl">20px</p>
+        <p class="ft-xxxl">24px</p>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">color</h3>
+        <p class="txt-primary">기본</p>
+        <p class="txt-black">검정</p>
+        <p class="txt-gray">회색</p>
+        <p class="txt-red">빨강</p>
+        <p class="txt-yellow">노랑</p>
+        <p class="txt-warning">경고 문구</p>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">align</h3>
+        <p class="txt-primary align__center">센터</p>
+        <p class="txt-primary align__left">왼쪽</p>
+        <p class="txt-primary align__right">오른쪽</p>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">bullet</h3>
+        <div class="bullet__wrap">
+          <ul>
+            <li>안내합니다.</li>
+            <li>안내합니다.</li>
+            <li>안내합니다.</li>
+          </ul>
+        </div>
+			</div>
+		</div>
+
+    <div class="test-section">
+			<h2 class="test-title">Checkbox, Radio</h2>
+			<div class="test-section-sub">
+				<h3 class="test-title">Checkbox</h3>
+
+        <div class="checkbox__wrap">
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox1" />
+            <label for="checkbox1">
+              <span class="ft-xxs">예약자와 동일</span>
+            </label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" id="checkbox2" />
+            <label for="checkbox2">
+              <span class="ft-xxs">예약자와 동일</span>
+            </label>
+          </div>
+        </div>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">Radio</h3>
+
+        <div class="radio__wrap">
+          <div class="radio">
+            <input type="radio" name="radiogroup" id="radio1" />
+            <label for="radio1">
+              <span class="ft-xxs">예약자와 동일</span>
+            </label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="radiogroup" id="radio2" />
+            <label for="radio2">
+              <span class="ft-xxs">예약자와 동일</span>
+            </label>
+          </div>
+        </div>
+			</div>
+      <div class="test-section-sub">
+				<h3 class="test-title">전체 동의</h3>
+        <!-- 전체 동의 -->
+        <div class="checkbox__wrap check-list__wrap agree__list">
+          <div class="check-list__all">
+            <div class="checkbox">
+              <input type="checkbox" id="agree_chk1" />
+              <label for="agree_chk1">
+                <span class="ft-default">전체 동의</span>
+              </label>
+            </div>
+          </div>
+          <div class="check-list__con">
+            <div class="checkbox">
+              <input type="checkbox" id="agree_chk2" />
+              <label for="agree_chk2">
+                <p class="flex-between">
+                  <span class="ft-s">[필수] 만 14세 이상입니다</span>
+                </p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="agree_chk3" />
+              <label for="agree_chk3">
+                <p class="flex-between">
+                  <span class="ft-s">[필수] 서비스 이용약관</span>
+                  <a href="" class="btn-checkbox__more"><i class="ico ico-arrow__right"></i></a>
+                </p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="agree_chk4" />
+              <label for="agree_chk4">
+                <p class="flex-between">
+                  <span class="ft-s">[필수] 개인정보 처리방침</span>
+                  <a href="" class="btn-checkbox__more"><i class="ico ico-arrow__right"></i></a>
+                </p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="agree_chk5" />
+              <label for="agree_chk5">
+                <p class="flex-between">
+                  <span class="ft-s">[필수] 위치기반 이용약관</span>
+                  <a href="" class="btn-checkbox__more"><i class="ico ico-arrow__right"></i></a>
+                </p>
+              </label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="agree_chk6" />
+              <label for="agree_chk6">
+                <p class="flex-between">
+                  <span class="ft-s">[선택] 마케팅 수신 동의(혜택알림 푸시, 메일, 문자)</span>
+                </p>
+              </label>
+            </div>
+          </div>
+        </div>
+        <!-- //전체 동의 -->
+			</div>
+		</div>
+
+    <div class="test-section">
+			<h2 class="test-title">Input</h2>
+			<div class="test-section-sub">
+				<h3 class="test-title">Input Default</h3>
+
+        <div class="input__wrap">
+          <div class="input__con">
+            <label for="name" class="input-label">성명</label>
+            <input id="name" type="text" class="input-default" placeholder="성명을 입력해주세요">
+          </div>
+          <div class="input__con">
+            <label for="tel" class="input-label">전화번호</label>
+            <input id="tel" type="tel" class="input-default" placeholder="전화번호를 입력해주세요">
+          </div>
+          <div class="input__con">
+            <label for="email" class="input-label">이메일</label>
+            <input id="email" type="email" class="input-default" placeholder="이메일을 입력해주세요">
+          </div>
+        </div>
+
+        <div class="input__wrap">
+          <div class="input__con">
+            <label for="tel" class="input-label">연락처</label>
+            <div class="input__btn">
+              <input id="tel" type="tel" class="input-default" placeholder="전화번호를 입력해주세요">
+              <button type="button" class="btn-full__black">인증</button>
+            </div>
+          </div>
+          <div class="input__con has-time">
+            <input id="name" type="text" class="input-default" placeholder="인증번호를 입력하세요">
+            <span class="expire-time">05:00</span>
+          </div>
+        </div>
+			</div>
+
+      <div class="test-section-sub">
+				<h3 class="test-title">Input type placeholder</h3>
+
+        <!-- https://www.dndmobile.co.kr/hana_money/WebContent/WEB-INF/jsp/hnm/mob/nrcHtml/SET/SET_914.html -->
+        <div class="input__wrap">
+          <div class="input__con">
+            <div class="input__box">
+              <label for="name" class="input-label">성명</label>
+              <input id="name" type="text" class="input-default" placeholder="성명을 입력해주세요">
+              <button type="button" class="btn_ico_clear"><span class="blind">입력삭제</span></button>
+            </div>
+            <p class="input__info">안내문구</p>
+          </div>
+
+          <!-- 주민등록번호 -->
+          <div class="wrap_inp type_placeholder transparent" data-order="0" data-check="jumin">
+            <div class="type_flex err">
+              <div class="box_inp">
+                <label for="ele_jumin" data-label="주민등록번호">주민번호 앞 7자리</label>
+                <input type="tel" inputmode="numeric" id="ele_jumin" class="inp" placeholder="주민번호 앞 7자리" maxlength="6">
+              <button type="button" class="btn_ico_clear"><span class="blind">입력삭제</span></button></div>
+              <div class="box_inp type_jumin">
+                <label for="ele_jumin2" data-label=" ">●</label>
+                <input type="tel" inputmode="numeric" id="ele_jumin2" class="inp" placeholder="●" maxlength="1">
+                <span>●●●●●●</span>
+              <button type="button" class="btn_ico_clear"><span class="blind">입력삭제</span></button></div>
+            </div>
+            <p class="txt_inp_guide type_noico">오류메세지 출력</p>
+          </div>
+
+        </div>
+			</div>
+		</div>
+
+    <div class="test-section">
+      <h2 class="test-title">Tab</h2>
+
+      <div class="test-section-sub">
+        <h3 class="test-title">스위치 탭</h3>
+
+        <div class="tab__wrap tab-switch__wrap">
+          <ul class="tab__inner">
+            <li class="tab-switch__con active"><a href="#none">tab1</a></li>
+            <li class="tab-switch__con"><a href="#none">tab2</a></li>
+          </ul>
+          <div class="tab-contents__wrap">
+            <div class="tab-contents active">
+              탭1 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭2 컨텐츠
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">라운드 탭</h3>
+
+        <div class="tab__wrap tab-round__wrap">
+          <ul class="tab__inner">
+            <li class="tab-round__con active"><a href="#none">tab1</a></li>
+            <li class="tab-round__con"><a href="#none">tab2</a></li>
+            <li class="tab-round__con"><a href="#none">tab3</a></li>
+          </ul>
+          <div class="tab-contents__wrap">
+            <div class="tab-contents active">
+              탭1 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭2 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭3 컨텐츠
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">라운드 탭 small</h3>
+
+        <div class="tab__wrap tab-round__wrap type-small">
+          <ul class="tab__inner">
+            <li class="tab-round__con active"><a href="#none">tab1</a></li>
+            <li class="tab-round__con"><a href="#none">tab2</a></li>
+            <li class="tab-round__con"><a href="#none">tab3</a></li>
+            <li class="tab-round__con"><a href="#none">tab4</a></li>
+            <li class="tab-round__con"><a href="#none">tab5</a></li>
+          </ul>
+          <div class="tab-contents__wrap">
+            <div class="tab-contents active">
+              탭1 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭2 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭3 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭4 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭5 컨텐츠
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">라운드 탭 동그라미</h3>
+
+        <div class="tab__wrap tab-round__wrap type-circle">
+          <ul class="tab__inner">
+            <li class="tab-round__con active"><a href="#none">tab1</a></li>
+            <li class="tab-round__con"><a href="#none">tab2</a></li>
+            <li class="tab-round__con"><a href="#none">tab3</a></li>
+          </ul>
+          <div class="tab-contents__wrap">
+            <div class="tab-contents active">
+              탭1 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭2 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭3 컨텐츠
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">라인 탭</h3>
+
+        <div class="tab__wrap tab-line__wrap">
+          <ul class="tab__inner">
+            <li class="tab-line__con active"><a href="#none">tab1</a></li>
+            <li class="tab-line__con"><a href="#none">tab2</a></li>
+            <li class="tab-line__con"><a href="#none">tab3</a></li>
+          </ul>
+          <div class="tab-contents__wrap">
+            <div class="tab-contents active">
+              탭1 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭2 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭3 컨텐츠
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">풀 라인 탭</h3>
+
+        <div class="tab__wrap tab-line__wrap full-line">
+          <ul class="tab__inner">
+            <li class="tab-line__con active"><a href="#none">tab1</a></li>
+            <li class="tab-line__con"><a href="#none">tab2</a></li>
+            <li class="tab-line__con"><a href="#none">tab3</a></li>
+          </ul>
+          <div class="tab-contents__wrap">
+            <div class="tab-contents active">
+              탭1 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭2 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭3 컨텐츠
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">풀 플렉스 라인 탭</h3>
+
+        <div class="tab__wrap tab-line__wrap full-flex">
+          <ul class="tab__inner">
+            <li class="tab-line__con active"><a href="#none">tab1</a></li>
+            <li class="tab-line__con"><a href="#none">tab2</a></li>
+            <li class="tab-line__con"><a href="#none">tab3</a></li>
+          </ul>
+          <div class="tab-contents__wrap">
+            <div class="tab-contents active">
+              탭1 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭2 컨텐츠
+            </div>
+            <div class="tab-contents">
+              탭3 컨텐츠
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="test-section">
+      <h2 class="test-title">Select</h2>
+
+      <div class="test-section-sub">
+        <h3 class="test-title">단일 선택, 복수 선택</h3>
+        <p class="ft-default">select__wrap에 단일이면 single-select class 추가, 복수면 multi-select class 추가</p>
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Select col3 단일 선택</h3>
+        <div class="select__wrap col-3 single-select">
+          <ul>
+            <li><a href="#none">서울</a></li>
+            <li><a href="#none">제주</a></li>
+            <li><a href="#none">부산</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Select col3 복수 선택</h3>
+        <div class="select__wrap col-3 multi-select">
+          <ul>
+            <li><a href="#none">서울</a></li>
+            <li><a href="#none">제주</a></li>
+            <li><a href="#none">부산</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Select col4 단일 선택</h3>
+        <div class="select__wrap col-4 single-select">
+          <ul>
+            <li><a href="#none">서울</a></li>
+            <li><a href="#none">제주</a></li>
+            <li><a href="#none">부산</a></li>
+            <li><a href="#none">부산</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Select col4 복수 선택</h3>
+        <div class="select__wrap col-4 multi-select">
+          <ul>
+            <li><a href="#none">서울</a></li>
+            <li><a href="#none">제주</a></li>
+            <li><a href="#none">부산</a></li>
+            <li><a href="#none">부산</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Select 이미지 타입 단일 선택</h3>
+        <div class="select__wrap type-img single-select">
+          <ul>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>가성비 중요</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>여유로운 힐링</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>도보여행 선호</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>도심 속 호캉스</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>전망좋은 곳</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>리뷰좋은 곳</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>로맨틱 분위기</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>야경즐기기</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>여유로운 평일여행</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>바다/해변 근처</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>기타</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Select 이미지 타입 복수 선택</h3>
+        <div class="select__wrap type-img multi-select">
+          <ul>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>가성비 중요</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>여유로운 힐링</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>도보여행 선호</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>도심 속 호캉스</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>전망좋은 곳</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>리뷰좋은 곳</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>로맨틱 분위기</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>야경즐기기</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>여유로운 평일여행</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>바다/해변 근처</span>
+              </a>
+            </li>
+            <li>
+              <a href="#none">
+                <img src="../../assets/images/demo/img_tag.png" alt="">
+                <span>기타</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Select 회색</h3>
+        <div class="select__wrap type-gray multi-select">
+          <ul>
+            <li><a href="#none">서울</a></li>
+            <li><a href="#none">제주</a></li>
+            <li><a href="#none">부산</a></li>
+            <li><a href="#none">부산</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Select 라인</h3>
+        <div class="select__wrap type-line multi-select">
+          <ul>
+            <li><a href="#none">서울</a></li>
+            <li><a href="#none">제주</a></li>
+            <li><a href="#none">부산</a></li>
+            <li><a href="#none">부산</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="test-section">
+			<h2 class="test-title">Accordion</h2>
+			<div class="test-section-sub">
+        
+        <div class="faq__wrap accordion__wrap">
+          <div class="accordion__list">
+            <div class="accordion__tit">
+              <p class="ft-default">방 2개를 예약하려면 어떻게 해야하나요?</p>
+              <a href="#none" class="btn-arrow"><i class="ico ico-arrow__down"></i></a>
+            </div>
+            <div class="accordion__con">
+              답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.
+            </div>
+          </div>
+        </div>
+
+			</div>
+		</div>
+
+    <div class="test-section">
+      <h2 class="test-title">Rating</h2>
+      <div class="test-section-sub">
+        <h3 class="test-title">Rating read only</h3>
+        <div class="rating__wrap">
+          <!--
+            data-rating : 별점 
+            data-width : 별 크기
+            data-spacing : 별과 별 사이 간격
+          -->
+          <div data-rating="4.5" data-width="32" data-spacing="12" data-rateyo-read-only="true" class="rating" ></div>
+          <p class="rating-num">4.5</p>
+        </div>
+			</div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Rating default</h3>
+        <div class="rating__wrap">
+          <!--
+            data-rating : 별점 
+            data-width : 별 크기
+            data-spacing : 별과 별 사이 간격
+          -->
+          <div data-rating="5" data-width="32" data-spacing="12" data-rateyo-read-only="false" class="rating" ></div>
+        </div>
+			</div>
+    </div>
+
+    <div class="test-section">
+      <h2 class="test-title">Calendar</h2>
+      <div class="test-section-sub">
+        <h3 class="test-title">Calendar</h3>
+        <div class="calendar-wrap">
+          <div class="placeholder"></div>
+        </div>
+        <script>
+          flatpickr('.calendar-wrap .placeholder', {
+            inline: true,
+            minDate: 'today',
+            mode: "range",
+            "locale": "ko",
+          });
+        </script>
+			</div>
+    </div>
+
+    <div class="test-section">
+      <h2 class="test-title">Slide</h2>
+      <div class="test-section-sub">
+        <h3 class="test-title">Slide 기본</h3>
+        <div class="splide splide__default">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+			</div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Slide height 160</h3>
+        <div class="splide splide__default splide__small">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+            </ul>
+          </div>
+        </div>
+			</div>
+      <div class="test-section-sub">
+        <h3 class="test-title">Slide product</h3>
+        <p class="ft-default">slide-counter는 페이지 위치마다 css 추가</p>
+        <div class="splide splide__product">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+              <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+            </ul>
+          </div>
+          <div class="slide-counter">
+            <span class="current-slide">1</span>/<span class="total-slides"></span>
+          </div>
+          <button type="button" class="btn-product__like"><span class="blind">찜하기</span></button>
+        </div>
+			</div>
+    </div>
+
+    <div class="test-section">
+			<h2 class="test-title">Etc</h2>
+			<div class="test-section-sub">
+        
+        <div class="thumb__wrap">
+          <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+          <div class="thumb__con">
+            <div class="thumb-badge">최대 80% 할인!</div>
+            <p class="detail-sub">
+              <span>탄자니아</span><span>6일</span>
+            </p>
+            <p class="detail-name">엠버 퓨어힐 호텔&리조트</p>
+          </div>
+          <div class="thumb__price">
+            <div>
+              <p class="sale-percent">80%</p>
+              <p class="default-price">400,000원</p>
+              <p class="sale-price">80,000원~</p>
+            </div>
+          </div>
+          <div class="thumb__gift">
+            <ul>
+              <li>조식 2인 무료권</li>
+              <li>추가 10% 할인</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bubble__wrap">
+          <i class="ico ico-calendar"></i>
+          <p class="txt">"원하시는 날짜를 선택해주세요"</p>
+        </div>
+
+        <div class="badge__wrap">
+          <div class="badge badge__lavender">뱃지</div>
+          <div class="badge badge__purple">뱃지</div>
+          <div class="badge badge__yellow">뱃지</div>
+          <div class="badge badge__gray">뱃지</div>
+        </div>
+
+        <div class="filter__wrap">
+          <button type="button" class="btn-filter fnOpenPop" data-name="popupFilter">필터</button>
+
+          <div class="filter-select__wrap">
+            <p class="filter-select__tit">
+              추천순 <i class="ico ico-arrow__down black"></i>
+            </p>
+            <div class="filter-select__list">
+              <ul>
+                <li><a href="">추천순</a></li>
+                <li><a href="">평점 높은순</a></li>
+                <li><a href="">리뷰 많은순</a></li>
+                <li><a href="">낮은 가격순</a></li>
+                <li><a href="">높은 가격순</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="nodata__wrap">
+          <div class="nodata__con">
+            해당 조건에 맞는 검색 결과가 없습니다. <br>
+            다른 검색어를 입력하시거나 <br>
+            철자와 띄어쓰기를 확인해보세요.
+          </div>
+        </div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>

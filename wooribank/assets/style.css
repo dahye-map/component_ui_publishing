@@ -1,0 +1,207 @@
+.txt-primary {
+  color: #1490EF;
+}
+
+:root {
+  --safeTop: env(safe-area-inset-top);
+  --safeRight: env(safe-area-inset-right);
+  --safeBottom: env(safe-area-inset-bottom);
+  --safeLeft: env(safe-area-inset-left);
+}
+
+#wrap {
+  padding-top: calc(env(safe-area-inset-top) + 4.4rem);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+#header {
+  position: fixed;
+  width: 100vw;
+  height: calc(env(safe-area-inset-top) + 4.4rem);
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background: #fff;
+}
+#header .inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#header [class*=btn-] {
+  position: absolute;
+  top: 1rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #333A40;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 50%;
+}
+#header h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #151C22;
+  line-height: 4.4rem;
+}
+#header .btn-back {
+  -webkit-mask: url("../images/common/ico_back.svg") no-repeat center;
+  mask: url("../images/common/ico_back.svg") no-repeat center;
+  left: 1.6rem;
+}
+#header .btn-menu {
+  -webkit-mask: url("../images/common/ico_menu.svg") no-repeat center;
+  mask: url("../images/common/ico_menu.svg") no-repeat center;
+  right: 1.6rem;
+}
+
+.section {
+  padding: 0 2rem;
+}
+.section.section-top {
+  padding-top: 2.4rem;
+}
+
+.certi-top-wrap {
+  background-color: #F2F5F9;
+  padding: 2.2rem 2rem 3.2rem;
+}
+.certi-top-wrap .tit {
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.58;
+}
+
+.card-woori {
+  background: linear-gradient(244.96deg, #0E6FEA 15.82%, #1491EE 93.53%);
+  -webkit-mask: url("../images/common/bg_certificate.svg") no-repeat center;
+  mask: url("../images/common/bg_certificate.svg") no-repeat center;
+  padding: 3.2rem 0;
+  line-height: 1;
+}
+.card-woori .inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 23rem;
+  height: 32rem;
+  padding: 2.6rem 2.4rem 3.2rem;
+  margin: 0 auto;
+}
+.card-woori .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-woori .logo {
+  width: 9.67rem;
+  height: 2rem;
+  background-image: url("../images/common/logo_white.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.card-woori .menu {
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: #fff;
+  -webkit-mask: url("../images/common/ico_certi_menu.svg") no-repeat center;
+  mask: url("../images/common/ico_certi_menu.svg") no-repeat center;
+}
+.card-woori .bottom-desc {
+  color: #fff;
+  opacity: 0.7;
+  font-size: 1.2rem;
+  line-height: 1.3;
+}
+.card-woori .logo-trustsign {
+  width: 3.2rem;
+  height: 3.2rem;
+  mix-blend-mode: darken;
+}
+.card-woori .row-name {
+  min-height: 9.8rem;
+}
+.card-woori .row-name .name {
+  font-size: 3.6rem;
+  font-weight: 400;
+  color: #fff;
+}
+.card-woori .row-name .date {
+  padding-top: 2.4rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+.card-woori .row-name .extension {
+  padding-top: 0.6rem;
+  color: #FFF27D;
+  text-decoration-line: underline;
+  font-size: 1.2rem;
+}
+
+.menu-list-wrap ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-list-wrap ul li {
+  padding: 0 1rem;
+}
+.menu-list-wrap ul .icon {
+  position: relative;
+  display: block;
+  width: 5.6rem;
+  height: 5.6rem;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 2rem;
+  margin: 0 auto;
+}
+.menu-list-wrap ul .icon::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.menu-list-wrap ul .icon.icon_01::before {
+  background-image: url("../images/layout/menu_basic01.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.menu-list-wrap ul .icon.icon_02::before {
+  background-image: url("../images/layout/menu_basic02.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.menu-list-wrap ul .icon.icon_03::before {
+  background-image: url("../images/layout/menu_basic03.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.menu-list-wrap ul .icon.icon_04::before {
+  background-image: url("../images/layout/menu_basic04.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.menu-list-wrap ul .txt {
+  display: block;
+  padding-top: 0.8rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.57;
+  text-align: center;
+  letter-spacing: -0.75px;
+  color: #151C22;
+  text-align: center;
+}

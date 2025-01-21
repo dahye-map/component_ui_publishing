@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button type="button" class="btn-back"><span class="blind">뒤로가기</span></button>
+        <div class="header-input">
+          <p class="ft-default">아아아</p>
+          <button type="button" class="btn-input__delete"><i class="ico ico-input__delete"></i></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container__wrap search__wrap">
+      <section class="layout__wrap pt12">
+        <!-- 검색 폼 -->
+        <div class="search-form__wrap">
+          <div class="search-form">
+
+            <div class="search-form__con search-date fnOpenPop" data-name="popupDate">
+              <i class="ico ico-date"></i>
+              <p class="txt">09.01~09.02</p>
+            </div>
+            <div class="search-form__con search-guest fnOpenPop" data-name="popupGuest">
+              <i class="ico ico-person"></i>
+              <p class="txt">성인 2</p>
+            </div>
+          </div>
+        </div>
+        <!-- //검색 폼 -->
+      </section>
+
+      <!-- 실시간 뭉클 딜 -->
+      <section class="layout__wrap bg-gray">
+        <div class="box-white__wrap live-deal__wrap">
+          <div class="tit__wrap align__center">
+            <p class="ft-xl">실시간 뭉클딜</p>
+          </div>
+          <div class="splide splide__default">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="badge__wrap">
+                    <div class="badge badge__lavender">투어</div>
+                    <div class="hashtag-list">
+                      <ul>
+                        <li>#4인 가족</li>
+                        <li>#제주도</li>
+                        <li>#힐링스팟</li>
+                        <li>#가성비</li>
+                        <li>#수영장</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <div class="thumb-badge">최대 80% 할인!</div>
+                        <p class="detail-sub">
+                          <span>탄자니아</span><span>6일</span>
+                        </p>
+                        <p class="detail-name">엠버 퓨어힐 호텔&리조트</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                        <p class="ft-xxs">취소 불가 상품</p>
+                      </div>
+                      <div class="thumb__gift">
+                        <ul>
+                          <li>조식 2인 무료권</li>
+                          <li>추가 10% 할인</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__line">자세히 보기</button>
+                      <button type="button" class="btn-md__black">지금 예약하기</button>
+                    </div>
+                  </div>
+                  <p class="txt-warning">뭉클딜은 상황에 따라 조기종료 될 수 있습니다.</p>
+                </li>
+                <li class="splide__slide">
+                  <div class="badge__wrap">
+                    <div class="badge badge__lavender">투어</div>
+                    <div class="hashtag-list">
+                      <ul>
+                        <li>#4인 가족</li>
+                        <li>#제주도</li>
+                        <li>#힐링스팟</li>
+                        <li>#가성비</li>
+                        <li>#수영장</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <div class="thumb-badge">최대 80% 할인!</div>
+                        <p class="detail-sub">
+                          <span>탄자니아</span><span>6일</span>
+                        </p>
+                        <p class="detail-name">엠버 퓨어힐 호텔&리조트</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                        <p class="ft-xxs">취소 불가 상품</p>
+                      </div>
+                      <div class="thumb__gift">
+                        <ul>
+                          <li>조식 2인 무료권</li>
+                          <li>추가 10% 할인</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__line">자세히 보기</button>
+                      <button type="button" class="btn-md__black">지금 예약하기</button>
+                    </div>
+                  </div>
+                  <p class="txt-warning">뭉클딜은 상황에 따라 조기종료 될 수 있습니다.</p>
+                </li>
+                <li class="splide__slide">
+                  <div class="badge__wrap">
+                    <div class="badge badge__lavender">투어</div>
+                    <div class="hashtag-list">
+                      <ul>
+                        <li>#4인 가족</li>
+                        <li>#제주도</li>
+                        <li>#힐링스팟</li>
+                        <li>#가성비</li>
+                        <li>#수영장</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <div class="thumb-badge">최대 80% 할인!</div>
+                        <p class="detail-sub">
+                          <span>탄자니아</span><span>6일</span>
+                        </p>
+                        <p class="detail-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                        <p class="ft-xxs">취소 불가 상품</p>
+                      </div>
+                      <div class="thumb__gift">
+                        <ul>
+                          <li>조식 2인 무료권</li>
+                          <li>추가 10% 할인</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__line">자세히 보기</button>
+                      <button type="button" class="btn-md__black">지금 예약하기</button>
+                    </div>
+                  </div>
+                  <p class="txt-warning">뭉클딜은 상황에 따라 조기종료 될 수 있습니다.</p>
+                </li>
+                <li class="splide__slide">
+                  <div class="badge__wrap">
+                    <div class="badge badge__lavender">투어</div>
+                    <div class="hashtag-list">
+                      <ul>
+                        <li>#4인 가족</li>
+                        <li>#제주도</li>
+                        <li>#힐링스팟</li>
+                        <li>#가성비</li>
+                        <li>#수영장</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <div class="thumb-badge">최대 80% 할인!</div>
+                        <p class="detail-sub">
+                          <span>탄자니아</span><span>6일</span>
+                        </p>
+                        <p class="detail-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                        <p class="ft-xxs">취소 불가 상품</p>
+                      </div>
+                      <div class="thumb__gift">
+                        <ul>
+                          <li>조식 2인 무료권</li>
+                          <li>추가 10% 할인</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__line">자세히 보기</button>
+                      <button type="button" class="btn-md__black">지금 예약하기</button>
+                    </div>
+                  </div>
+                  <p class="txt-warning">뭉클딜은 상황에 따라 조기종료 될 수 있습니다.</p>
+                </li>
+                <li class="splide__slide">
+                  <div class="badge__wrap">
+                    <div class="badge badge__lavender">투어</div>
+                    <div class="hashtag-list">
+                      <ul>
+                        <li>#4인 가족</li>
+                        <li>#제주도</li>
+                        <li>#힐링스팟</li>
+                        <li>#가성비</li>
+                        <li>#수영장</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <div class="thumb-badge">최대 80% 할인!</div>
+                        <p class="detail-sub">
+                          <span>탄자니아</span><span>6일</span>
+                        </p>
+                        <p class="detail-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                        <p class="ft-xxs">취소 불가 상품</p>
+                      </div>
+                      <div class="thumb__gift">
+                        <ul>
+                          <li>조식 2인 무료권</li>
+                          <li>추가 10% 할인</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__line">자세히 보기</button>
+                      <button type="button" class="btn-md__black">지금 예약하기</button>
+                    </div>
+                  </div>
+                  <p class="txt-warning">뭉클딜은 상황에 따라 조기종료 될 수 있습니다.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //실시간 뭉클 딜 -->
+
+      <!-- 탭 -->
+      <div class="tab__wrap tab-line__wrap full-line">
+        <ul class="tab__inner fnStickyTop">
+          <li class="tab-line__con active">
+            <a href="#none">숙소</a>
+          </li>
+          <li class="tab-line__con">
+            <a href="#none">액티비티&체험</a>
+          </li>
+          <li class="tab-line__con">
+            <a href="#none">투어</a>
+          </li>
+        </ul>
+
+        <div class="tab-contents__wrap">
+          <div class="tab-contents active">
+            <div class="filter__wrap">
+              <button type="button" class="btn-filter fnOpenPop" data-name="popupFilter">필터</button>
+
+              <div class="filter-select__wrap">
+                <p class="filter-select__tit">
+                  추천순 <i class="ico ico-arrow__down black"></i>
+                </p>
+                <div class="filter-select__list">
+                  <ul>
+                    <li><a href="">추천순</a></li>
+                    <li><a href="">평점 높은순</a></li>
+                    <li><a href="">리뷰 많은순</a></li>
+                    <li><a href="">낮은 가격순</a></li>
+                    <li><a href="">높은 가격순</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- 상품 리스트 -->
+            <div class="product-list__wrap">
+              <div class="product-list__con">
+                <!-- 이미지 슬라이드 -->
+                <div class="splide splide__product">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                  <div class="slide-counter">
+                    <span class="current-slide">1</span>/<span class="total-slides"></span>
+                  </div>
+                  <button type="button" class="btn-product__like"><span class="blind">찜하기</span></button>
+                </div>
+                <!-- //이미지 슬라이드 -->
+                <a href="" class="product-list__detail">
+                  <p class="detail-sub">
+                    <span>탄자니아</span><span>6일</span>
+                  </p>
+                  <p class="detail-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                  <p class="review-con">
+                    <i class="ico ico-star"></i>
+                    <span class="rating-num">4.5</span>
+                    <span class="review-num">(1,000)</span>
+                  </p>
+                  <div class="product-list__price">
+                    <p class="sale-percent">80%</p>
+                    <p class="default-price">400,000원</p>
+                    <p class="sale-price">80,000원~</p>
+                  </div>
+                </a>
+              </div>
+              <div class="product-list__con">
+                <!-- 이미지 슬라이드 -->
+                <div class="splide splide__product">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                  <div class="slide-counter">
+                    <span class="current-slide">1</span>/<span class="total-slides"></span>
+                  </div>
+                  <button type="button" class="btn-product__like"><span class="blind">찜하기</span></button>
+                </div>
+                <!-- //이미지 슬라이드 -->
+                <a href="" class="product-list__detail">
+                  <p class="detail-sub">
+                    <span>탄자니아</span><span>6일</span>
+                  </p>
+                  <p class="detail-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                  <p class="review-con">
+                    <i class="ico ico-star"></i>
+                    <span class="rating-num">4.5</span>
+                    <span class="review-num">(1,000)</span>
+                  </p>
+                  <div class="product-list__price">
+                    <div class="badge badge__purple">쿠폰할인</div>
+                    <p class="default-price">400,000원</p>
+                    <p class="sale-price">80,000원~</p>
+                  </div>
+                </a>
+              </div>
+              <!-- 예약마감 product-close class 추가 -->
+              <div class="product-list__con product-close">
+                <!-- 이미지 슬라이드 -->
+                <div class="splide splide__product">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    </ul>
+                  </div>
+                  <div class="slide-counter">
+                    <span class="current-slide">1</span>/<span class="total-slides"></span>
+                  </div>
+                  <button type="button" class="btn-product__like"><span class="blind">찜하기</span></button>
+                </div>
+                <!-- //이미지 슬라이드 -->
+                <a href="" class="product-list__detail">
+                  <button type="button" class="btn-md__black">재오픈 알림</button>
+                  <p class="detail-sub">
+                    <span>경북 울진군</span><span>5성급</span>
+                  </p>
+                  <p class="detail-name">엠버 퓨어힐 호텔&리조트</p>
+                  <p class="review-con">
+                    <i class="ico ico-star"></i>
+                    <span class="rating-num">4.5</span>
+                    <span class="review-num">(1,000)</span>
+                  </p>
+                  <div class="product-list__price">
+                    <div class="badge badge__purple">쿠폰할인</div>
+                    <p class="sale-percent">+ 80%</p>
+                    <p class="default-price">400,000원</p>
+                    <p class="sale-price">80,000원~</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- //상품 리스트 -->
+          </div>
+          <div class="tab-contents">
+
+            <!-- 2 depth tab -->
+            <div class="tab-sub__wrap">
+              <ul class="tab-sub__inner">
+                <li class="tab-sub__con active">
+                  <a href="#none">전체</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">입장권/티켓</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">키즈</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">액티비티&클래스</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">레스토랑&다이닝</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">투어</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">여행편의</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">유심&와이파이</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">스파&마사지</a>
+                </li>
+                <li class="tab-sub__con">
+                  <a href="#none">이동/교통</a>
+                </li>
+              </ul>
+              <div class="filter__wrap">
+                <button type="button" class="btn-filter fnOpenPop" data-name="popupFilter">필터</button>
+
+                <div class="filter-select__wrap">
+                  <p class="filter-select__tit">
+                    추천순 <i class="ico ico-arrow__down black"></i>
+                  </p>
+                  <div class="filter-select__list">
+                    <ul>
+                      <li><a href="">추천순</a></li>
+                      <li><a href="">평점 높은순</a></li>
+                      <li><a href="">리뷰 많은순</a></li>
+                      <li><a href="">낮은 가격순</a></li>
+                      <li><a href="">높은 가격순</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-subcontents__wrap">
+                <div class="tab-subcontents active">
+                  <!-- 상품 리스트 -->
+                  <div class="product-list__wrap">
+                    <div class="product-list__con">
+                      <!-- 이미지 슬라이드 -->
+                      <div class="splide splide__product">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="slide-counter">
+                          <span class="current-slide">1</span>/<span class="total-slides"></span>
+                        </div>
+                        <button type="button" class="btn-product__like"><span class="blind">찜하기</span></button>
+                      </div>
+                      <!-- //이미지 슬라이드 -->
+                      <a href="" class="product-list__detail">
+                        <p class="detail-sub">
+                          <span>탄자니아</span><span>6일</span>
+                        </p>
+                        <p class="detail-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                        <p class="review-con">
+                          <i class="ico ico-star"></i>
+                          <span class="rating-num">4.5</span>
+                          <span class="review-num">(1,000)</span>
+                        </p>
+                        <div class="product-list__price">
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="product-list__con">
+                      <!-- 이미지 슬라이드 -->
+                      <div class="splide splide__product">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="slide-counter">
+                          <span class="current-slide">1</span>/<span class="total-slides"></span>
+                        </div>
+                        <button type="button" class="btn-product__like"><span class="blind">찜하기</span></button>
+                      </div>
+                      <!-- //이미지 슬라이드 -->
+                      <a href="" class="product-list__detail">
+                        <p class="detail-sub">
+                          <span>탄자니아</span><span>6일</span>
+                        </p>
+                        <p class="detail-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                        <p class="review-con">
+                          <i class="ico ico-star"></i>
+                          <span class="rating-num">4.5</span>
+                          <span class="review-num">(1,000)</span>
+                        </p>
+                        <div class="product-list__price">
+                          <div class="badge badge__purple">쿠폰할인</div>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- 예약마감 product-close class 추가 -->
+                    <div class="product-list__con product-close">
+                      <!-- 이미지 슬라이드 -->
+                      <div class="splide splide__product">
+                        <div class="splide__track">
+                          <ul class="splide__list">
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                            <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          </ul>
+                        </div>
+                        <div class="slide-counter">
+                          <span class="current-slide">1</span>/<span class="total-slides"></span>
+                        </div>
+                        <button type="button" class="btn-product__like"><span class="blind">찜하기</span></button>
+                      </div>
+                      <!-- //이미지 슬라이드 -->
+                      <a href="" class="product-list__detail">
+                        <button type="button" class="btn-md__black">재오픈 알림</button>
+                        <p class="detail-sub">
+                          <span>경북 울진군</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">엠버 퓨어힐 호텔&리조트</p>
+                        <p class="review-con">
+                          <i class="ico ico-star"></i>
+                          <span class="rating-num">4.5</span>
+                          <span class="review-num">(1,000)</span>
+                        </p>
+                        <div class="product-list__price">
+                          <div class="badge badge__purple">쿠폰할인</div>
+                          <p class="sale-percent">+ 80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- //상품 리스트 -->
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+                <div class="tab-subcontents">
+
+                </div>
+              </div>
+            </div>
+            <!-- //2 depth tab -->
+
+          </div>
+          <div class="tab-contents">
+
+          </div>
+        </div>
+      </div>
+      <!-- //탭 -->
+
+      <div class="btn__wrap btn-fixed__wrap">
+        <button type="button" class="btn-map">지도보기</button>
+      </div>
+
+      <div class="bottom-navi__wrap">
+        <ul class="bottom-navi__list">
+          <li class="navi navi-home">
+            <a href="#none">
+              <i class="ico ico-home"></i>
+              <span>홈</span>
+            </a>
+          </li>
+          <li class="navi navi-search active">
+            <a href="#none">
+              <i class="ico ico-search"></i>
+              <span>검색</span>
+            </a>
+          </li>
+          <li class="navi navi-logo">
+            <a href="#none">
+              <i class="ico ico-logo"><p class="num">1</p></i>
+            </a>
+          </li>
+          <li class="navi navi-community">
+            <a href="#none">
+              <i class="ico ico-community"></i>
+              <span>커뮤니티</span>
+            </a>
+          </li>
+          <li class="navi navi-mypage">
+            <a href="#none">
+              <i class="ico ico-mypage"></i>
+              <span>마이</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 바텀 팝업(인원 선택) -->
+    <div id="popupGuest" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">인원 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="count__wrap">
+            <ul>
+              <li>
+                <p class="ft-default">성인</p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+              </li>
+              <li>
+                <p class="ft-default">아동</p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+
+                <div class="count-age__wrap"></div>
+              </li>
+              <li>
+                <p class="ft-default">유아</p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+
+                <div class="count-age__wrap"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__primary">선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(인원 선택) -->
+
+    <!-- 바텀 팝업(나이 선택) -->
+    <div id="popupAge" class="layerpop__wrap layerpop__select">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">나이 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="select__wrap type-list single-select">
+            <ul>
+              <li><a href="#none">만 1세</a></li>
+              <li><a href="#none">만 2세</a></li>
+              <li><a href="#none">만 3세</a></li>
+              <li><a href="#none">만 4세</a></li>
+              <li><a href="#none">만 5세</a></li>
+              <li><a href="#none">만 6세</a></li>
+              <li><a href="#none">만 7세</a></li>
+              <li><a href="#none">만 8세</a></li>
+              <li><a href="#none">만 9세</a></li>
+              <li><a href="#none">만 10세</a></li>
+              <li><a href="#none">만 11세</a></li>
+              <li><a href="#none">만 12세</a></li>
+              <li><a href="#none">만 13세</a></li>
+              <li><a href="#none">만 14세</a></li>
+              <li><a href="#none">만 15세</a></li>
+              <li><a href="#none">만 16세</a></li>
+              <li><a href="#none">만 17세</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(나이 선택) -->
+
+    <!-- 바텀 팝업(개월수 선택) -->
+    <div id="popupMonth" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">개월수 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="select__wrap type-list single-select">
+            <ul>
+              <li><a href="#none">1개월</a></li>
+              <li><a href="#none">2개월</a></li>
+              <li><a href="#none">3개월</a></li>
+              <li><a href="#none">4개월</a></li>
+              <li><a href="#none">5개월</a></li>
+              <li><a href="#none">6개월</a></li>
+              <li><a href="#none">7개월</a></li>
+              <li><a href="#none">8개월</a></li>
+              <li><a href="#none">9개월</a></li>
+              <li><a href="#none">10개월</a></li>
+              <li><a href="#none">11개월</a></li>
+              <li><a href="#none">12개월</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(개월수 선택) -->
+  </div>
+
+  <script>
+    flatpickr('.calendar-wrap .placeholder', {
+      inline: true,
+      minDate: 'today',
+      mode: "range",
+      "locale": "ko",
+    });
+
+    $(document).ready(function () {
+      $('.input').on('input', function () {
+        if ($(this).val().length > 0) {
+          $('.btn-input__delete').show();
+        } else {
+          $('.btn-input__delete').hide();
+        }
+      });
+      $('.btn-input__delete').click(function () {
+        $('.input').val('');
+        $(this).hide();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

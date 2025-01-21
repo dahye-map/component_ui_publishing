@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/swiper.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <title>우리WON인증서</title>
+</head>
+
+<body>
+
+  <main id="root">
+
+    <!-- 풀 팝업 -->
+    <div id="popupId" class="layerpop-wrap type-full">
+      <div class="layerpop">
+        <div class="inner">
+          <div class="header-pop">
+            <h2>우리WON인증서 관리</h2>
+          </div>
+          
+
+          <div class="title-wrap">
+            <h3 class="tit-top">
+              유효기간을 연장하려면 <br>
+              약관에 동의해 주세요.
+            </h3>
+          </div>
+        
+          <div class="form-wrap">
+            <div class="section-terms">
+              <!-- 전체동의 -->
+              <div class="chk-all-wrap">
+                <span class="chk">
+                  <input type="checkbox" id="chk1_all" name="chk1"/>
+                  <label for="chk1_all">
+                    <span class="label">전체 동의</span>
+                  </label>
+                </span>
+                <button type="button" class="ico-arrow"><span class="blind">자세히 보기</span></button>
+              </div>
+
+              <ul class="agree-list-wrap">
+                <!-- block -->
+                <li>
+                  <div class="box-chk">
+                    <span class="chk type-sub">
+                      <input type="checkbox" id="chk1" required/>
+                      <label for="chk1">
+                        <span class="label">[필수] 우리WON인증 서비스 이용약관</span>
+                      </label>
+                    </span>
+                    <button type="button" class="ico-arrow"><span class="blind">자세히 보기</span></button>
+                  </div>
+                </li>
+                <!--// block -->
+                <!-- block -->
+                <li>
+                  <div class="box-chk">
+                    <span class="chk type-sub">
+                      <input type="checkbox" id="chk2" required/>
+                      <label for="chk2">
+                        <span class="label">[필수] 개인정보 수집 및 이용동의</span>
+                      </label>
+                    </span>
+                    <button type="button" class="ico-arrow"><span class="blind">자세히 보기</span></button>
+                  </div>
+                </li>
+                <!--// block -->
+              </ul>
+            </div>
+          </div>
+
+          <!-- 하단 버튼 영역 -->
+          <div class="section-bottom-fixed">
+            <div class="btn-wrap">
+              <button class="btn-full-secondary fnClosePop">취소</button>
+              <button class="btn-full-primary">다음</button>
+            </div>
+          </div>
+          <!-- //하단 버튼 영역 -->
+          <button class="btn-close fnClosePop"><span class="blind">팝업 닫기</span></button>
+        </div>
+      </div>
+    </div>
+    <!-- //풀 팝업 -->
+
+  </main>
+</body>
+
+<script>
+  fnOpenLayerPop('popupId')
+</script>
+
+</html>

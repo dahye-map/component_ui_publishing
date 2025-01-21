@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button type="button" class="btn-back"><span class="blind">뒤로가기</span></button>
+        <h1 class="header-tit__center">알림</h1>
+        <button type="button" class="btn-txt__underline btn-txt__small">삭제</button>
+      </div>
+    </header>
+
+    <div class="container__wrap notification__wrap">
+
+      <div class="notification-list__wrap">
+        <p class="title">새로운 알림</p>
+        <a href="" class="notification-list__con">
+          <div class="thumb__wrap">
+            <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+            <div class="thumb__con">
+              <p class="detail-name">제목</p>
+              <p class="detail-sub">내용</p>
+            </div>
+            <p class="notification-date">24.01.01</p>
+          </div>
+        </a>
+        <!-- 탭 -->
+        <div class="tab__wrap tab-line__wrap full-flex">
+          <ul class="tab__inner">
+            <li class="tab-line__con active"><a href="#none">뭉클딜</a></li>
+            <li class="tab-line__con"><a href="#none">커뮤니티</a></li>
+            <li class="tab-line__con"><a href="#none">시스템</a></li>
+          </ul>
+          <div class="tab-contents__wrap">
+            <!-- 뭉클딜 -->
+            <div class="tab-contents active">
+              <!-- 뭉클딜 알림 -->
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">설레는 뭉클딜 도착!</p>
+                    <p class="detail-sub">
+                      {판매자명}으로부터 뭉클딜이 도착했어요. <br>
+                      제안받은 뭉클딜: (뭉클딜명 표출)
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">관심상품 재오픈 알림</p>
+                    <p class="detail-sub">
+                      관심있는 {상품명} {관심날짜}가 재오픈했어요! 서둘러 확인해볼까요?
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <!-- //뭉클딜 알림 -->
+            </div>
+            <!-- //뭉클딜 -->
+            <!-- 커뮤니티 -->
+            <div class="tab-contents">
+              <!-- 커뮤니티 알림 -->
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">후기가 좋아요를 받았어요!</p>
+                    <p class="detail-sub">
+                      000님이 나의 {상품명} 후기를 좋아합니다.
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">후기에 댓글이 달렸어요!</p>
+                    <p class="detail-sub">
+                      000님이 나의 후기에 댓글을 남겨주었어요: 좋은 후기 정보 공유 감사합니다. 이번에 여행가는 데 좋은 ...
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">대댓글이 달렸어요!</p>
+                    <p class="detail-sub">
+                      000님이 나에게 대댓글을 남겨주었어요: 좋은 정보 공유 감사합니다. 혹시 추가로 아이와 함께 가려고 ...
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">후기에 댓글이 달렸어요!</p>
+                    <p class="detail-sub">
+                      상품판매자님이 나의 후기에 댓글을 남겨주었어요: 저희 숙소를 이용해주시고 소중한 리뷰를 남겨주셔서 감사...
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <!-- //커뮤니티 알림 -->
+            </div>
+            <!-- //커뮤니티 -->
+            <!-- 시스템 -->
+            <div class="tab-contents">
+              <!-- 시스템 알림 -->
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">예약 완료</p>
+                    <p class="detail-sub">
+                      2024.10.01 (목) {상품명} 예약이 완료되었습니다.
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">예약 취소 완료</p>
+                    <p class="detail-sub">
+                      2024.10.01 (목) {상품명} 예약이 취소되었습니다. 취소사유 : 개인사정
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">이용일이 다가오고있어요!</p>
+                    <p class="detail-sub">
+                      다가오는 2024.10.01 (목) {상품명} 설레는 뭉클트립되세요.
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">후기를 작성해볼까요?</p>
+                    <p class="detail-sub">
+                      즐거운 여행을 다녀오셨나요? {상품명} 후기를 작성해주세요.
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">공지사항 제목</p>
+                    <p class="detail-sub">
+                      공지사항 내용
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">(광고) 이벤트 알림</p>
+                    <p class="detail-sub">
+                      이벤트 수동 텍스트
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <a href="" class="notification-list__con">
+                <div class="thumb__wrap">
+                  <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                  <div class="thumb__con">
+                    <p class="detail-name">쿠폰이 3일 뒤에 사라져요!</p>
+                    <p class="detail-sub">
+                      {쿠폰명} 을 2024.10.10 (목) 12:00 까지 사용해주세요.
+                    </p>
+                  </div>
+                  <p class="notification-date">24.01.01</p>
+                </div>
+              </a>
+              <!-- //시스템 알림 -->
+            </div>
+            <!-- //시스템 -->
+          </div>
+        </div>
+        <!-- //탭 -->
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

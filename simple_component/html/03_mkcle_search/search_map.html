@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-close"><span class="blind">닫기</span></button>
+        <h1 class="header-tit__center">지도</h1>
+      </div>
+    </header>
+
+    <div class="container__wrap search__wrap">
+
+      <div class="select-type__wrap">
+        <ul>
+          <li class="active"><a href="#none" class="fnOpenPop" data-name="popupDate">09.01~09.02</a></li>
+          <li><a href="#none" class="fnOpenPop" data-name="popupHotelType">숙소유형</a></li>
+          <li><a href="#none" class="fnOpenPop" data-name="popupPrice">가격</a></li>
+          <li><a href="#none" class="select-filter fnOpenPop" data-name="popupFilter"><i class="ico ico-filter"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="map__wrap">
+        <p><img src="../../assets/images/demo/img_map.jpg" alt=""></p>
+
+        <div class="product-list__wrap type-box">
+          <div class="product-list__con">
+            <!-- 이미지 슬라이드 -->
+            <div class="product-list__img">
+              <p><img src="../../assets/images/demo/img_hotel_box.png" alt=""></p>
+              <button type="button" class="btn-product__like"><span class="blind">찜하기</span></button>
+            </div>
+            <!-- //이미지 슬라이드 -->
+            <div class="product-list__detail">
+              <p class="detail-sub">
+                <span>경북 울진군</span><span>5성급</span>
+              </p>
+              <p class="detail-name">엠버 퓨어힐 호텔&리조트</p>
+              <p class="review-con">
+                <i class="ico ico-star"></i>
+                <span class="rating-num">4.5</span>
+                <span class="review-num">(1,000)</span>
+              </p>
+              <div class="product-list__price">
+                <p class="sale-percent">80%</p>
+                <p class="default-price">400,000원</p>
+                <p class="sale-price">80,000원~</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 바텀 팝업(날짜 선택) -->
+    <div id="popupDate" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">날짜 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <!-- 날짜 선택 -->
+          <div class="tab__wrap tab-switch__wrap">
+            <ul class="tab__inner">
+              <li class="tab-switch__con active">
+                <a href="#none">날짜 선택</a>
+              </li>
+              <li class="tab-switch__con">
+                <a href="#none">월 선택</a>
+              </li>
+            </ul>
+            <div class="tab-contents__wrap">
+              <!-- 날짜 선택 탭 -->
+              <div class="tab-contents active">
+                <div class="calendar-wrap">
+                  <div class="placeholder"></div>
+                </div>
+              </div>
+              <!-- //날짜 선택 탭 -->
+              <!-- 월 선택 탭 -->
+              <div class="tab-contents">
+                <div class="select__wrap col-3 multi-select">
+                  <p class="title">2024년</p>
+                  <ul>
+                    <li><a href="#none">9월</a></li>
+                    <li><a href="#none">10월</a></li>
+                    <li><a href="#none">11월</a></li>
+                    <li><a href="#none">12월</a></li>
+                  </ul>
+
+                  <p class="title">2025년</p>
+                  <ul>
+                    <li><a href="#none">1월</a></li>
+                    <li><a href="#none">1월</a></li>
+                    <li><a href="#none">3월</a></li>
+                    <li><a href="#none">4월</a></li>
+                    <li><a href="#none">5월</a></li>
+                    <li><a href="#none">6월</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //월 선택 탭 -->
+            </div>
+          </div>
+          <!-- //날짜 선택 -->
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__line__primary">날짜 미정</button>
+            <button class="btn-full__primary">선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(날짜 선택) -->
+
+    <!-- 바텀 팝업(숙소유형) -->
+    <div id="popupHotelType" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">숙소유형</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+
+          <div class="filter-list__wrap">
+            <div class="filter-list__con">
+              <div class="tit__wrap">
+                <p class="ft-default">유형</p>
+              </div>
+              <div class="select__wrap col-3 type-white multi-select">
+                <ul>
+                  <li><a href="#none">호텔</a></li>
+                  <li><a href="#none">리조트</a></li>
+                  <li><a href="#none">펜션·풀빌라</a></li>
+                  <li><a href="#none">모텔</a></li>
+                  <li><a href="#none">감성숙소</a></li>
+                  <li><a href="#none">캠핑·글램핑</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter-list__con">
+              <div class="tit__wrap">
+                <p class="ft-default">성급</p>
+              </div>
+              <div class="select__wrap col-3 type-white multi-select">
+                <ul>
+                  <li><a href="#none">1성급</a></li>
+                  <li><a href="#none">2성급</a></li>
+                  <li><a href="#none">3성급</a></li>
+                  <li><a href="#none">4성급</a></li>
+                  <li><a href="#none">5성급</a></li>
+                  <li><a href="#none">기타</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-txt btn-txt__underline">초기화</button>
+            <button class="btn-full__primary">선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(숙소유형) -->
+
+    <!-- 바텀 팝업(가격) -->
+    <div id="popupPrice" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">필터</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+
+          <div class="filter-list__wrap">
+            <div class="filter-list__con">
+              <div class="tit__wrap">
+                <p class="ft-default">가격</p>
+              </div>
+              <div class="double-range__wrap">
+                <div class="slider-track"></div>
+                <input type="range" min="0" max="100" value="30" class="slider-1">
+                <input type="range" min="0" max="100" value="70" class="slider-2">
+
+                <div class="values">
+                  <p><span class="range1">0</span>만원</p>
+                  <p><span class="range2">100</span>만원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-txt btn-txt__underline">초기화</button>
+            <button class="btn-full__primary">선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(가격) -->
+
+     <!-- 바텀 팝업(필터) -->
+     <div id="popupFilter" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">필터</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+
+          <div class="filter-list__wrap">
+            <div class="filter-list__con">
+              <div class="tit__wrap">
+                <p class="ft-default">가격</p>
+              </div>
+              <div class="double-range__wrap">
+                <div class="slider-track"></div>
+                <input type="range" min="0" max="100" value="30" class="slider-1">
+                <input type="range" min="0" max="100" value="70" class="slider-2">
+
+                <div class="values">
+                  <p><span class="range1">0</span>만원</p>
+                  <p><span class="range2">100</span>만원</p>
+                </div>
+              </div>
+            </div>
+            <div class="filter-list__con">
+              <div class="tit__wrap">
+                <p class="ft-default">성급</p>
+              </div>
+              <div class="select__wrap col-3 type-white single-select">
+                <ul>
+                  <li><a href="#none">1성급</a></li>
+                  <li><a href="#none">2성급</a></li>
+                  <li><a href="#none">3성급</a></li>
+                  <li><a href="#none">4성급</a></li>
+                  <li><a href="#none">5성급</a></li>
+                  <li><a href="#none">기타</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="filter-list__con">
+              <div class="tit__wrap" style="padding-bottom:.4rem;">
+                <p class="ft-default">취향태그</p>
+              </div>
+              <div class="custom-list__wrap">
+                <ul>
+                  <li class="custom-list">
+                    <div class="flex-between">
+                      <p class="ft-default">여행 취향 <span>+3</span></p>
+                      <a href="#none" class="fnOpenPop" data-name="popupTravel"><i
+                          class="ico ico-plus__small"></i></a>
+                    </div>
+                  </li>
+                  <li class="custom-list">
+                    <div class="flex-between">
+                      <p class="ft-default">이벤트</p>
+                      <a href=""><i class="ico ico-plus__small"></i></a>
+                    </div>
+                  </li>
+                  <li class="custom-list">
+                    <div class="flex-between">
+                      <p class="ft-default">숙박 취향</p>
+                      <a href=""><i class="ico ico-plus__small"></i></a>
+                    </div>
+                  </li>
+                  <li class="custom-list">
+                    <div class="flex-between">
+                      <p class="ft-default">여행 준비</p>
+                      <a href=""><i class="ico ico-plus__small"></i></a>
+                    </div>
+                  </li>
+                  <li class="custom-list">
+                    <div class="flex-between">
+                      <p class="ft-default">선호 브랜드</p>
+                      <a href=""><i class="ico ico-plus__small"></i></a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-txt btn-txt__underline">초기화</button>
+            <button class="btn-full__primary">선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(필터) -->
+
+  </div>
+
+  <script>
+    flatpickr('.calendar-wrap .placeholder', {
+      inline: true,
+      minDate: 'today',
+      mode: "range",
+      "locale": "ko",
+    });
+  </script>
+
+</body>
+
+</html>

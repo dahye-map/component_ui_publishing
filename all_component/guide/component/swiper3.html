@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui, viewport-fit=cover, user-scalable=no">
+	<title>Swiper v3.4.2</title>
+	
+	<!-- [S] PUBLISH COMMON STYLE -->
+	<link rel="stylesheet" href="../../asset/css/cm.common.css">
+	<!-- [E] PUBLISH COMMON STYLE -->
+
+	<!-- [S] PAGES - STYLE -->
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@3.4.2/dist/css/swiper.min.css"> -->
+	<!-- <link rel="stylesheet" href="../com/css/swiper_8.4.7.css"> -->
+	<!-- [E] PAGES - STYLE -->
+		
+	<!-- [S] LIBRARY - SCRIPT -->
+	<script src="../../asset/js/lib/lib.jquery-3.6.3.min.js"></script>
+	<script src="../../asset/js/lib/lib.swiper.3.4.2.min.js"></script>
+	<script src="../../asset/js/lib/lib.jquery-ui-1.13.2.js"></script>
+	<!-- <script src="https://kit.fontawesome.com/b37216440e.js" crossorigin="anonymous"></script> -->
+	<!-- <script src="../com/js/lib/lib.swiper.8.4.7.min.js"></script> -->
+	
+	<!-- [E] LIBRARY - SCRIPT -->
+
+</head>
+<body>
+	<div id="cp-wrap">
+		<div id="cp-container">
+			<h1 class="cp-tit dep01">[swiper v3.4.2] 탭메뉴 / slider</h1>
+
+			<!-- <section class="cp-content">
+				<h2 class="cp-tit dep02">스크롤 이동</h2>
+				<div id="tab-menu-1">
+					<div class="cate-m">
+						<div class="swiper-container">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide active" data-slide-index="0"><span>Tab 1</span></li>
+								<li class="swiper-slide" data-slide-index="1"><span>Tab 2</span></li>
+								<li class="swiper-slide" data-slide-index="2"><span>Tab 3</span></li>
+								<li class="swiper-slide" data-slide-index="3"><span>Tab 4</span></li>
+								<li class="swiper-slide" data-slide-index="4"><span>Tab 5</span></li>
+								<li class="swiper-slide" data-slide-index="5"><span>Tab 6</span></li>
+								<li class="swiper-slide" data-slide-index="6"><span>Tab 7</span></li>
+								<li class="swiper-slide" data-slide-index="7"><span>Tab 8</span></li>
+								<li class="swiper-slide" data-slide-index="8"><span>Tab 9</span></li>
+								<li class="swiper-slide" data-slide-index="9"><span>Tab 10</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="tab-content swiper-container">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">Swipe 1</li>
+							<li class="swiper-slide">Swipe 2</li>
+							<li class="swiper-slide">Swipe 3</li>
+							<li class="swiper-slide">Swipe 4</li>
+							<li class="swiper-slide">Swipe 5</li>
+							<li class="swiper-slide">Swipe 6</li>
+							<li class="swiper-slide">Swipe 7</li>
+							<li class="swiper-slide">Swipe 8</li>
+							<li class="swiper-slide">Swipe 9</li>
+							<li class="swiper-slide">Swipe 10</li>
+						</ul>
+					</div>
+				</div>
+			</section> 아래와 구조가 다른 스와이퍼 -->
+			<section class="cp-content">
+				<h2 class="cp-tit dep02">스크롤 이동</h2>
+				<div class="tab-swiper">
+					<!-- 탭메뉴 -->
+					<div class="tab-nav" tab-swiper="swiper1">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide active" data-slide-index="0"><a href="javascript:void(0);">Tab 1</a></li>
+							<li class="swiper-slide" data-slide-index="1"><a href="javascript:void(0);">TabTab 2</a></li>
+							<li class="swiper-slide" data-slide-index="2"><a href="javascript:void(0);">TabTabTab 3</a></li>
+							<li class="swiper-slide" data-slide-index="3"><a href="javascript:void(0);">Tab 4</a></li>
+							<li class="swiper-slide" data-slide-index="4"><a href="javascript:void(0);">Tab 5</a></li>
+							<li class="swiper-slide" data-slide-index="5"><a href="javascript:void(0);">Tab 6</a></li>
+							<li class="swiper-slide" data-slide-index="6"><a href="javascript:void(0);">Tab 7</a></li>
+							<li class="swiper-slide" data-slide-index="7"><a href="javascript:void(0);">Tab 8</a></li>
+							<li class="swiper-slide" data-slide-index="8"><a href="javascript:void(0);">Tab 9</a></li>
+							<li class="swiper-slide" data-slide-index="9"><a href="javascript:void(0);">Tab 10</a></li>
+						</ul>
+					</div>
+					<!-- 리스트 -->
+					<div class="tab-content" tab-swiper-target="swiper1">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">Swipe 1</li>
+							<li class="swiper-slide">Swipe 2</li>
+							<li class="swiper-slide">Swipe 3</li>
+							<li class="swiper-slide">Swipe 4</li>
+							<li class="swiper-slide">Swipe 5</li>
+							<li class="swiper-slide">Swipe 6</li>
+							<li class="swiper-slide">Swipe 7</li>
+							<li class="swiper-slide">Swipe 8</li>
+							<li class="swiper-slide">Swipe 9</li>
+							<li class="swiper-slide">Swipe 10</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="cp-content">
+				<h2 class="cp-tit dep02">스크롤 이동 - 메뉴바 이동</h2>
+				<div class="tab-swiper">
+					<!-- 탭메뉴 -->
+					<div class="tab-nav moveBar" tab-swiper="swiper2">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide active" data-slide-index="0"><a href="javascript:void(0);">Tab 21</a></li>
+							<li class="swiper-slide" data-slide-index="1"><a href="javascript:void(0);">TabTab 22</a></li>
+							<li class="swiper-slide" data-slide-index="2"><a href="javascript:void(0);">TabTabTab 23</a></li>
+							<li class="swiper-slide" data-slide-index="3"><a href="javascript:void(0);">Tab 24</a></li>
+							<li class="swiper-slide" data-slide-index="4"><a href="javascript:void(0);">Tab 25</a></li>
+							<li class="swiper-slide" data-slide-index="5"><a href="javascript:void(0);">Tab 26</a></li>
+							<li class="swiper-slide" data-slide-index="6"><a href="javascript:void(0);">Tab 27</a></li>
+							<li class="swiper-slide" data-slide-index="7"><a href="javascript:void(0);">Tab 28</a></li>
+							<li class="swiper-slide" data-slide-index="8"><a href="javascript:void(0);">Tab 29</a></li>
+							<li class="swiper-slide" data-slide-index="9"><a href="javascript:void(0);">Tab 20</a></li>
+						</ul>
+					</div>
+					<!-- 리스트 -->
+					<div class="tab-content" tab-swiper-target="swiper2">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">Swipe 21</li>
+							<li class="swiper-slide">Swipe 22</li>
+							<li class="swiper-slide">Swipe 23</li>
+							<li class="swiper-slide">Swipe 24</li>
+							<li class="swiper-slide">Swipe 25</li>
+							<li class="swiper-slide">Swipe 26</li>
+							<li class="swiper-slide">Swipe 27</li>
+							<li class="swiper-slide">Swipe 28</li>
+							<li class="swiper-slide">Swipe 29</li>
+							<li class="swiper-slide">Swipe 20</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="cp-content">
+				<h2 class="cp-tit dep02">스크롤 / 세로형 / 휠이동가능</h2>
+				<div class="tab-swiper vertical">
+					<!-- 탭메뉴 -->
+					<div class="tab-nav" tab-swiper="swiper3">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide active" data-slide-index="0"><a href="javascript:void(0);">Tab 1</a></li>
+							<li class="swiper-slide" data-slide-index="1"><a href="javascript:void(0);">TabTab 2</a></li>
+							<li class="swiper-slide" data-slide-index="2"><a href="javascript:void(0);">TabTabTab 3</a></li>
+							<li class="swiper-slide" data-slide-index="3"><a href="javascript:void(0);">Tab 4</a></li>
+							<li class="swiper-slide" data-slide-index="4"><a href="javascript:void(0);">Tab 5</a></li>
+							<li class="swiper-slide" data-slide-index="5"><a href="javascript:void(0);">Tab 6</a></li>
+							<li class="swiper-slide" data-slide-index="6"><a href="javascript:void(0);">Tab 7</a></li>
+							<li class="swiper-slide" data-slide-index="7"><a href="javascript:void(0);">Tab 8</a></li>
+							<li class="swiper-slide" data-slide-index="8"><a href="javascript:void(0);">Tab 9</a></li>
+							<li class="swiper-slide" data-slide-index="9"><a href="javascript:void(0);">Tab 10</a></li>
+						</ul>
+					</div>
+					<!-- 리스트 -->
+					<div class="tab-content" tab-swiper-target="swiper3">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">Swipe 1</li>
+							<li class="swiper-slide">Swipe 2</li>
+							<li class="swiper-slide">Swipe 3</li>
+							<li class="swiper-slide">Swipe 4</li>
+							<li class="swiper-slide">Swipe 5</li>
+							<li class="swiper-slide">Swipe 6</li>
+							<li class="swiper-slide">Swipe 7</li>
+							<li class="swiper-slide">Swipe 8</li>
+							<li class="swiper-slide">Swipe 9</li>
+							<li class="swiper-slide">Swipe 10</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="cp-content">
+				<h2 class="cp-tit dep02">swiper full</h2>
+				<div class="swip-rt">
+					<div class="swip-swiper" swiper-type="swiper1" swiper-outo="true" swiper-nav="type1">
+						<!-- <div class="swiper-pagination"></div> -->
+						<div class="swip-content">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">Swipe 1</li>
+								<li class="swiper-slide">Swipe 2</li>
+								<li class="swiper-slide">Swipe 3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cp-content">
+				<h2 class="cp-tit dep02">swiper 1.5</h2>
+				<div class="swip-rt">
+					<div class="swip-swiper" swiper-type="swiper2" swiper-outo="true" swiper-nav="type3">
+						<!-- <div class="swiper-pagination"></div> -->
+						<div class="swip-content">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">Swipe 1</li>
+								<li class="swiper-slide">Swipe 2</li>
+								<li class="swiper-slide">Swipe 3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cp-content">
+				<h2 class="cp-tit dep02">swiper 3</h2>
+				<div class="swip-rt">
+					<div class="swip-swiper" swiper-type="swiper3">
+						<!-- <div class="swiper-pagination"></div> -->
+						<div class="swip-content">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">Swipe 1</li>
+								<li class="swiper-slide">Swipe 2</li>
+								<li class="swiper-slide">Swipe 3</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="cp-content">
+				<h2 class="cp-tit dep02">swiper nav</h2>
+				<div class="swip-rt">
+					<div class="swip-swiper" swiper-type="swiper4" swiper-auto="true" swiper-nav="type4">
+						<!-- <div class="swip-wrap">
+							<div class="play-btn-wrap">
+								<button class="fa-solid fa-pause fa-sm" id="pauseBtn"><span>정지</span></button>
+								<button class="fa-solid fa-play fa-sm" id="playBtn" style="display: none"><span>재생</span></button>
+							</div>
+							<div class="swiper-pagination"></div>
+						</div>
+						<div class="swiper-button-prev"><span>이전 슬라이드로</span></div>
+						<div class="swiper-button-next"><span>다음 슬라이드로</span></div> -->
+						<div class="swip-content">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">Swipe 1</li>
+								<li class="swiper-slide">Swipe 2</li>
+								<li class="swiper-slide">Swipe 3</li>
+								<li class="swiper-slide">Swipe 4</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	
+<!-- [S] PAGES - SCRIPT -->
+<script src="../../asset/js/ui.component.js"></script>
+<!-- [E] PAGES - SCRIPT -->
+
+</body>
+</html>

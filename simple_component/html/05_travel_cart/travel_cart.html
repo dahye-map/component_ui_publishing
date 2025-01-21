@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-back"><span class="blind">뒤로가기</span></button>
+        <p class="header-tit__center">
+          2024년 10월 <i class="ico ico-arrow__down"></i>
+        </p>
+        <div class="checkbox__wrap">
+          <div class="checkbox">
+            <input type="checkbox" id="all_view" />
+            <label for="all_view">
+              <span class="ft-xxs">전체 보기</span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container__wrap travelcart__wrap">
+      <!-- 주간 보기 -->
+      <div class="weekly__wrap">
+        <div class="weekly__day">
+          <div class="weekly__day-header">일</div>
+          <div class="weekly__day-header">월</div>
+          <div class="weekly__day-header">화</div>
+          <div class="weekly__day-header">수</div>
+          <div class="weekly__day-header">목</div>
+          <div class="weekly__day-header">금</div>
+          <div class="weekly__day-header">토</div>
+        </div>
+        <!-- data-reserved 예약 갯수 입력 -->
+        <div class="weekly__day">
+          <div class="weekly__day-content" data-reserved="1">13</div>
+          <div class="weekly__day-content" data-reserved="2">14</div>
+          <div class="weekly__day-content">15</div>
+          <div class="weekly__day-content today" data-reserved="5">16</div>
+          <div class="weekly__day-content">17</div>
+          <div class="weekly__day-content" data-reserved="4">18</div>
+          <div class="weekly__day-content" data-reserved="3">19</div>
+        </div>
+      </div>
+      <!-- //주간 보기 -->
+
+      <!-- 내 장바구니 리스트 -->
+      <div class="travelcart__list">
+        <div class="checkbox__wrap check-list__wrap">
+          <div class="check-list__all">
+            <div class="checkbox">
+              <input type="checkbox" id="travel_all" />
+              <label for="travel_all">
+                <span class="ft-default">전체 선택 (<em>0</em>/<em>6</em>)</span>
+              </label>
+            </div>
+            <button type="button" class="btn-txt__small">선택 삭제</button>
+          </div>
+          <div class="check-list__con">
+            <div class="check-list__tit">
+              <div class="checkbox">
+                <input type="checkbox" id="travel1" />
+                <label for="travel1">
+                  <div class="badge badge__lavender">숙박</div>
+                </label>
+              </div>
+              <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+            </div>
+            <div class="box-gray__wrap">
+              <p class="product-name">스위트호텔 제주</p>
+              <div class="thumb__wrap">
+                <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                <div class="thumb__con">
+                  <p class="detail-name">디럭스 트윈 (오션뷰) - 뭉클딜명</p>
+                  <p class="detail-sub">
+                    <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                  </p>
+                  <p class="detail-sub">
+                    <span>2024.10.10(화)~2024.10.11(수)</span><span>1박</span>
+                  </p>
+                </div>
+                <div class="thumb__price">
+                  <div>
+                    <p class="sale-percent">80%</p>
+                    <p class="default-price">400,000원</p>
+                    <p class="sale-price">80,000원~</p>
+                  </div>
+                  <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                </div>
+                <div class="thumb__gift">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="check-list__con">
+            <div class="check-list__tit">
+              <div class="checkbox">
+                <input type="checkbox" id="travel2" />
+                <label for="travel2">
+                  <div class="badge badge__lavender">액티비티&체험</div>
+                </label>
+              </div>
+              <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+            </div>
+            <div class="box-gray__wrap">
+              <p class="product-name">유니버셜 스튜디오 싱가포르 입장권</p>
+              <div class="thumb__wrap">
+                <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                <div class="thumb__con">
+                  <p class="detail-name">체험 옵션명</p>
+                  <p class="detail-sub">
+                    <span>도쿄</span><span>입장권</span>
+                  </p>
+                  <p class="detail-sub">2024.10.10(화)</p>
+                  <p class="detail-sub">성인 1명, 아동 1명, 유아 1명</p>
+                </div>
+                <div class="thumb__price">
+                  <div>
+                    <p class="sale-percent">80%</p>
+                    <p class="default-price">400,000원</p>
+                    <p class="sale-price">230,000원</p>
+                  </div>
+                  <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                </div>
+                <div class="thumb__gift">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="check-list__con">
+            <div class="check-list__tit">
+              <div class="checkbox">
+                <input type="checkbox" id="travel3" />
+                <label for="travel3">
+                  <div class="badge badge__lavender">투어</div>
+                </label>
+              </div>
+              <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+            </div>
+            <div class="box-gray__wrap">
+              <p class="product-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+              <div class="thumb__wrap">
+                <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                <div class="thumb__con">
+                  <p class="detail-name">투어 옵션명</p>
+                  <p class="detail-sub">
+                    <span>탄자니아</span><span>6일</span>
+                  </p>
+                  <p class="detail-sub">2024.10.10(화)</p>
+                  <p class="detail-sub">성인 1명, 아동 1명, 유아 1명</p>
+                </div>
+                <div class="thumb__price">
+                  <div>
+                    <p class="sale-percent">80%</p>
+                    <p class="default-price">400,000원</p>
+                    <p class="sale-price">80,000원~</p>
+                  </div>
+                  <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                </div>
+                <div class="thumb__gift">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="check-list__con">
+            <div class="check-list__tit">
+              <div class="checkbox">
+                <input type="checkbox" id="travel4" />
+                <label for="travel4">
+                  <div class="badge__wrap">
+                    <div class="badge badge__lavender">숙박</div>
+                    <div class="badge badge__lavender">투어</div>
+                  </div>
+                </label>
+              </div>
+              <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+            </div>
+            <div class="box-gray__wrap">
+              <div class="splide splide__default">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide">
+                      <p class="product-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                      <div class="thumb__wrap">
+                        <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                        <div class="thumb__con">
+                          <p class="detail-name">투어 옵션명</p>
+                          <p class="detail-sub">
+                            <span>탄자니아</span><span>6일</span>
+                          </p>
+                          <p class="detail-sub">2024.10.10(화)</p>
+                          <p class="detail-sub">성인 1명, 아동 1명, 유아 1명</p>
+                        </div>
+                        <div class="thumb__price">
+                          <div>
+                            <p class="sale-percent">80%</p>
+                            <p class="default-price">400,000원</p>
+                            <p class="sale-price">80,000원~</p>
+                          </div>
+                          <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                        </div>
+                        <div class="thumb__gift">
+                          <ul>
+                            <li>조식 2인 무료권</li>
+                            <li>추가 10% 할인</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="splide__slide">
+                      <p class="product-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                      <div class="thumb__wrap">
+                        <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                        <div class="thumb__con">
+                          <p class="detail-name">투어 옵션명</p>
+                          <p class="detail-sub">
+                            <span>탄자니아</span><span>6일</span>
+                          </p>
+                          <p class="detail-sub">2024.10.10(화)</p>
+                          <p class="detail-sub">성인 1명, 아동 1명, 유아 1명</p>
+                        </div>
+                        <div class="thumb__price">
+                          <div>
+                            <p class="sale-percent">80%</p>
+                            <p class="default-price">400,000원</p>
+                            <p class="sale-price">80,000원~</p>
+                          </div>
+                          <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                        </div>
+                        <div class="thumb__gift">
+                          <ul>
+                            <li>조식 2인 무료권</li>
+                            <li>추가 10% 할인</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="check-list__con">
+            <div class="check-list__tit">
+              <div class="checkbox">
+                <input type="checkbox" id="travel5" />
+                <label for="travel5">
+                  <div class="badge badge__lavender">숙박</div>
+                </label>
+              </div>
+              <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+            </div>
+            <div class="box-gray__wrap">
+              <p class="product-name">스위트호텔 제주</p>
+              <div class="thumb__wrap">
+                <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                <div class="thumb__con">
+                  <p class="detail-name">디럭스 트윈 (오션뷰) - 뭉클딜명</p>
+                  <p class="detail-sub">
+                    <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                  </p>
+                  <p class="detail-sub">
+                    <span>2024.10.10(화)~2024.10.11(수)</span><span>1박</span>
+                  </p>
+                </div>
+                <div class="thumb__price">
+                  <div>
+                    <p class="sale-percent">80%</p>
+                    <p class="default-price">400,000원</p>
+                    <p class="sale-price">80,000원~</p>
+                  </div>
+                  <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                </div>
+                <div class="thumb__gift">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="check-list__con">
+            <div class="check-list__tit">
+              <div class="checkbox">
+                <input type="checkbox" id="travel6" />
+                <label for="travel6">
+                  <div class="badge badge__lavender">숙박</div>
+                </label>
+              </div>
+              <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+            </div>
+            <div class="box-gray__wrap">
+              <p class="product-name">스위트호텔 제주</p>
+              <div class="thumb__wrap">
+                <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                <div class="thumb__con">
+                  <p class="detail-name">디럭스 트윈 (오션뷰) - 뭉클딜명</p>
+                  <p class="detail-sub">
+                    <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                  </p>
+                  <p class="detail-sub">
+                    <span>2024.10.10(화)~2024.10.11(수)</span><span>1박</span>
+                  </p>
+                </div>
+                <div class="thumb__price">
+                  <div>
+                    <p class="sale-percent">80%</p>
+                    <p class="default-price">400,000원</p>
+                    <p class="sale-price">80,000원~</p>
+                  </div>
+                  <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                </div>
+                <div class="thumb__gift">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //내 장바구니 리스트 -->
+
+      <hr class="divide">
+
+      <!-- 탭 -->
+      <div class="travelcart__tab">
+        <div class="tab__wrap tab-line__wrap full-line">
+          <ul class="tab__inner fnStickyTop">
+            <li class="tab-line__con active">
+              <a href="#none">전체</a>
+            </li>
+            <li class="tab-line__con">
+              <a href="#none">숙소</a>
+            </li>
+            <li class="tab-line__con">
+              <a href="#none">액티비티&체험</a>
+            </li>
+            <li class="tab-line__con">
+              <a href="#none">투어</a>
+            </li>
+          </ul>
+          <div class="box-purple__wrap type2">
+            <p class="ft-xxs">아래 상품의 날짜 및 옵션을 선택하시면 여행 일정에 추가돼요!</p>
+          </div>
+          <div class="tab-contents__wrap">
+            <div class="tab-contents active">
+              <!-- 추천 상품 -->
+              <div class="travelcart-recommend__wrap">
+                <a href="#none" class="travelcart-recommend__con active">
+                  <div class="travelcart-recommend__tit">
+                    <div class="badge__wrap">
+                      <div class="badge badge__lavender">액티비티&체험</div>
+                    </div>
+                    <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <p class="product-name">스위트호텔 제주</p>
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-name">디럭스 트윈 (오션뷰) - 뭉클딜명</p>
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-sub">
+                          <span>2024.10.10(화)~2024.10.11(수)</span><span>1박</span>
+                        </p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                        <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                      </div>
+                      <div class="thumb__gift">
+                        <ul>
+                          <li>조식 2인 무료권</li>
+                          <li>추가 10% 할인</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bubble__wrap">
+                      <i class="ico ico-calendar"></i>
+                      <p class="txt">"원하시는 날짜를 선택해주세요"</p>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__black">날짜 선택하기</button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#none" class="travelcart-recommend__con">
+                  <div class="travelcart-recommend__tit">
+                    <div class="badge__wrap">
+                      <div class="badge badge__lavender">액티비티&체험</div>
+                    </div>
+                    <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <p class="product-name">스위트호텔 제주</p>
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-name">디럭스 트윈 (오션뷰) - 뭉클딜명</p>
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-sub">
+                          <span>2024.10.10(화)~2024.10.11(수)</span><span>1박</span>
+                        </p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                        <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                      </div>
+                      <div class="thumb__gift">
+                        <ul>
+                          <li>조식 2인 무료권</li>
+                          <li>추가 10% 할인</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bubble__wrap">
+                      <i class="ico ico-calendar"></i>
+                      <p class="txt">"원하시는 날짜를 선택해주세요"</p>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__black">날짜 선택하기</button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#none" class="travelcart-recommend__con">
+                  <div class="travelcart-recommend__tit">
+                    <div class="badge__wrap">
+                      <div class="badge badge__lavender">액티비티&체험</div>
+                      <div class="badge badge__lavender">투어</div>
+                    </div>
+                    <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <div class="splide splide__default">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide">
+                            <p class="product-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                            <div class="thumb__wrap">
+                              <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                              <div class="thumb__con">
+                                <p class="detail-name">투어 옵션명</p>
+                                <p class="detail-sub">
+                                  <span>탄자니아</span><span>6일</span>
+                                </p>
+                                <p class="detail-sub">2024.10.10(화)</p>
+                                <p class="detail-sub">성인 1명, 아동 1명, 유아 1명</p>
+                              </div>
+                              <div class="thumb__price">
+                                <div>
+                                  <p class="sale-percent">80%</p>
+                                  <p class="default-price">400,000원</p>
+                                  <p class="sale-price">80,000원~</p>
+                                </div>
+                                <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                              </div>
+                              <div class="thumb__gift">
+                                <ul>
+                                  <li>조식 2인 무료권</li>
+                                  <li>추가 10% 할인</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <p class="product-name">가족 여행의 완벽한 선택: 경비행기와 사파리 모험</p>
+                            <div class="thumb__wrap">
+                              <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                              <div class="thumb__con">
+                                <p class="detail-name">투어 옵션명</p>
+                                <p class="detail-sub">
+                                  <span>탄자니아</span><span>6일</span>
+                                </p>
+                                <p class="detail-sub">2024.10.10(화)</p>
+                                <p class="detail-sub">성인 1명, 아동 1명, 유아 1명</p>
+                              </div>
+                              <div class="thumb__price">
+                                <div>
+                                  <p class="sale-percent">80%</p>
+                                  <p class="default-price">400,000원</p>
+                                  <p class="sale-price">80,000원~</p>
+                                </div>
+                                <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                              </div>
+                              <div class="thumb__gift">
+                                <ul>
+                                  <li>조식 2인 무료권</li>
+                                  <li>추가 10% 할인</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bubble__wrap">
+                      <i class="ico ico-calendar"></i>
+                      <p class="txt">"원하시는 날짜를 선택해주세요"</p>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__black">날짜 선택하기</button>
+                    </div>
+                  </div>
+                </a>
+                <a href="#none" class="travelcart-recommend__con">
+                  <div class="travelcart-recommend__tit">
+                    <div class="badge__wrap">
+                      <div class="badge badge__lavender">액티비티&체험</div>
+                    </div>
+                    <button type="button" class="btn-delete"><i class="ico ico-close__gray fnOpenPop" data-name="alert"></i></button>
+                  </div>
+                  <div class="box-gray__wrap">
+                    <p class="product-name">스위트호텔 제주</p>
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-name">디럭스 트윈 (오션뷰) - 뭉클딜명</p>
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-sub">
+                          <span>2024.10.10(화)~2024.10.11(수)</span><span>1박</span>
+                        </p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                        <p class="ft-xxs">09.09 09:09까지 무료 취소</p>
+                      </div>
+                      <div class="thumb__gift">
+                        <ul>
+                          <li>조식 2인 무료권</li>
+                          <li>추가 10% 할인</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="bubble__wrap">
+                      <i class="ico ico-calendar"></i>
+                      <p class="txt">"원하시는 날짜를 선택해주세요"</p>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-md__black">날짜 선택하기</button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <!-- //추천 상품 -->
+            </div>
+            <div class="tab-contents">
+  
+            </div>
+            <div class="tab-contents">
+  
+            </div>
+            <div class="tab-contents">
+  
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- //탭 -->
+
+      <!-- 하단 버튼 영역 -->
+      <div class="bottom-fixed__wrap">
+        <div class="btn__wrap">
+          <button class="btn-full__primary">구매하기</button>
+        </div>
+      </div>
+      <!-- //하단 버튼 영역 -->
+    </div>
+
+    <!-- 바텀 팝업(일정 선택) -->
+    <div id="popupDate" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">일정 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <!-- 날짜 선택 -->
+          <div class="tab__wrap tab-switch__wrap">
+            <ul class="tab__inner">
+              <li class="tab-switch__con active">
+                <a href="#none">날짜 선택</a>
+              </li>
+              <li class="tab-switch__con">
+                <a href="#none">월 선택</a>
+              </li>
+            </ul>
+            <div class="tab-contents__wrap">
+              <!-- 날짜 선택 탭 -->
+              <div class="tab-contents active">
+                <div class="calendar-wrap">
+                  <div class="placeholder"></div>
+                </div>
+              </div>
+              <!-- //날짜 선택 탭 -->
+              <!-- 월 선택 탭 -->
+              <div class="tab-contents">
+                <div class="select__wrap col-3 multi-select">
+                  <p class="title">2024년</p>
+                  <ul>
+                    <li><a href="#none">9월</a></li>
+                    <li><a href="#none">10월</a></li>
+                    <li><a href="#none">11월</a></li>
+                    <li><a href="#none">12월</a></li>
+                  </ul>
+
+                  <p class="title">2025년</p>
+                  <ul>
+                    <li><a href="#none">1월</a></li>
+                    <li><a href="#none">1월</a></li>
+                    <li><a href="#none">3월</a></li>
+                    <li><a href="#none">4월</a></li>
+                    <li><a href="#none">5월</a></li>
+                    <li><a href="#none">6월</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //월 선택 탭 -->
+            </div>
+          </div>
+          <!-- //날짜 선택 -->
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__primary">다음</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(일정 선택) -->
+
+    <!-- 바텀 팝업(인원 선택) -->
+    <div id="popupGuest" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">인원 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="count__wrap">
+            <ul>
+              <li>
+                <p class="ft-default">성인 <span>100,000원</span></p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+              </li>
+              <li>
+                <p class="ft-default">아동 <span>80,000원</span></p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+
+                <div class="count-age__wrap"></div>
+              </li>
+              <li>
+                <p class="ft-default">유아 <span>50,000원</span></p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+
+                <div class="count-age__wrap"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button type="button" class="btn-full__line__gray"><i class="ico ico-cart"></i></button>
+            <button class="btn-full__primary">예약하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(인원 선택) -->
+
+    <!-- 알럿 팝업 -->
+    <div id="alert" class="layerpop__wrap type-alert">
+      <div class="layerpop__container">
+        <div class="layerpop__contents">
+          <div class="tit__wrap">
+            <p class="title">정말 일정에서 제외하시겠습니까?</p>
+            <p class="desc">
+              선택하신 상품이 삭제됩니다.
+            </p>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__secondary fnClosePop">아니요</button>
+            <button class="btn-full__primary">삭제하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //알럿 팝업 -->
+  </div>
+
+  <script>
+    flatpickr('.calendar-wrap .placeholder', {
+      inline: true,
+      minDate: 'today',
+      mode: "range",
+      "locale": "ko",
+    });
+
+    $('.travelcart-recommend__con').click(function(){
+      $(this).toggleClass('active');
+    });
+  </script>
+
+</body>
+
+</html>

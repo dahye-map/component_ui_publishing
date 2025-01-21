@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <h1 class="header-tit__left">검색</h1>
+        <button type="button" class="btn-alarm"><span class="blind">알림</span></button>
+      </div>
+    </header>
+
+    <div class="container__wrap search__wrap">
+      <section class="layout__wrap pt20">
+        <!-- 검색 폼 -->
+        <div class="search-form__wrap">
+          <div class="search-form">
+            <div class="search-form__con search-input">
+              <i class="ico ico-search__small"></i>
+              <div class="input__wrap">
+                <input type="text" class="input" placeholder="도시, 상품명 또는 #뭉클태그 입력" value="아아">
+                <button type="button" class="btn-input__delete"><i class="ico ico-input__delete"></i></button>
+              </div>
+              
+            </div>
+            <div class="search-form__con search-date fnOpenPop" data-name="popupDate">
+              <i class="ico ico-date"></i>
+              <p class="txt">09.01~09.02</p>
+            </div>
+            <div class="search-form__con search-guest fnOpenPop" data-name="popupGuest">
+              <i class="ico ico-person"></i>
+              <p class="txt">성인 2</p>
+            </div>
+          </div>
+        </div>
+        <!-- //검색 폼 -->
+
+        <div class="category-list__wrap">
+          <ul>
+            <li>
+              <p class="title">도시</p>
+              <div class="category-list__con category-location">
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <p class="title">국가</p>
+              <div class="category-list__con category-national">
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <p class="title">랜드마크</p>
+              <div class="category-list__con category-landmark">
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <p class="title">교통중심지</p>
+              <div class="category-list__con category-bus">
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <p class="title">숙소</p>
+              <div class="category-list__con category-hotel">
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <p class="title">액티비티</p>
+              <div class="category-list__con category-activity">
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <p class="title">투어</p>
+              <div class="category-list__con category-tour">
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+              </div>
+            </li>
+            <li>
+              <p class="title">뭉클태그</p>
+              <div class="category-list__con category-hashtag">
+                <a href="">
+                  <p class="ft-s">00<span class="txt-primary ft-bold">아아</span>00</p>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      
+      <div class="bottom-navi__wrap">
+        <ul class="bottom-navi__list">
+          <li class="navi navi-home">
+            <a href="#none">
+              <i class="ico ico-home"></i>
+              <span>홈</span>
+            </a>
+          </li>
+          <li class="navi navi-search active">
+            <a href="#none">
+              <i class="ico ico-search"></i>
+              <span>검색</span>
+            </a>
+          </li>
+          <li class="navi navi-logo">
+            <a href="#none">
+              <i class="ico ico-logo"><p class="num">1</p></i>
+            </a>
+          </li>
+          <li class="navi navi-community">
+            <a href="#none">
+              <i class="ico ico-community"></i>
+              <span>커뮤니티</span>
+            </a>
+          </li>
+          <li class="navi navi-mypage">
+            <a href="#none">
+              <i class="ico ico-mypage"></i>
+              <span>마이</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 바텀 팝업(일정 선택) -->
+    <div id="popupDate" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">일정 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <!-- 날짜 선택 -->
+          <div class="tab__wrap tab-switch__wrap">
+            <ul class="tab__inner">
+              <li class="tab-switch__con active">
+                <a href="#none">날짜 선택</a>
+              </li>
+              <li class="tab-switch__con">
+                <a href="#none">월 선택</a>
+              </li>
+            </ul>
+            <div class="tab-contents__wrap">
+              <!-- 날짜 선택 탭 -->
+              <div class="tab-contents active">
+                <div class="calendar-wrap">
+                  <div class="placeholder"></div>
+                </div>
+              </div>
+              <!-- //날짜 선택 탭 -->
+              <!-- 월 선택 탭 -->
+              <div class="tab-contents">
+                <div class="select__wrap col-3 multi-select">
+                  <p class="title">2024년</p>
+                  <ul>
+                    <li><a href="#none">9월</a></li>
+                    <li><a href="#none">10월</a></li>
+                    <li><a href="#none">11월</a></li>
+                    <li><a href="#none">12월</a></li>
+                  </ul>
+
+                  <p class="title">2025년</p>
+                  <ul>
+                    <li><a href="#none">1월</a></li>
+                    <li><a href="#none">1월</a></li>
+                    <li><a href="#none">3월</a></li>
+                    <li><a href="#none">4월</a></li>
+                    <li><a href="#none">5월</a></li>
+                    <li><a href="#none">6월</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- //월 선택 탭 -->
+            </div>
+          </div>
+          <!-- //날짜 선택 -->
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__line__primary">날짜 미정</button>
+            <button class="btn-full__primary">선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(일정 선택) -->
+
+    <!-- 바텀 팝업(인원 선택) -->
+    <div id="popupGuest" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">인원 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="count__wrap">
+            <ul>
+              <li>
+                <p class="ft-default">성인</p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+              </li>
+              <li>
+                <p class="ft-default">아동</p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+
+                <div class="count-age__wrap"></div>
+              </li>
+              <li>
+                <p class="ft-default">유아</p>
+                <div class="count__con">
+                  <button type="button" class="btn-count btn-count__minus"><i class="ico ico-count__minus"></i></button>
+                  <span class="num">0</span>
+                  <button type="button" class="btn-count btn-count__plus"><i class="ico ico-count__plus"></i></button>
+                </div>
+
+                <div class="count-age__wrap"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__primary">선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(인원 선택) -->
+
+    <!-- 바텀 팝업(나이 선택) -->
+    <div id="popupAge" class="layerpop__wrap layerpop__select">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">나이 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="select__wrap type-list single-select">
+            <ul>
+              <li><a href="#none">만 1세</a></li>
+              <li><a href="#none">만 2세</a></li>
+              <li><a href="#none">만 3세</a></li>
+              <li><a href="#none">만 4세</a></li>
+              <li><a href="#none">만 5세</a></li>
+              <li><a href="#none">만 6세</a></li>
+              <li><a href="#none">만 7세</a></li>
+              <li><a href="#none">만 8세</a></li>
+              <li><a href="#none">만 9세</a></li>
+              <li><a href="#none">만 10세</a></li>
+              <li><a href="#none">만 11세</a></li>
+              <li><a href="#none">만 12세</a></li>
+              <li><a href="#none">만 13세</a></li>
+              <li><a href="#none">만 14세</a></li>
+              <li><a href="#none">만 15세</a></li>
+              <li><a href="#none">만 16세</a></li>
+              <li><a href="#none">만 17세</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(나이 선택) -->
+
+    <!-- 바텀 팝업(개월수 선택) -->
+    <div id="popupMonth" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">개월수 선택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="select__wrap type-list single-select">
+            <ul>
+              <li><a href="#none">1개월</a></li>
+              <li><a href="#none">2개월</a></li>
+              <li><a href="#none">3개월</a></li>
+              <li><a href="#none">4개월</a></li>
+              <li><a href="#none">5개월</a></li>
+              <li><a href="#none">6개월</a></li>
+              <li><a href="#none">7개월</a></li>
+              <li><a href="#none">8개월</a></li>
+              <li><a href="#none">9개월</a></li>
+              <li><a href="#none">10개월</a></li>
+              <li><a href="#none">11개월</a></li>
+              <li><a href="#none">12개월</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(개월수 선택) -->
+  </div>
+
+  <script>
+    flatpickr('.calendar-wrap .placeholder', {
+      inline: true,
+      minDate: 'today',
+      mode: "range",
+      "locale": "ko",
+    });
+
+    $(document).ready(function() {
+      $('.input').on('input', function() {
+        if ($(this).val().length > 0) {
+          $('.btn-input__delete').show();
+        } else {
+          $('.btn-input__delete').hide();
+        }
+      });
+      $('.btn-input__delete').click(function() {
+        $('.input').val('');
+        $(this).hide();
+      });
+    });
+  </script>
+
+</body>
+
+</html>

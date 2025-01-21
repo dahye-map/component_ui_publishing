@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/type-hangul.bundle.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <h1 class="logo"><span class="blind">뭉클트립</span></h1>
+        <div class="btn__wrap">
+          <button type="button" class="btn-search"><span class="blind">검색</span></button>
+          <button type="button" class="btn-alarm"><span class="blind">알림</span></button>
+          <button type="button" class="btn-cart__gray"><span class="blind">장바구니</span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container__wrap main__wrap">
+      <section class="layout__wrap bg-gray">
+        <div class="tit__wrap">
+          <p class="tit">설레는 여행 준비</p>
+          <p class="sub-tit">이제, 내 여행 취향 태그만 등록하면 끝!</p>
+        </div>
+        <div class="box-white__list">
+          <!-- 태그 알림받기 -->
+          <div class="box-white__wrap">
+            <div class="tag-animation__wrap">
+              <div class="tag-animation__tit">
+                <p class="tit">
+                  <span class="typing-ani">내가 원하는 <strong class="txt-primary">여행</strong>은?</span>
+                </p>
+                <p class="sub-tit">내 취향 태그를 아래 고리에 걸어주세요</p>
+              </div>
+              <div class="tag-animation__con">
+                <div class="main-tag__select">
+                  <div class="main-tag__thumb active">
+                    <p class="img"><img src="../../assets/images/layout/img_main_tag01.png" alt=""></p>
+                    <p class="txt">조식은<br>필수</p>
+                  </div>
+                  <div class="main-tag__thumb active">
+                    <p class="img"><img src="../../assets/images/layout/img_main_tag02.png" alt=""></p>
+                    <p class="txt">5성</p>
+                  </div>
+                  <div class="main-tag__thumb"></div>
+                </div>
+                <div class="main-tag__slide">
+                  <div class="swiper-container">
+                    <ul class="swiper-wrapper">
+                      <li class="swiper-slide">
+                        <a href="" class="main-tag__btn">
+                          <p class="img"><img src="../../assets/images/layout/img_main_tag01.png" alt=""></p>
+                          <p class="txt">조식은<br>필수</p>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="main-tag__btn">
+                          <p class="img"><img src="../../assets/images/layout/img_main_tag02.png" alt=""></p>
+                          <p class="txt">5성</p>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="main-tag__btn">
+                          <p class="img"><img src="../../assets/images/layout/img_main_tag03.png" alt=""></p>
+                          <p class="txt">커플기념일</p>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="main-tag__btn">
+                          <p class="img"><img src="../../assets/images/layout/img_main_tag01.png" alt=""></p>
+                          <p class="txt">조식은<br>필수</p>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="main-tag__btn">
+                          <p class="img"><img src="../../assets/images/layout/img_main_tag01.png" alt=""></p>
+                          <p class="txt">조식은<br>필수</p>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="main-tag__btn">
+                          <p class="img"><img src="../../assets/images/layout/img_main_tag01.png" alt=""></p>
+                          <p class="txt">조식은<br>필수</p>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="main-tag__btn">
+                          <p class="img"><img src="../../assets/images/layout/img_main_tag01.png" alt=""></p>
+                          <p class="txt">조식은<br>필수</p>
+                        </a>
+                      </li>
+                      <li class="swiper-slide">
+                        <a href="" class="main-tag__btn">
+                          <p class="img"><img src="../../assets/images/layout/img_main_tag01.png" alt=""></p>
+                          <p class="txt">조식은<br>필수</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <button type="button" class="btn-txt__gray"><i class="ico ico-refresh"></i>새로고침</button>
+                <button type="button" class="btn-full__primary fnOpenPop" data-name="alert">여 행  시 작 하 기</button>
+                <button type="button" class="btn-full__primary fnOpenPop" data-name="alert2">여 행  시 작 하 기(웹)</button>
+              </div>
+            </div>
+          </div>
+          <!-- //태그 알림받기 -->
+          <!-- 원하는 여행 제안 -->
+          <div class="box-white__wrap">
+            <p class="title">
+              원하는 여행을 등록하면 <br>
+              꼭 맞는 제안이 도착해요
+            </p>
+            <div class="splide splide__default">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="main-benefit__btn">
+              <a href="">
+                <p class="tit">뭉클딜 등록하고 혜택받기</p>
+                <i class="ico ico-arrow__right"></i>
+              </a>
+            </div>
+          </div>
+          <!-- //원하는 여행 제안 -->
+          <!-- 뭉클태그 혜택 -->
+          <div class="box-white__wrap">
+            <p class="title">
+              혜택으로 발견하는 <br>
+              나만의 뭉클태그!
+            </p>
+            <div class="splide splide__default splide__small">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex-between">
+              <div class="txt__wrap">
+                <p class="sub-txt">마음에 드는 혜택이 있다면</p>
+                <p class="txt">뭉클태그 복사하기</p>
+              </div>
+              <button type="button" class="btn-sm__black">태그 복사</button>
+            </div>
+          </div>
+          <!-- //뭉클태그 혜택 -->
+          <!-- 나만의 뭉클태그 -->
+          <div class="box-white__wrap">
+            <p class="title">
+              가고 싶은 곳에서 발견하는 <br>
+              나만의 뭉클태그!
+            </p>
+            <div class="splide splide__default splide__small">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex-between">
+              <div class="txt__wrap">
+                <p class="sub-txt">마음에 드는 혜택이 있다면</p>
+                <p class="txt">뭉클태그 복사하기</p>
+              </div>
+              <button type="button" class="btn-sm__black">태그 복사</button>
+            </div>
+          </div>
+          <!-- //나만의 뭉클태그 -->
+          <!-- 우리만의 뭉클태그 -->
+          <div class="box-white__wrap">
+            <p class="title">
+              동행이 있다면? <br>
+              우리만의 뭉클태그!
+            </p>
+            <div class="splide splide__default splide__small">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+            <div class="flex-between">
+              <div class="txt__wrap">
+                <p class="sub-txt">마음에 드는 혜택이 있다면</p>
+                <p class="txt">뭉클태그 복사하기</p>
+              </div>
+              <button type="button" class="btn-sm__black">태그 복사</button>
+            </div>
+          </div>
+          <!-- //우리만의 뭉클태그 -->
+        </div>
+      </section>
+      <!-- 자주 묻는 질문 -->
+      <div class="faq__wrap accordion__wrap">
+        <p class="title">자주 묻는 질문</p>
+        <div class="accordion__list">
+          <div class="accordion__tit">
+            <p class="ft-default">방 2개를 예약하려면 어떻게 해야하나요?</p>
+            <a href="#none" class="btn-arrow"><i class="ico ico-arrow__down"></i></a>
+          </div>
+          <div class="accordion__con">
+            답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.
+          </div>
+        </div>
+        <div class="accordion__list">
+          <div class="accordion__tit">
+            <p class="ft-default">쿠폰은 어떻게 사용이 가능한가요?</p>
+            <a href="#none" class="btn-arrow"><i class="ico ico-arrow__down"></i></a>
+          </div>
+          <div class="accordion__con">
+            답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.
+          </div>
+        </div>
+        <div class="accordion__list">
+          <div class="accordion__tit">
+            <p class="ft-default">예약을 취소하고 싶어요.</p>
+            <a href="#none" class="btn-arrow"><i class="ico ico-arrow__down"></i></a>
+          </div>
+          <div class="accordion__con">
+            답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.답변 자리 입니다.
+          </div>
+        </div>
+      </div>
+      <!-- //자주 묻는 질문 -->
+      <!-- 푸터 -->
+      <footer class="footer__wrap">
+        <div class="footer__inner">
+          <div class="company-info">
+            <p class="name">(주)호놀룰루컴퍼니</p>
+            <p>한국관광공사 인증 관광벤처기업</p>
+          </div>
+
+          <div class="company-details__wrap">
+            <div class="company-details">
+              <p>대표자 : 김범수</p>
+              <p>주소 : 경기도 안양시 동안구 시민대로327번길 11-41 3층</p>
+            </div>
+            <div class="company-details">
+              <p>사업자 등록번호 : 485-87-02613</p>
+              <p>대표번호 : 070-7537-2694</p>
+            </div>
+            <div class="company-details">
+              <p>통신판매업 신고번호 : 제2023-안양동안-0792호</p>
+              <p>관광사업자 등록번호 : 제2023-000006호</p>
+            </div>
+            <div class="company-details">
+              <span>(주)호놀룰루컴퍼니는 통신판매중개자로서 통신판매의 당사자가 아니며, 상품의 예약, 이용 및 환불 등과 관련된 의무와 책임은 각 판매자에게 있습니다.</span>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <a href="#" class="footer-link">공지사항</a>
+            <a href="#" class="footer-link">사업자정보확인</a>
+            <a href="#" class="footer-link">인스타그램</a>
+            <a href="#" class="footer-link">전자금융거래이용약관</a>
+            <a href="#" class="footer-link">개인정보처리방침</a>
+            <a href="#" class="footer-link">리뷰운영정책</a>
+            <a href="#" class="footer-link">데이터제공정책</a>
+            <a href="#" class="footer-link">소비자분쟁해결기준</a>
+            <a href="#" class="footer-link">처음으로</a>
+          </div>
+        </div>
+      </footer>
+      <!-- //푸터 -->
+      <div class="bottom-navi__wrap">
+        <ul class="bottom-navi__list">
+          <li class="navi navi-home active">
+            <a href="#none">
+              <i class="ico ico-home"></i>
+              <span>홈</span>
+            </a>
+          </li>
+          <li class="navi navi-search">
+            <a href="#none">
+              <i class="ico ico-search"></i>
+              <span>검색</span>
+            </a>
+          </li>
+          <li class="navi navi-logo">
+            <a href="#none">
+              <i class="ico ico-logo"><p class="num">1</p></i>
+            </a>
+          </li>
+          <li class="navi navi-community">
+            <a href="#none">
+              <i class="ico ico-community"></i>
+              <span>커뮤니티</span>
+            </a>
+          </li>
+          <li class="navi navi-mypage">
+            <a href="#none">
+              <i class="ico ico-mypage"></i>
+              <span>마이</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 뭉클딜 등록 팝업 -->
+    <div id="alert" class="layerpop__wrap type-center main__popup">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <button type="button" class="btn-close fnClosePop"><i class="ico ico-close"></i></button>
+          <p class="title">
+            아래의 여행정보로 <br>
+            뭉클딜을 받아볼까요?
+          </p>
+        </div>
+        <div class="layerpop__contents">
+          <div class="select-tag__wrap">
+            <div class="select-tag">
+              <p class="img"><img src="../../assets/images/demo/img_recommend.png" alt=""></p>
+              <p class="txt">4인 가족</p>
+            </div>
+            <div class="select-tag">
+              <p class="img"><img src="../../assets/images/demo/img_recommend.png" alt=""></p>
+              <p class="txt">제주도</p>
+            </div>
+            <div class="select-tag">
+              <p class="img"><img src="../../assets/images/demo/img_recommend.png" alt=""></p>
+              <p class="txt">성수기</p>
+            </div>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__primary">지금 뭉클딜 등록하기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // 뭉클딜 등록 팝업 -->
+    <!-- 뭉클딜 등록 팝업 (웹)-->
+    <div id="alert2" class="layerpop__wrap type-center main__popup">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <button type="button" class="btn-close fnClosePop"><i class="ico ico-close"></i></button>
+          <div class="align__left">
+            <p class="title">
+              뭉클딜 받기는 앱에서만 가능해요!
+            </p>
+            <p class="desc">아래의 여행정보로  뭉클딜 혜택을 누려볼까요?</p>
+          </div>
+        </div>
+        <div class="layerpop__contents">
+          <div class="select-tag__wrap">
+            <div class="select-tag">
+              <p class="img"><img src="../../assets/images/demo/img_recommend.png" alt=""></p>
+              <p class="txt">4인 가족</p>
+            </div>
+            <div class="select-tag">
+              <p class="img"><img src="../../assets/images/demo/img_recommend.png" alt=""></p>
+              <p class="txt">제주도</p>
+            </div>
+            <div class="select-tag">
+              <p class="img"><img src="../../assets/images/demo/img_recommend.png" alt=""></p>
+              <p class="txt">성수기</p>
+            </div>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__primary">앱으로 뭉클딜 알림 받기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // 뭉클딜 등록 팝업 (웹) -->
+  </div>
+
+  <script>
+    var swiper = new Swiper(".main-tag__slide .swiper-container", {
+      initialSlide: 2,
+      loop: true,
+      grabCursor: true,
+      slidesPerView: 3,
+      effect: "creative",
+      observer:true,
+      observeParents:true,
+      autoplay: {
+        delay: 1500,
+      },
+      creativeEffect: {
+        perspective: true,
+        limitProgress: 3,
+        prev: {
+          translate: ["-65%", "-10%", -100],
+          origin: "top",
+        },
+        next: {
+          translate: ["65%", "-10%", -100],
+          origin: "top",
+        }
+      }
+    });
+
+    $(document).ready(function () {
+      $('.main-tag__btn').on('click', function (e) {
+        e.preventDefault();
+        var emptyThumb = $('.main-tag__thumb:not(.active)').first();
+
+        if (emptyThumb.length) {
+          // 클릭된 버튼의 HTML을 복제
+          var content = $(this).html();
+          emptyThumb.html(content).addClass('active');
+        }
+      });
+
+      $('.main-tag__thumb').on('click', function () {
+        if ($(this).hasClass('active')) {
+          $(this).html('').removeClass('active');
+        }
+      });
+    });
+
+    // 타이핑 효과
+    TypeHangul.type('.typing-ani', {
+      intervalType:60
+    });
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,320 @@
+.payment {
+  &__wrap {
+    .checkbox__wrap {
+      @include flexbox($js:start, $ai:start);
+      .checkbox {
+        & + .checkbox {
+          margin-left: 2rem;
+        }
+      }
+      input {
+        & + label {
+          span {
+            font-weight: 400;
+          }
+        }
+      }
+      .checkbox {
+        margin-top: 0;
+      }
+      .btn-checkbox__more {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+  &__top {
+    padding: 2rem 2rem 3rem;
+    & + & {
+      border-top: 1px solid #EEF0F2;
+      margin: 0 2rem;
+      padding: 3rem 0;
+    }
+    .tit__wrap {
+      .sub-name {
+        padding-bottom: .8rem;
+        font-size: $font_size_s;
+        color: $primary_gray;
+      }
+      .name {
+        font-size: $font_size_xl;
+        font-weight: 700;
+        line-height: 1.4;
+      }
+    }
+    .travelers-count {
+      @include flexbox($js:between);
+      padding-top: 2rem;
+      .tit {
+        font-size: $font_size_xxs;
+        color: $primary_gray;
+        font-weight: 400;
+      }
+      .num {
+        font-size: $font_size_xxs;
+        font-weight: 400;
+      }
+      & + .date-box {
+        margin-top: .8rem;
+      }
+    }
+    .date-box {
+      background-color: #F8F8F8;
+      @include flexbox($js:between);
+      margin-top: 1.6rem;
+      padding: 1.6rem 0;
+      border-radius: 2rem;
+      & > div {
+        flex: 1;
+        text-align: center;
+      }
+      .tit {
+        padding-bottom: .8rem;
+        font-size: $font_size_xxs;
+        color: $primary_gray;
+        & ~ .tit {
+          padding-top: 2.4rem;
+        }
+      }
+      .date {
+        font-size: $font_size_s;
+      }
+    }
+    .txt-primary {
+      font-size: $font_size_xs;
+      font-weight: 400;
+      padding: .8rem 0 0 .4rem;
+    }
+    .total-price {
+      padding-top: 1.6rem;
+      font-size: $font_size_xl;
+      font-weight: 600;
+      text-align: right;
+    }
+    .badge {
+      margin-bottom: .8rem;
+    }
+    .total__accordion {
+      padding: .8rem .4rem;
+      .accordion__tit {
+        @include flexbox($js:between);
+        .ft-s {
+          font-weight: 400;
+          color: $primary_gray;
+        }
+        .ft-default {
+          font-weight: 400;
+        }
+        .btn-arrow {
+          margin-left: .4rem;
+        }
+      }
+      .total-detail__list {
+        @include flexbox($js:between);
+        padding-top: .8rem;
+        .ft-xxs {
+          padding-left: 1.2rem;
+          color: $primary_gray;
+          font-weight: 400;
+        }
+        .ft-s {
+          font-weight: 400;
+        }
+      }
+    }
+    .input__con {
+      padding-top: 1.6rem;
+    }
+    .reservation-top {
+      padding-bottom: 1.2rem;
+    }
+    .reservation-bottom {
+      padding-top: .8rem;
+    }
+    .reservation-list__con {
+      padding-top: 1.6rem;
+      li + li {
+        padding-top: .4rem;
+      }
+    }
+  }
+  &__con {
+    padding: 3rem 2rem;
+    .tit__wrap {
+      padding-bottom: 2rem;
+      &.type2 {
+        padding-bottom: 1.2rem;
+      }
+      .title {
+        font-size: $font_size_xl;
+        font-weight: 600;
+      }
+      .desc {
+        padding-top: .8rem;
+        font-size: $font_size_xxs;
+        color: $primary_gray;
+        line-height: 1.4;
+      }
+    }
+  }
+  &__list {
+    & ~ .payment__list {
+      padding-top: 3rem;
+    }
+  }
+  &__sale {
+    .input-point {
+      @include flexbox();
+      width: 100%;
+      padding-top: 1.2rem;
+      & > div {
+        position: relative;
+        flex: 1;
+      }
+      .input-label {
+        position: absolute;
+        left: 1.4rem;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 0;
+        padding-bottom: 0;
+        font-size: $font_size_s;
+        font-weight: 600;
+        color: $primary_black;
+      }
+      .input-default {
+        text-align: right;
+        padding-right: 2.5rem;
+        font-size: $font_size_s;
+        &::placeholder {
+          color: $primary_gray;
+          font-size: $font_size_xxs;
+          font-weight: 400;
+        }
+        &.active {
+          padding-right: 2.6rem;
+          & + .unit {
+            font-size: $font_size_s;
+            color: $primary_black;
+          }
+        }
+      }
+      .unit {
+        position: absolute;
+        right: 1.4rem;
+        top: 51%;
+        transform: translateY(-50%);
+        font-size: $font_size_xxs;
+        color: $primary_gray;
+        font-weight: 400;
+      }
+      .btn-full__black {
+        width: 6.9rem;
+        font-size: $font_size_xxs;
+        margin-left: .4rem;
+      }
+    }
+    .txt-point {
+      @include flexbox($js:end);
+      font-size: $font_size_xxs;
+      font-weight: 400;
+      padding-top: 1.2rem;
+      .divider {
+        color: #EEF0F2;
+        padding: 0 .4rem;
+      }
+    }
+  }
+  &__total {
+    background-color: #F8F8F8;
+    border-radius: 2rem;
+    padding: 2.4rem;
+    margin-top: 3rem;
+    .title {
+      padding-bottom: 2.4rem;
+      font-size: $font_size_xl;
+      font-weight: 600;
+    }
+    .pay-list {
+      li {
+        @include flexbox($js:between);
+        & + li {
+          padding-top: 1.2rem;
+        }
+      }
+      .tit {
+        font-size: $font_size_s;
+        color: $primary_gray;
+        font-weight: 400;
+      }
+      .money {
+        font-size: $font_size_default;
+        font-weight: 400;
+      }
+      .total {
+        padding-top: 2.4rem;
+        .tit {
+          font-size: $font_size_default;
+          color: $primary_black;
+          font-weight: 500;
+        }
+        .money {
+          font-size: $font_size_xxl;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.box-yellow__wrap {
+  @include flexbox($js:between);
+  background-color: $highlight_color;
+  padding: 1.4rem 1.2rem;
+  border-radius: 1.6rem;
+  .ft-xxs {
+    padding-top: .8rem;
+    font-weight: 400;
+  }
+}
+
+.coupon-list {
+  &__con {
+    display: block;
+    padding: 2rem 1.6rem;
+    border: 1px solid #EEF0F2;
+    border-radius: 2rem;
+    & + & {
+      margin-top: 1.2rem;
+    }
+    &.disabled {
+      background-color: #F8F8F8;
+      border-color: #F8F8F8;
+    }
+    .coupon {
+      &-name {
+        padding-bottom: .8rem;
+        font-size: $font_size_default;
+        font-weight: 600;
+        line-height: 1.5;
+      }
+      &-sub {
+        padding-bottom: 1.6rem;
+        font-size: $font_size_xl;
+        font-weight: 700;
+        color: $primary_color;
+      }
+      &-use {
+        padding-bottom: .8rem;
+        font-size: $font_size_xxs;
+        color: $primary_gray;
+        font-weight: 400;
+      }
+      &-period {
+        font-size: $font_size_xxs;
+        font-weight: 400;
+      }
+    }
+  }
+}

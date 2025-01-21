@@ -1,0 +1,68 @@
+.mkcle-home__wrap {
+  .btn-header {
+    padding-bottom: 4rem;
+  }
+  .tit__wrap {
+    &.align__center {
+      padding-bottom: 1.2rem;
+    }
+    .ft-xxl {
+      line-height: 1.5;
+    }
+    .desc {
+      padding-top: .8rem;
+      color: $primary_gray;
+      font-size: $font_size_xxs;
+    }
+  }
+  .tit__member {
+    padding-bottom: 4rem;
+  }
+  .box-gray__wrap {
+    .btn__wrap {
+      padding-top: 1.6rem;
+    }
+  }
+}
+
+.no-contents__wrap {
+  text-align: center;
+  .title {
+    color: $primary_black;
+    font-size: $font_size_xl;
+    font-weight: 600;
+    line-height: 1.38;
+  }
+  .desc {
+    padding-top: 2rem;
+    color: $primary_black;
+    font-size: $font_size_s;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+}
+
+.no-mymkcle__wrap {
+  max-width: 76%;
+  margin: 0 auto;
+  .splide__default {
+    margin-bottom: 2.4rem;
+  }
+  .ft-s {
+    padding-top: 2.4rem;
+    color: $primary_gray;
+  }
+}
+
+.mkcle-detail__wrap {
+  .box-purple__wrap {
+    @include flexbox($js:between);
+    margin-top: 2.4rem;
+    .ft-xxs {
+      font-weight: 400;
+    }
+    .txt-primary {
+      margin-right: .8rem;
+    }
+  }
+}

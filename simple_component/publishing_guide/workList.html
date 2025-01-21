@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title></title>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<!-- style -->
+	<link type="text/css" rel="stylesheet" href="../assets/css/common.css" />
+	<style>
+		body {
+			margin: 0;
+		}
+
+		.is-emphasis {
+			font-weight: 700;
+			color: #ff706e;
+		}
+
+		.index-wrap {
+			box-sizing: border-box;
+			min-width: 1900px;
+			padding: 20px;
+		}
+
+		.index-title {
+			font-size: 30px;
+			line-height: 40px;
+			margin: 0 0 20px;
+		}
+
+		.index-links:before {
+			content: '';
+			display: table;
+		}
+
+		.index-links__inner {
+			margin: -10px 0 0 -10px;
+		}
+
+		.index-links__inner:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+
+		.index-links a {
+			display: block;
+			margin: 10px 0 0 10px;
+			float: left;
+			padding: 5px 15px;
+			font-size: 14px;
+			line-height: 20px;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			background: #666;
+		}
+
+		.index-gnb {
+			margin: 20px 0;
+		}
+
+		.index-bottom {
+			position: fixed;
+			z-index: 1000;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			min-width: 1900px;
+			box-sizing: border-box;
+			padding: 10px 20px;
+			background: rgba(0, 0, 0, 0.4);
+		}
+
+		.index-bottom a {
+			background-color: #066cb3;
+		}
+
+		.index-section {
+			border-radius: 5px;
+			background-color: #fff;
+		}
+
+		.index-section+.index-section {
+			margin-top: 20px;
+		}
+
+		.index-section--clicked {
+			-webkit-animation: index-section-clicked 0.8s linear;
+			animation: index-section-clicked 0.8s linear;
+		}
+
+		@-webkit-keyframes index-section-clicked {
+			0% {
+				background-color: rgba(255, 255, 255, 1);
+			}
+
+			30% {
+				background-color: rgba(255, 202, 222, 1);
+			}
+
+			70% {
+				background-color: rgba(255, 202, 222, 1);
+			}
+
+			100% {
+				background-color: rgba(255, 255, 255, 1);
+			}
+		}
+
+		@keyframes index-section-clicked {
+			0% {
+				background-color: rgba(255, 255, 255, 1);
+			}
+
+			30% {
+				background-color: rgba(255, 202, 222, 1);
+			}
+
+			70% {
+				background-color: rgba(255, 202, 222, 1);
+			}
+
+			100% {
+				background-color: rgba(255, 255, 255, 1);
+			}
+		}
+
+		.index-section__title {
+			margin: 0;
+			padding: 5px 15px;
+			font-size: 14px;
+			line-height: 20px;
+			color: #fff;
+			border-radius: 5px 5px 0 0;
+			background: #333;
+		}
+
+		.index-table>table {
+			width: 100%;
+			table-layout: fixed;
+			margin: 0;
+			padding: 0;
+			border-spacing: 0;
+			box-sizing: border-box;
+		}
+
+		.index-table>table>thead>tr>th,
+		.index-table>table>tbody>tr>th,
+		.index-table>table>tbody>tr>td {
+			box-sizing: border-box;
+			font-size: 12px;
+			line-height: 18px;
+			text-align: left;
+			padding: 5px 10px;
+			border: 0 solid #cdcdcd;
+			border-width: 0 1px 1px 0;
+			background: none;
+			word-break: keep-all;
+			word-wrap: break-word;
+		}
+
+		.index-table>table>tbody>tr:hover>th,
+		.index-table>table>tbody>tr:hover>td {
+			background-color: #f6f6f6;
+		}
+
+		.index-table>table>thead>tr>th:first-child,
+		.index-table>table>tbody>tr>th:first-child,
+		.index-table>table>tbody>tr>td:first-child {
+			border-left-width: 1px;
+		}
+
+		.index-table>table>thead>tr>th {
+			border-top-width: 1px;
+		}
+
+		.index-table>table>thead>tr>th,
+		.index-table>table>tbody>tr>th {
+			background-color: #e8e8e8;
+		}
+
+		.index-table>table>tbody>tr:last-child>td:first-child {
+			border-radius: 0 0 0 5px;
+		}
+
+		.index-table>table>tbody>tr:last-child>td:last-child {
+			border-radius: 0 0 5px 0;
+		}
+
+		.index-status {
+			display: inline-block;
+			vertical-align: top;
+			padding: 3px 8px;
+			margin: -3px 0;
+			background: #999;
+			color: #fff;
+			border-radius: 5px;
+		}
+
+		.index-status--ing {
+			background-color: #cf8800;
+		}
+
+		.index-status--end {
+			background-color: #00a6a0;
+		}
+
+		.index-status--moding {
+			background-color: #ff4594;
+		}
+
+		.index-log {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.index-log__item {
+			position: relative;
+			padding-left: 80px;
+		}
+
+		.index-log__item__date {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+
+		.index-text {
+			margin-bottom: 20px;
+		}
+
+		.index-type {
+			color: #2b5cd9;
+		}
+	</style>
+	<!-- //style -->
+</head>
+
+<body>
+	<div class="index-wrap">
+		<h1 class="index-title"></h1>
+		<div class="index-gnb">
+			<div class="index-links">
+				<div class="index-links__inner">
+					<a href="./guide_popup.html" target="_blank">레이어 팝업 가이드</a>
+					<a href="./guide_component.html" target="_blank">컴포넌트 가이드</a>
+				</div>
+			</div>
+		</div>
+		<div class="index-bottom">
+			<div class="index-links">
+				<div class="index-links__inner" id="nav"></div>
+			</div>
+		</div>
+
+		<!--
+			<div class="index-text">기타 문구</div>
+			-->
+
+		<div class="index-datas" id="indexTable"></div>
+	</div>
+
+	<div class="index-fake-botttom"></div>
+
+	<!-- script -->
+	<script type="text/javascript" src="../assets/js/jquery-3.6.1.min.js"></script>
+	<script>
+		var title = '뭉클트립';
+		var tableData = [
+			/*
+			{
+				depth1: '',
+				data: [
+					{
+						id: '',
+						depth2: '',
+						depth3: '',
+						depth4: '',
+						
+						path: '',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [
+							//{ date: '', text: '', },
+						],
+					},
+				],
+			},
+			*/
+			{
+				depth1: '홈',
+				data: [
+					{
+						id: 'main_active',
+						depth2: '뭉클딜 홈(최초)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/00_home/main.html',
+						status: 'end',
+						create: '',
+						log: [],
+					},
+          {
+						id: 'main_active',
+						depth2: '뭉클딜 홈(활성화)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/00_home/main_active.html',
+						status: 'end',
+						create: '',
+						log: [],
+					},
+          {
+						id: 'main_nodeal',
+						depth2: '뭉클딜 홈(뭉클딜 없음, 뭉클딜 만든 이력 있음)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/00_home/main_nodeal.html',
+						status: 'end',
+						create: '',
+						log: [],
+					},
+          {
+						id: 'main_popup',
+						depth2: '뭉클딜 홈(팝업)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/00_home/main_popup.html',
+						status: 'end',
+						create: '',
+						log: [],
+					},
+          {
+						id: 'web',
+						depth2: '뭉클딜 홈(웹)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/00_home/web.html',
+						status: 'end',
+						create: '',
+						log: [],
+					}
+				],
+			},
+      {
+				depth1: '뭉클딜작성',
+				data: [
+					{
+						id: 'mkcle_deal_create',
+						depth2: '작성1',
+						depth3: '',
+						depth4: '',
+						
+						path: '/01_mkcle_create/mkcle_deal_create.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mkcle_deal_create_02',
+						depth2: '작성2',
+						depth3: '',
+						depth4: '',
+						
+						path: '/01_mkcle_create/mkcle_deal_create_02.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [{date:'참고', text:'여행 취향 바텀 시트 포함/토스트팝업 포함'}],
+					},
+          {
+						id: 'mkcle_deal_create_02_hotel',
+						depth2: '작성2_호텔 선택',
+						depth3: '',
+						depth4: '',
+						
+						path: '/01_mkcle_create/mkcle_deal_create_02_hotel.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [{date:'참고', text:'장소 변경 알럿 포함'}],
+					},
+          {
+						id: 'mkcle_deal_create_02_complete',
+						depth2: '작성2_완료',
+						depth3: '',
+						depth4: '',
+						
+						path: '/01_mkcle_create/mkcle_deal_create_02_complete.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mkcle_deal_create_03',
+						depth2: '작성3',
+						depth3: '',
+						depth4: '',
+						
+						path: '/01_mkcle_create/mkcle_deal_create_03.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [{date:'참고', text:'하단 js 참고'}],
+					},
+          {
+						id: 'mkcle_deal_create_03_complete',
+						depth2: '작성3_완료팝업',
+						depth3: '',
+						depth4: '',
+						
+						path: '/01_mkcle_create/mkcle_deal_create_03_complete.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [{date:'참고', text:'팝업 강제 호출 상태(하단 js 참고)'}],
+					},
+				],
+			},
+      {
+				depth1: '뭉클딜',
+				data: [
+					{
+						id: 'mkcle_deal_home',
+						depth2: '홈',
+						depth3: '',
+						depth4: '',
+						
+						path: '/02_mkcle_detail/mkcle_deal_home.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mkcle_deal_detail',
+						depth2: '홈',
+						depth3: '상세',
+						depth4: '',
+						
+						path: '/02_mkcle_detail/mkcle_deal_detail.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mkcle_deal_hide',
+						depth2: '홈',
+						depth3: '상세',
+						depth4: '숨긴 뭉클딜',
+						
+						path: '/02_mkcle_detail/mkcle_deal_hide.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mkcle_deal_modify',
+						depth2: '홈',
+						depth3: '편집',
+						depth4: '',
+						
+						path: '/02_mkcle_detail/mkcle_deal_modify.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+				],
+			},
+      {
+				depth1: '검색',
+				data: [
+					{
+						id: 'search_home',
+						depth2: '홈',
+						depth3: '',
+						depth4: '',
+						
+						path: '/03_mkcle_search/search_home.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [{date:'참고', text:"일정 선택/인원 선택/나이 선택/개월 수 선택 바텀 시트 포함"}],
+					},
+          {
+						id: 'search_category',
+						depth2: '홈',
+						depth3: '카테고리',
+						depth4: '',
+						
+						path: '/03_mkcle_search/search_category.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'search_nodata',
+						depth2: '홈',
+						depth3: '검색결과 없을 때',
+						depth4: '',
+						
+						path: '/03_mkcle_search/search_nodata.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'search_hasdata',
+						depth2: '홈',
+						depth3: '검색결과 있을 때',
+						depth4: '',
+						
+						path: '/03_mkcle_search/search_hasdata.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'search_filter',
+						depth2: '홈',
+						depth3: '검색 필터',
+						depth4: '',
+						
+						path: '/03_mkcle_search/search_filter.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'search_map',
+						depth2: '홈',
+						depth3: '검색 지도로 보기(뭉클딜, 바로예약)',
+						depth4: '',
+						
+						path: '/03_mkcle_search/search_map.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'search_map2',
+						depth2: '홈',
+						depth3: '검색 지도로 보기(이 지역으로 재검색)',
+						depth4: '',
+						
+						path: '/03_mkcle_search/search_map2.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					}
+				],
+			},
+      {
+				depth1: '상품상세',
+				data: [
+					{
+						id: 'hotel_detail',
+						depth2: '숙소 상세',
+						depth3: '',
+						depth4: '',
+						
+						path: '/04_product_detail/hotel_detail.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [
+							{ date: '참고', text: '뭉클한 혜택 포함, 일정 선택/인원 선택 바텀 시트 포함, 알림 알럿 포함', },
+						],
+					},
+          {
+						id: 'hotel_detail_web',
+						depth2: '숙소 상세_모바일웹 진입',
+						depth3: '',
+						depth4: '',
+						
+						path: '/04_product_detail/hotel_detail_web.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [
+							{ date: '참고', text: '뭉클딜 받기 버튼 클릭 시 팝업 포함', },
+						],
+					},
+          {
+						id: 'facilities',
+						depth2: '숙소 상세',
+						depth3: '편의시설',
+						depth4: '',
+						
+						path: '/04_product_detail/facilities.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'room_detail',
+						depth2: '객실 상세',
+						depth3: '',
+						depth4: '',
+						
+						path: '/04_product_detail/room_detail.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'all_picture',
+						depth2: '객실 상세',
+						depth3: '전체 사진',
+						depth4: '',
+						
+						path: '/04_product_detail/all_picture.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'all_picture_full',
+						depth2: '객실 상세',
+						depth3: '전체 슬라이드 사진',
+						depth4: '',
+						
+						path: '/04_product_detail/all_picture_full.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'hotel_detail_popup',
+						depth2: '상품 상세',
+						depth3: '뭉클한 혜택(팝업)',
+						depth4: '',
+						
+						path: '/04_product_detail/hotel_detail_popup.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'review_list',
+						depth2: '상품 상세',
+						depth3: '리뷰',
+						depth4: '',
+						
+						path: '/04_product_detail/review_list.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'payment',
+						depth2: '상품 상세',
+						depth3: '결제',
+						depth4: '',
+						
+						path: '/04_product_detail/payment.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [
+              { date: '참고', text: '결제 중단 알럿 포함', },
+            ],
+					},
+          {
+						id: 'coupon_list',
+						depth2: '상품 상세',
+						depth3: '결제',
+						depth4: '쿠폰',
+						
+						path: '/04_product_detail/coupon_list.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'activity_detail',
+						depth2: '액티비티 상세',
+						depth3: '',
+						depth4: '',
+						
+						path: '/04_product_detail/activity_detail.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'payment_activity',
+						depth2: '액티비티 상세',
+						depth3: '결제',
+						depth4: '',
+						
+						path: '/04_product_detail/payment_activity.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [
+              { date: '참고', text: '결제 중단 알럿 포함', },
+            ],
+					},
+          {
+						id: 'tour_detail',
+						depth2: '투어 상세',
+						depth3: '',
+						depth4: '',
+						
+						path: '/04_product_detail/tour_detail.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'payment_tour',
+						depth2: '투어 상세',
+						depth3: '결제',
+						depth4: '',
+						
+						path: '/04_product_detail/payment_tour.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [
+              { date: '참고', text: '결제 중단 알럿 포함', },
+            ],
+					},
+          {
+						id: 'seller_detail',
+						depth2: '판매자 미니 홈',
+						depth3: '',
+						depth4: '',
+						
+						path: '/04_product_detail/seller_detail.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'seller_product_list',
+						depth2: '판매자 미니 홈',
+						depth3: '판매 중인 상품',
+						depth4: '',
+						
+						path: '/04_product_detail/seller_product_list.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'chat',
+						depth2: '판매자 미니 홈',
+						depth3: '채팅',
+						depth4: '',
+						
+						path: '/04_product_detail/chat.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+				],
+			},
+      {
+				depth1: '트래블카트',
+				data: [
+					{
+						id: 'travel_cart',
+						depth2: '트래블카트',
+						depth3: '',
+						depth4: '',
+						
+						path: '/05_travel_cart/travel_cart.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [
+							{ date: '참고', text: '상품 삭제 알럿 포함', },
+						],
+					},
+          {
+						id: 'travel_cart_all',
+						depth2: '트래블카트',
+						depth3: '전체 보기',
+						depth4: '',
+						
+						path: '/05_travel_cart/travel_cart_all.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [
+							{ date: '참고', text: '상품 삭제 알럿 포함', },
+						],
+					},
+          {
+						id: 'travel_cart_nodata',
+						depth2: '트래블카트(해당 날짜 상품도 없고, 날짜 미정도 없을 때)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/05_travel_cart/travel_cart_nodata.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'travel_cart_nodata2',
+						depth2: '트래블카트(날짜에 상품 없지만, 미정 있을 때)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/05_travel_cart/travel_cart_nodata2.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'payment_travelcart',
+						depth2: '트래블카트',
+						depth3: '결제',
+						depth4: '',
+						
+						path: '/05_travel_cart/payment_travelcart.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+				],
+			},
+      {
+				depth1: '커뮤니티',
+				data: [
+					{
+						id: 'community_home',
+						depth2: '뭉클딜 홈',
+						depth3: '',
+						depth4: '',
+						
+						path: '/06_community/community_home.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'community_detail',
+						depth2: '뭉클딜 홈',
+						depth3: '상세',
+						depth4: '',
+						
+						path: '/06_community/community_detail.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'article_home',
+						depth2: '아티클 홈',
+						depth3: '',
+						depth4: '',
+						
+						path: '/06_community/article_home.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'article_detail',
+						depth2: '아티클 홈',
+						depth3: '상세',
+						depth4: '',
+						
+						path: '/06_community/article_detail.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'community_search',
+						depth2: '검색',
+						depth3: '',
+						depth4: '',
+						
+						path: '/06_community/community_search.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'community_search_hasdata',
+						depth2: '검색(결과 있을 때)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/06_community/community_search_hasdata.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'community_search_nodata',
+						depth2: '검색(결과 없을 때)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/06_community/community_search_nodata.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'community_review',
+						depth2: '후기 작성 리스트',
+						depth3: '',
+						depth4: '',
+						
+						path: '/06_community/community_review.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'community_review_form',
+						depth2: '후기 작성 리스트',
+						depth3: '작성',
+						depth4: '',
+						
+						path: '/06_community/community_review_form.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+				],
+			},
+      {
+				depth1: '마이페이지',
+				data: [
+					{
+						id: 'mypage_logout',
+						depth2: '비로그인',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/mypage_logout.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mypage_login',
+						depth2: '로그인',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/mypage_login.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'login',
+						depth2: '로그인',
+						depth3: '연락처',
+						depth4: '',
+						
+						path: '/08_mypage/login.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'login_email',
+						depth2: '로그인',
+						depth3: '이메일',
+						depth4: '',
+						
+						path: '/08_mypage/login_email.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'join_agree',
+						depth2: '회원가입',
+						depth3: '약관동의',
+						depth4: '',
+						
+						path: '/08_mypage/join_agree.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'join_phone',
+						depth2: '회원가입',
+						depth3: '약관동의',
+						depth4: '휴대폰 인증',
+						
+						path: '/08_mypage/join_phone.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'join_email',
+						depth2: '회원가입',
+						depth3: '약관동의',
+						depth4: '이메일 가입',
+						
+						path: '/08_mypage/join_email.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'profile_modify_phone',
+						depth2: '프로필 수정(휴대폰)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/profile_modify_phone.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'profile_modify_email',
+						depth2: '프로필 수정(이메일)',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/profile_modify_email.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mypage_coupon',
+						depth2: '쿠폰 내역',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/mypage_coupon.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mypage_reservation',
+						depth2: '예약 내역',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/mypage_reservation.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'reservation_search_hasdata',
+						depth2: '예약 내역',
+						depth3: '검색 내용 있을 때',
+						depth4: '',
+						
+						path: '/08_mypage/reservation_search_hasdata.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'reservation_search_nodata',
+						depth2: '예약 내역',
+						depth3: '검색 내용 없을 때',
+						depth4: '',
+						
+						path: '/08_mypage/reservation_search_nodata.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'reservation_detail_before',
+						depth2: '예약 내역',
+						depth3: '상세',
+						depth4: '',
+						
+						path: '/08_mypage/reservation_detail_before.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'reservation_detail_after',
+						depth2: '예약 내역',
+						depth3: '상세(이용 후)',
+						depth4: '',
+						
+						path: '/08_mypage/reservation_detail_after.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'reservation_detail_cancle',
+						depth2: '예약 내역',
+						depth3: '상세(예약 취소)',
+						depth4: '',
+						
+						path: '/08_mypage/reservation_detail_cancle.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'reservation_detail_cancle_select',
+						depth2: '예약 내역',
+						depth3: '상세(예약 취소_체크박스)',
+						depth4: '',
+						
+						path: '/08_mypage/reservation_detail_cancle_select.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'reservation_detail_cancle_after',
+						depth2: '예약 내역',
+						depth3: '상세(예약 취소 완료)',
+						depth4: '',
+						
+						path: '/08_mypage/reservation_detail_cancle_after.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'wishlist',
+						depth2: '찜하기',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/wishlist.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mypage_review',
+						depth2: '내 후기',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/mypage_review.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'mypage_review_modify',
+						depth2: '내 후기',
+						depth3: '수정',
+						depth4: '',
+						
+						path: '/08_mypage/mypage_review_modify.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'point_list',
+						depth2: '포인트 내역',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/point_list.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'notice_list',
+						depth2: '공지사항',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/notice_list.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'notice_view',
+						depth2: '공지사항',
+						depth3: '상세',
+						depth4: '',
+						
+						path: '/08_mypage/notice_view.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'qna',
+						depth2: '자주 묻는 질문',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/qna.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+          {
+						id: 'service',
+						depth2: '서비스 이용 약관',
+						depth3: '',
+						depth4: '',
+						
+						path: '/08_mypage/service.html',
+						status: 'end',
+						create: '',
+						update: '',
+						log: [],
+					},
+				],
+			},
+    ];
+
+		var html = '';
+		var navHTML = '';
+		var totalIndex = 0;
+		var dates = (function () {
+			var array = [];
+
+			function add(date) {
+				if (typeof date === 'string' && date.length && array.indexOf(date) === -1) {
+					array.push(date);
+				}
+			}
+
+			$.each(tableData, function (i) {
+				var sectionData = tableData[i].data;
+				$.each(sectionData, function (j) {
+					add(this.create);
+					$.each(sectionData[j].log, function (l) {
+						add(this.date);
+					});
+				});
+			});
+
+			array.sort();
+
+			return array;
+		})();
+		var latestDate = dates[dates.length - 1];
+
+		$.each(tableData, function (i) {
+			var sectionIndex = i;
+			var sectionData = tableData[i].data;
+			var tableHTML = '';
+
+			$.each(sectionData, function (j) {
+				var returnVal = function (key, secondTestKey) {
+					var val = sectionData[j][key];
+					var secondTestVal = sectionData[j][secondTestKey];
+					var prevIndex = j - 1;
+					var isPrint = true;
+					if (prevIndex >= 0) {
+						if (sectionData[prevIndex][key] === val) {
+							isPrint = false;
+						}
+						if (typeof secondTestKey === 'string' && secondTestKey.length && !sectionData[j].depthOnly) {
+							if (sectionData[prevIndex][key] === val && sectionData[prevIndex][secondTestKey] === secondTestVal) {
+								isPrint = false;
+							} else {
+								isPrint = true;
+							}
+						}
+					}
+					return isPrint ? val.replace(/\n/g, '<br>') : '';
+				};
+				var id = returnVal('id');
+				//var type = returnVal('type', 'depth2');
+				var depth2 = returnVal('depth2');
+				var depth3 = returnVal('depth3');
+				var depth4 = returnVal('depth4');
+				var path = (function () {
+					var val = sectionData[j].path;
+					var href = '';
+					if (val.match(/^\.\//g)) {
+						href = val;
+					} else {
+						href = '../html' + val;
+					}
+					return val.length ? '<a href="' + href + '" target="_blank">' + val + '</a>' : '';
+				})();
+				var status = (function () {
+					var val = sectionData[j].status;
+					var text = '';
+					if (val === 'ing') {
+						text = '작업중';
+					} else if (val === 'end') {
+						text = '작업완료';
+					} else if (val === 'moding') {
+						text = '수정중';
+					}
+					return val.length ? '<span class="index-status index-status--' + val + '">' + text + '</span>' : '';
+				})();
+				var create = this.create;
+				var update = '';
+				var log = (function () {
+					var val = sectionData[j].log;
+					var length = val.length;
+					var html = '<ul class="index-log">';
+					$.each(val, function (l) {
+						var date = this.date;
+						html +=
+							'<li class="index-log__item' + (date === latestDate ? ' is-emphasis' : '') + '"><div class="index-log__item__date">[' + date + ']</div>' + this.text.replace(/\n/g, '<br>') + '</li>';
+						if (length - 1 === l) {
+							update = date;
+						}
+					});
+					html += '</ul>';
+
+					return html;
+				})();
+
+				tableHTML +=
+					'<tr>' +
+					'<td>' +
+					(j + 1) +
+					'</td>' +
+					'<td>' +
+					id +
+					'</td>' +
+					//'<td class="index-type">' +
+					//type +
+					//'</td>' +
+					'<td>' +
+					depth2 +
+					'</td>' +
+					'<td>' +
+					depth3 +
+					'</td>' +
+					'<td>' +
+					depth4 +
+					'</td>' +
+					'<td>' +
+					path +
+					'</td>' +
+					'<td>' +
+					status +
+					'</td>' +
+					'<td class="' +
+					(create === latestDate ? ' is-emphasis' : '') +
+					'">' +
+					create +
+					'</td>' +
+					'<td class="' +
+					(update === latestDate ? ' is-emphasis' : '') +
+					'">' +
+					update +
+					'</td>' +
+					'<td>' +
+					log +
+					'</td>' +
+					'</tr>';
+
+				totalIndex++;
+			});
+
+			navHTML += '<a href="#section' + i + '">' + tableData[i].depth1 + '</a>';
+
+			html +=
+				'<div class="index-section" id="section' +
+				i +
+				'">' +
+				'<h2 class="index-section__title">' +
+				tableData[i].depth1 +
+				'</h2>' +
+				'<div class="index-table">' +
+				'<table>' +
+				'<colgroup>' +
+				'<col width="50px" />' +
+				'<col width="200px" />' +
+				//'<col width="80px" />' +
+				'<col width="300px" />' +
+				'<col width="160px" />' +
+				'<col width="160px" />' +
+				'<col width="" />' +
+				'<col width="100px" />' +
+				'<col width="110px" />' +
+				'<col width="110px" />' +
+				'<col width="300px" />' +
+				'</colgroup>' +
+				'<thead>' +
+				'<tr>' +
+				'<th>No</th>' +
+				'<th>ID</th>' +
+				//'<th>type</th>' +
+				'<th>depth2</th>' +
+				'<th>depth3</th>' +
+				'<th>depth4</th>' +
+				'<th>path</th>' +
+				'<th>status</th>' +
+				'<th>create</th>' +
+				'<th>update</th>' +
+				'<th>log</th>' +
+				'</tr>' +
+				'</thead>' +
+				'<tbody>' +
+				tableHTML +
+				'</tbody>' +
+				'</table>' +
+				'</div>' +
+				'</div>';
+		});
+
+		$('title, .index-title').text(title);
+		$('#nav').append(navHTML);
+		$('#indexTable').append(html);
+
+		var $nav = $('.index-bottom');
+		var $doc = $(document);
+		var $win = $(window);
+
+		function paddingBottom() {
+			$('.index-fake-botttom').css('height', $nav.outerHeight());
+		}
+
+		var clickedTimer = null;
+
+		$doc.on('click', '#nav a', function () {
+			var $this = $(this);
+			var href = $this.attr('href');
+			var $target = $(href);
+			var $sections = $('.index-section');
+
+			$sections.removeClass('index-section--clicked');
+
+			clearTimeout(clickedTimer);
+
+			clickedTimer = setTimeout(function () {
+				$target.addClass('index-section--clicked');
+			}, 100);
+		});
+
+		$win
+			.on('scroll', function () {
+				var scrollLeft = $win.scrollLeft();
+				$nav.css('margin-left', -scrollLeft);
+			})
+			.on('resize', function () {
+				paddingBottom();
+			})
+			.on('load', function () {
+				paddingBottom();
+			});
+	</script>
+	<!-- //script -->
+</body>
+
+</html>

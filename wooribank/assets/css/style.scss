@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@import '_define';
+
+// layout
+:root {
+  --safeTop: env(safe-area-inset-top);
+  --safeRight: env(safe-area-inset-right);
+  --safeBottom: env(safe-area-inset-bottom);
+  --safeLeft: env(safe-area-inset-left);
+}
+
+#wrap {
+  padding-top: calc(env(safe-area-inset-top) + 4.4rem);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+#header {
+  position:fixed;
+  width:100vw;
+  height:calc(env(safe-area-inset-top) + 4.4rem);
+  left:0;
+  right:0;
+  top:0;
+  z-index: 10;
+  background:#fff;
+  .inner {
+    position:relative;
+    @include flexbox();
+  }
+  [class*='btn-'] {
+    position:absolute;
+    top:1rem;
+    width:2.4rem;
+    height: 2.4rem;
+    background-color: #333A40;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+  }
+  h1 {
+    text-align: center;
+    font-size: $font_size_default;
+    font-weight: 500;
+    color:$gray_01;
+    line-height: 4.4rem;
+  }
+  .btn-back {
+    -webkit-mask:url($image_root+"common/ico_back.svg") no-repeat center;
+    mask:url($image_root+"common/ico_back.svg") no-repeat center;
+    left:1.6rem;
+  }
+  .btn-menu {
+    -webkit-mask:url($image_root+"common/ico_menu.svg") no-repeat center;
+    mask:url($image_root+"common/ico_menu.svg") no-repeat center;
+    right: 1.6rem;
+  }
+}
+
+.section {
+  padding: 0 2rem;
+  &.section-top {
+    padding-top: 2.4rem;
+  }
+}
+
+//인증서 상단
+.certi-top-wrap {
+  background-color: $bg_lightgray;
+  padding: 2.2rem 2rem 3.2rem;
+  .tit {
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: $tit_line_height;
+  }
+}
+
+//인증서
+.card-woori {
+  //색상 변경 시 background로 조절
+  background: linear-gradient(244.96deg, #0E6FEA 15.82%, #1491EE 93.53%);
+  -webkit-mask:url($image_root+"common/bg_certificate.svg") no-repeat center;
+  mask:url($image_root+"common/bg_certificate.svg") no-repeat center;
+  padding: 3.2rem 0;
+  line-height: 1;
+  .inner {
+    @include column-flexbox($js:between);
+    width: 23rem;
+    height: 32rem;
+    padding: 2.6rem 2.4rem 3.2rem;
+    margin: 0 auto;
+  }
+  .row {
+    @include flexbox($js:between);
+  }
+  .logo {
+    width: 9.67rem;
+    height: 2rem;
+    @include bgimage($url:$image_root+'common/logo_white.png');
+  }
+  .menu {
+    display: block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background-color:#fff;
+    -webkit-mask:url($image_root+"common/ico_certi_menu.svg") no-repeat center;
+    mask:url($image_root+"common/ico_certi_menu.svg") no-repeat center;
+  }
+  .bottom-desc {
+    color:#fff;
+    opacity: .7;
+    font-size: $font_size_xxs;
+    line-height: 1.3;
+  }
+  .logo-trustsign {
+    width: 3.2rem;
+    height: 3.2rem;
+    mix-blend-mode: darken;
+  }
+  .row-name {
+    min-height: 9.8rem;
+    .name {
+      font-size: 3.6rem;
+      font-weight: 400;
+      color:#fff;
+    }
+    .date {
+      padding-top: 2.4rem;
+      font-size: $font_size_s;
+      color:#fff;
+    }
+    .extension {
+      padding-top: .6rem;
+      color: #FFF27D;
+      text-decoration-line: underline;
+      font-size: $font_size_xxs;
+    }
+  }
+}
+
+.menu-list-wrap {
+  ul {
+    @include flexbox();
+    li {
+      padding: 0 1rem;
+    }
+    .icon {
+      position:relative;
+      display: block;
+      width: 5.6rem;
+      height: 5.6rem;
+      background: #fff;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+      border-radius: 2rem;
+      margin: 0 auto;
+      &::before {
+        content:'';
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%, -50%);
+        width:2.4rem;
+        height: 2.4rem;
+      }
+      &.icon_01::before {
+        @include bgimage($url:$image_root+'layout/menu_basic01.png');
+      }
+      &.icon_02::before {
+        @include bgimage($url:$image_root+'layout/menu_basic02.png');
+      }
+      &.icon_03::before {
+        @include bgimage($url:$image_root+'layout/menu_basic03.png');
+      }
+      &.icon_04::before {
+        @include bgimage($url:$image_root+'layout/menu_basic04.png');
+      }
+    }
+    .txt {
+      display: block;
+      padding-top: .8rem;
+      font-weight: 700;
+      font-size: $font_size_xs;
+      line-height: 1.57;
+      text-align: center;
+      letter-spacing: -0.75px;
+      color: $gray_01;
+      text-align: center;
+    }
+  }
+}
+
+
+

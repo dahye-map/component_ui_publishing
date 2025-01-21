@@ -1,0 +1,263 @@
+.ico {
+  display: inline-block;
+  &-logo {
+    width: 4.2rem;
+    height: 4.2rem;
+    @include bgimage($url:$image_root+'common/logo_small.png');
+    &__tiny {
+      width: 1.4rem;
+      height: 1.4rem;
+      @include bgimage($url:$image_root+'common/logo_tiny.png');
+    }
+    &__big {
+      width: 6rem;
+      height: 6rem;
+      @include bgimage($url:$image_root+'common/logo.png');
+    }
+  }
+  &-close {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_close.svg');
+    &__small {
+      width: 1.6rem;
+      height: 1.6rem;
+      @include bgimage($url:$image_root+'common/ico_close_small.svg');
+    }
+    &__gray {
+      width: 2rem;
+      height: 2rem;
+      @include bgimage($url:$image_root+'common/ico_close_gray.svg');
+    }
+  }
+  &-refresh {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_refresh.svg');
+    margin-left: .4rem;
+  }
+  &-keyboard {
+    width: 2rem;
+    height: 2rem;
+    @include bgimage($url:$image_root+'common/ico_keyboard.svg');
+    margin-left: .4rem;
+  }
+  &-arrow {
+    &__right {
+      width: 2rem;
+      height: 2rem;
+      @include bgimage($url:$image_root+'common/ico_arrow_right_gray.svg');
+      &__black {
+        width: 2rem;
+        height: 2rem;
+        @include bgimage($url:$image_root+'common/ico_arrow_right_black.svg');
+      }
+    }
+    &__down {
+      width: 2rem;
+      height: 2rem;
+      @include bgimage($url:$image_root+'common/ico_arrow_down.svg');
+      &.black {
+        @include bgimage($url:$image_root+'common/ico_arrow_down_black.svg');
+      }
+      &.purple {
+        @include bgimage($url:$image_root+'common/ico_arrow_down_purple.svg');
+      }
+    }
+    &__small {
+      width: 1.7rem;
+      height: 1.7rem;
+      @include bgimage($url:$image_root+'common/ico_arrow_small.svg');
+    }
+    &__purple {
+      width: 1.4rem;
+      height: 1.4rem;
+      @include bgimage($url:$image_root+'common/ico_arrow_purple.svg');
+    }
+  }
+  &-plus {
+    &__small {
+      width: 2rem;
+      height: 2rem;
+      @include bgimage($url:$image_root+'common/ico_plus_small.svg');
+    }
+  }
+  &-tag__delete {
+    width: 1.6rem;
+    height: 1.6rem;
+    @include bgimage($url:$image_root+'common/ico_tag_delete.svg');
+    &__white {
+      width: 1.6rem;
+      height: 1.6rem;
+      @include bgimage($url:$image_root+'common/ico_tag_delete_white.svg');
+    }
+  }
+  &-input__delete {
+    width: 2rem;
+    height: 2rem;
+    @include bgimage($url:$image_root+'common/ico_input_delete.svg');
+  }
+  &-delete__circle {
+    width: 1.6rem;
+    height: 1.6rem;
+    @include bgimage($url:$image_root+'common/ico_delete_circle.svg');
+  }
+  &-info {
+    width: 1.6rem;
+    height: 1.6rem;
+    @include bgimage($url:$image_root+'common/ico_info.svg');
+  }
+  &-medal {
+    &__gold {
+      width: 4rem;
+      height: 4rem;
+      @include bgimage($url:$image_root+'layout/img_goldmedal.png');
+    }
+    &__silver {
+      width: 4rem;
+      height: 4rem;
+      @include bgimage($url:$image_root+'layout/img_silvermedal.png');
+    }
+    &__bronze {
+      width: 4rem;
+      height: 4rem;
+      @include bgimage($url:$image_root+'layout/img_bronzemedal.png');
+    }
+  }
+  &-transfer {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_transfer.svg');
+  }
+  &-home {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_home.png');
+  }
+  &-search {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_search.png');
+    &__small {
+      width: 2.4rem;
+      height: 2.4rem;
+      @include bgimage($url:$image_root+'common/ico_search_small.svg');
+    }
+  }
+  &-community {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_community.png');
+  }
+  &-mypage {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_mypage.png');
+  }
+  &-date {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_date.svg');
+    &__black {
+      width: 1.4rem;
+      height: 1.4rem;
+      @include bgimage($url:$image_root+'common/ico_date_black.svg');
+    }
+  }
+  &-person {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_person.svg');
+    &__black {
+      width: 1.4rem;
+      height: 1.4rem;
+      @include bgimage($url:$image_root+'common/ico_person_black.svg');
+    }
+  }
+  &-count {
+    &__minus {
+      width: 2.4rem;
+      height: 2.4rem;
+      @include bgimage($url:$image_root+'common/ico_minus.svg');
+      &.active {
+        @include bgimage($url:$image_root+'common/ico_minus_active.svg');
+      }
+    }
+    &__plus {
+      width: 2.4rem;
+      height: 2.4rem;
+      @include bgimage($url:$image_root+'common/ico_plus.svg');
+    }
+  }
+  &-check {
+    width: 1.6rem;
+    height: 1.6rem;
+    @include bgimage($url:$image_root+'common/ico_check_primary.svg');
+  }
+  &-star {
+    width: 1.4rem;
+    height: 1.4rem;
+    @include bgimage($url:$image_root+'common/ico_star.svg');
+    &__empty {
+      width: 1.2rem;
+      height: 1.2rem;
+      @include bgimage($url:$image_root+'common/ico_star_empty.svg');
+    }
+  }
+  &-heart {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_heart.svg');
+  }
+  &-map {
+    width: 1.4rem;
+    height: 1.4rem;
+    @include bgimage($url:$image_root+'common/ico_map.svg');
+  }
+  &-filter {
+    width: 2rem;
+    height: 2rem;
+    @include bgimage($url:$image_root+'common/ico_filter.svg');
+  }
+  &-dotmenu {
+    width: 1.6rem;
+    height: 1.6rem;
+    @include bgimage($url:$image_root+'common/ico_dot_menu.svg');
+    &__type2 {
+      width: 1.4rem;
+      height: 1.4rem;
+      @include bgimage($url:$image_root+'common/ico_dotmenu2.svg');
+    }
+  }
+  &-cart {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'common/ico_cart.svg');
+  }
+  &-download {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: .4rem;
+    @include bgimage($url:$image_root+'common/ico_download.svg');
+  }
+  &-image {
+    width: 2rem;
+    height: 2rem;
+    @include bgimage($url:$image_root+'common/ico_image.svg');
+  }
+  &-calendar {
+    width: 1.2rem;
+    height: 1.2rem;
+    @include bgimage($url:$image_root+'layout/ico_calendar.png');
+  }
+  &-share {
+    width: 3.2rem;
+    height: 3.2rem;
+    @include bgimage($url:$image_root+'common/ico_share_big.svg');
+  }
+  &-fix {
+    width: 2.4rem;
+    height: 2.4rem;
+    @include bgimage($url:$image_root+'layout/ico_fix.png');
+  }
+}

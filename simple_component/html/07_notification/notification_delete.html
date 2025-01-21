@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button type="button" class="btn-close"><span class="blind">닫기</span></button>
+        <h1 class="header-tit__center">알림 삭제</h1>
+      </div>
+    </header>
+
+    <div class="container__wrap notification__wrap">
+      <!-- 전체 동의 -->
+      <div class="notification-list__wrap">
+        <div class="checkbox__wrap check-list__wrap">
+          <div class="check-list__all">
+            <div class="checkbox">
+              <input type="checkbox" id="agree_chk1" />
+              <label for="agree_chk1">
+                <span class="ft-xxs">전체 삭제</span>
+              </label>
+            </div>
+          </div>
+          <div class="check-list__con">
+            <p class="title">새로운 알림</p>
+            <div class="checkbox">
+              <input type="checkbox" id="agree_chk2" />
+              <label for="agree_chk2">
+                <div class="notification-list__con">
+                  <div class="thumb__wrap">
+                    <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                    <div class="thumb__con">
+                      <p class="detail-name">제목</p>
+                      <p class="detail-sub">내용</p>
+                    </div>
+                    <p class="notification-date">24.01.01</p>
+                  </div>
+                </div>
+              </label>
+            </div>
+            <!-- 탭 -->
+            <div class="tab__wrap tab-line__wrap full-flex">
+              <ul class="tab__inner">
+                <li class="tab-line__con active"><a href="#none">뭉클딜</a></li>
+                <li class="tab-line__con"><a href="#none">커뮤니티</a></li>
+                <li class="tab-line__con"><a href="#none">시스템</a></li>
+              </ul>
+              <div class="tab-contents__wrap">
+                <!-- 뭉클딜 -->
+                <div class="tab-contents active">
+                  <div class="checkbox">
+                    <input type="checkbox" id="agree_chk3" />
+                    <label for="agree_chk3">
+                      <div class="notification-list__con">
+                        <div class="thumb__wrap">
+                          <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                          <div class="thumb__con">
+                            <p class="detail-name">설레는 뭉클딜 도착!</p>
+                            <p class="detail-sub">
+                              {판매자명}으로부터 뭉클딜이 도착했어요. <br>
+                              제안받은 뭉클딜: (뭉클딜명 표출)
+                            </p>
+                          </div>
+                          <p class="notification-date">24.01.01</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="agree_chk4" />
+                    <label for="agree_chk4">
+                      <div class="notification-list__con">
+                        <div class="thumb__wrap">
+                          <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                          <div class="thumb__con">
+                            <p class="detail-name">관심상품 재오픈 알림</p>
+                            <p class="detail-sub">관심있는 {상품명} {관심날짜}가 재오픈했어요! 서둘러 확인해볼까요?</p>
+                          </div>
+                          <p class="notification-date">24.01.01</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- //뭉클딜 -->
+                <!-- 커뮤니티 -->
+                <div class="tab-contents">
+                  <div class="checkbox">
+                    <input type="checkbox" id="agree_chk5" />
+                    <label for="agree_chk5">
+                      <div class="notification-list__con">
+                        <div class="thumb__wrap">
+                          <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                          <div class="thumb__con">
+                            <p class="detail-name">후기가 좋아요를 받았어요!</p>
+                            <p class="detail-sub">000님이 나의 {상품명} 후기를 좋아합니다.</p>
+                          </div>
+                          <p class="notification-date">24.01.01</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="agree_chk6" />
+                    <label for="agree_chk6">
+                      <div class="notification-list__con">
+                        <div class="thumb__wrap">
+                          <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                          <div class="thumb__con">
+                            <p class="detail-name">후기에 댓글이 달렸어요!</p>
+                            <p class="detail-sub">000님이 나의 후기에 댓글을 남겨주었어요: 좋은 후기 정보 공유 감사합니다. 이번에 여행가는 데 좋은 ...</p>
+                          </div>
+                          <p class="notification-date">24.01.01</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <!-- //커뮤니티 -->
+                <!-- 시스템 -->
+                <div class="tab-contents">
+                  <div class="checkbox">
+                    <input type="checkbox" id="agree_chk7" />
+                    <label for="agree_chk7">
+                      <div class="notification-list__con">
+                        <div class="thumb__wrap">
+                          <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                          <div class="thumb__con">
+                            <p class="detail-name">예약 완료</p>
+                            <p class="detail-sub">2024.10.01 (목) {상품명} 예약이 완료되었습니다.</p>
+                          </div>
+                          <p class="notification-date">24.01.01</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="agree_chk8" />
+                    <label for="agree_chk8">
+                      <div class="notification-list__con">
+                        <div class="thumb__wrap">
+                          <p class="thumb__img logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+                          <div class="thumb__con">
+                            <p class="detail-name">제목</p>
+                            <p class="detail-sub">내용</p>
+                          </div>
+                          <p class="notification-date">24.01.01</p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+
+                </div>
+                <!-- //시스템 -->
+              </div>
+            </div>
+            <!-- //탭 -->
+          </div>
+        </div>
+        
+      </div>
+      <!-- //전체 동의 -->
+      <!-- 하단 버튼 영역 -->
+      <div class="bottom-fixed__wrap">
+        <div class="btn__wrap">
+          <button class="btn-full__primary">삭제하기</div>
+      </div>
+      <!-- //하단 버튼 영역 -->
+    </div>
+  </div>
+
+</body>
+
+</html>

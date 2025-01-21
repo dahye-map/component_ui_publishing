@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-back"><span class="blind">뒤로가기</span></button>
+        <p class="process-txt">마지막 단계예요!</p>
+      </div>
+    </header>
+
+    <div class="container__wrap mkcle-create__wrap">
+      <!-- 프로그레스바 -->
+      <div class="progress__wrap fnStickyTop">
+        <div class="progress__inner" style="width:100%"></div>
+      </div>
+      <!-- //프로그레스바 -->
+
+      <section class="layout__wrap pd-big">
+        <div class="tit__wrap">
+          <h2 class="ft-xl">뭉클딜 추천 우선순위를 정해주세요.</h2>
+        </div>
+
+        <div class="select__wrap type-gray">
+          <ul>
+            <li><a href="#none">#8월 1일</a></li>
+            <li><a href="#none">#8월 2일</a></li>
+            <li><a href="#none">#2명</a></li>
+            <li><a href="#none">#연인과</a></li>
+            <li><a href="#none">#제주</a></li>
+            <li><a href="#none">#가성비 중요</a></li>
+            <li><a href="#none">#여유로운 힐링</a></li>
+            <li><a href="#none">#도심 속 호캉스</a></li>
+            <li><a href="#none">#전망좋은 곳</a></li>
+            <li><a href="#none">#야경즐기기</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="layout__wrap pd-big bg-gray">
+        <div class="flight__wrap">
+          <div class="tit__wrap">
+            <h2 class="ft-xl">항공권도 필요하시나요?</h2>
+          </div>
+  
+          <div class="radio__wrap">
+            <div class="radio">
+              <input type="radio" id="radio1" name="flight_radio" required checked/>
+              <label for="radio1">
+                <span class="ft-default">예</span>
+              </label>
+            </div>
+            <div class="radio">
+              <input type="radio" id="radio2" name="flight_radio" required />
+              <label for="radio2">
+                <span class="ft-default">아니요, 필요없어요</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- 왕복 편도 선택 -->
+          <div class="tab__wrap tab-round__wrap">
+            <ul class="tab__inner">
+              <li class="tab-round__con active">
+                <a href="#none">왕복</a>
+              </li>
+              <li class="tab-round__con">
+                <a href="#none">편도</a>
+              </li>
+            </ul>
+            <div class="tab-contents__wrap">
+              <!-- 왕복 선택 탭 -->
+              <div class="tab-contents active">
+                <div class="box-white__wrap">
+                  <div class="flight-place">
+                    <p class="eng">SEL</p>
+                    <p class="ko">서울</p>
+                  </div>
+                  <i class="ico ico-transfer"></i>
+                  <div class="flight-place">
+                    <p class="eng">OSA</p>
+                    <p class="ko">오사카</p>
+                  </div>
+                </div>
+              </div>
+              <!-- //왕복 선택 탭 -->
+              <!-- 편도 선택 탭 -->
+              <div class="tab-contents">
+                
+              </div>
+              <!-- //편도 선택 탭 -->
+            </div>
+          </div>
+          <!-- //왕복 편도 선택 -->
+        </div>
+      </section>
+
+      <!-- 순위 바텀 시트 -->
+      <div class="select-bottom__wrap">
+        <div class="select-bottom__con">
+          <ul class="select-bottom__list">
+            <li>
+              <i class="ico ico-medal__gold"></i>
+              <div class="select-item">
+                <span></span> <a href="#none" class="select-item__delete"><i class="ico ico-delete__circle"></i></a>
+              </div>
+            </li>
+            <li>
+              <i class="ico ico-medal__silver"></i>
+              <div class="select-item">
+                <span></span> <a href="#none" class="select-item__delete"><i class="ico ico-delete__circle"></i></a>
+              </div>
+            </li>
+            <li>
+              <i class="ico ico-medal__bronze"></i>
+              <div class="select-item">
+                <span></span> <a href="#none" class="select-item__delete"><i class="ico ico-delete__circle"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- //순위 바텀 시트 -->
+
+      <!-- 하단 버튼 영역 -->
+      <div class="bottom-fixed__wrap">
+        <div class="btn__wrap">
+          <!-- <button class="btn-full-secondary">취소</button> -->
+          <!-- <button class="btn-full__primary disabled" disabled>우선 순위를 정해주세요</button> -->
+          <button class="btn-full__primary">뭉클딜 받기</button>
+        </div>
+      </div>
+      <!-- //하단 버튼 영역 -->
+    </div>
+
+    <!-- 바텀 팝업 -->
+    <div id="alert" class="layerpop__wrap type-alert mkcle-complete__pop">
+      <div class="layerpop__container">
+        <div class="layerpop__contents">
+          <p class="logo"><img src="../../assets/images/common/logo.png" alt=""></p>
+          <div class="title__wrap">
+            <p class="ft-xxxl">
+              두근두근! 뭉클딜 등록 완료 <br>
+              어떤 뭉클딜이 도착할까요?
+            </p>
+          </div>
+          <div class="box-gray__wrap">
+            <div class="ranking__wrap">
+              <div class="ranking">
+                <i class="ico ico-medal__gold"></i>
+                <p>4인 가족</p>
+              </div>
+              <div class="ranking">
+                <i class="ico ico-medal__silver"></i>
+                <p>제주도</p>
+              </div>
+              <div class="ranking">
+                <i class="ico ico-medal__bronze"></i>
+                <p>가성비 중요</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__primary">나만의 뭉클딜 바로가기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업 -->
+  </div>
+
+  <script>
+    //팝업 강제 호출
+    fnOpenLayerPop('alert');
+    
+    $(document).ready(function() {
+      let selectedItems = [];
+      
+      $(".select__wrap li").click(function(e) {
+        e.preventDefault();
+        var $this = $(this);
+        var text = $this.text();
+
+        $('.select-bottom__wrap').addClass('show');
+        
+        if ($this.hasClass('active')) {
+          selectedItems = selectedItems.filter(item => item !== text);
+          $this.find('a').text(text);
+          updateSelectedList();
+        } else if (selectedItems.length < 3) {
+          selectedItems.push(text);
+          $this.addClass('active');
+          $this.find('a').html('<span class="num">' + selectedItems.length + '</span>' + text);
+          updateSelectedList();
+        }
+      });
+
+      function updateSelectedList() {
+        $('.select-bottom__list .select-item').each(function(index) {
+          if (selectedItems[index]) {
+            $(this).find('span').text(selectedItems[index]);
+            $(this).show();
+          } else {
+            $(this).find('span').text('');
+            $(this).hide();
+          }
+        });
+
+        $(".select__wrap li").each(function() {
+          var itemText = $(this).text();
+          if (selectedItems.includes(itemText)) {
+            let itemIndex = selectedItems.indexOf(itemText) + 1;
+            $(this).find('a').html('<span class="num">' + itemIndex + '</span>' + itemText);
+          }
+        });
+      }
+
+      $(".select-item__delete").click(function(e) {
+        e.preventDefault();
+        var index = $(this).parents('li').index();
+        var removedItem = selectedItems[index];
+
+        selectedItems.splice(index, 1);
+
+        $(".select__wrap li").each(function() {
+          var text = $(this).find('a').contents().filter(function() {
+              return this.nodeType === 3; // 텍스트 노드만 선택
+          }).text();
+          if (text === removedItem) {
+            $(this).removeClass('active');
+            $(this).find('a').text(removedItem);
+          }
+        });
+        updateSelectedList();
+      });
+
+      // 항공권
+      if ($('#radio1').is(':checked')) {
+        $('.tab-round__wrap').show();
+      } else {
+        $('.tab-round__wrap').hide();
+      }
+      $('input[name="flight_radio"]').change(function() {
+        if ($('#radio1').is(':checked')) {
+          $('.tab-round__wrap').show();
+        } else if ($('#radio2').is(':checked')) {
+          $('.tab-round__wrap').hide();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

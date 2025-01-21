@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <h1 class="logo"><span class="blind">뭉클트립</span></h1>
+        <button type="button" class="btn-txt__underline btn-txt__small">신규 작성</button>
+      </div>
+    </header>
+
+    <div class="container__wrap mkcle-home__wrap">
+      <div class="tab__wrap tab-line__wrap">
+        <ul class="tab__inner fnStickyTop">
+          <li class="tab-line__con active">
+            <a href="#none">전체보기</a>
+          </li>
+          <li class="tab-line__con">
+            <a href="#none">나만의 뭉클딜</a>
+          </li>
+          <li class="tab-line__con">
+            <a href="#none">재오픈 알림</a>
+          </li>
+          <li class="tab-line__con">
+            <a href="#none">알림이 꺼진 뭉클딜</a>
+          </li>
+        </ul>
+
+        <div class="tab-contents__wrap">
+          <!-- 전체보기 탭 -->
+          <div class="tab-contents active">
+            <section class="layout__wrap pt20">
+              <div class="btn__wrap btn-header">
+                <button type="button" class="btn-full__black btn-full__small">미완료된 뭉클딜이 있어요. 마저 작성할까요?</button>
+              </div>
+              <div class="tit__wrap tit__member">
+                <p class="ft-xxl">
+                  <span class="txt-yellow">김뭉클</span> 님에게 <br>
+                  도착한 뭉클딜이에요
+                </p>
+                <p class="desc">내게 꼭 맞는 마음에 드는 여행 혜택을 누려보세요!</p>
+              </div>
+
+              <!-- 나만의 뭉클딜 -->
+              <div class="has-mymkcle__wrap">
+                <div class="tit__wrap align__center">
+                  <p class="ft-xl">나만의 뭉클딜</p>
+                </div>
+                <div class="recommend-list__wrap">
+                  <a href="" class="recommend-list">
+                    <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>4인가족</span>
+                    </div>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>제주도</span>
+                    </div>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>가성비 중요</span>
+                    </div>
+                  </a>
+                  <a href="" class="recommend-list">
+                    <span class="num">1</span>
+                    <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>4인가족</span>
+                    </div>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>제주도</span>
+                    </div>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>성수기</span>
+                    </div>
+                  </a>
+                  <a href="" class="recommend-list">
+                    <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>4인가족</span>
+                    </div>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>제주도</span>
+                    </div>
+                    <div>
+                      <img src="../../assets/images/demo/img_recommend.png" alt="">
+                      <span>성수기</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <!-- //나만의 뭉클딜 -->
+              <!-- 뭉클딜 없을 때 -->
+              <div class="no-mymkcle__wrap">
+                <div class="tit__wrap align__center">
+                  <p class="ft-xl">
+                    아직 등록된 뭉클딜이 없어요. <br>
+                    뭉클딜을 등록해볼까요?
+                  </p>
+                </div>
+                <div class="splide splide__default">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                      <li class="splide__slide"><img src="../../assets/images/demo/img_empty.png" alt=""></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="btn__wrap">
+                  <button type="button" class="btn-full__primary">나만의 뭉클딜 제안받기</button>
+                </div>
+                <p class="ft-s">뭉클딜 등록만 해도 <b>50,000원 쿠폰백 즉시 제공</b></p>
+              </div>
+              <!-- //뭉클딜 없을 때 -->
+            </section>
+
+            <hr class="divide">
+
+            <!-- 재오픈 알림 -->
+            <section class="layout__wrap">
+              <div class="tit__wrap align__center">
+                <p class="ft-xl">재오픈 알림</p>
+              </div>
+              <div class="box-gray__list">
+                <div class="box-gray__wrap">
+                  <div class="thumb__wrap">
+                    <p class="thumb__img medium"><img src="../../assets/images/demo/img_hotel_medium.png" alt=""></p>
+                    <div class="thumb__con">
+                      <p class="detail-sub">
+                        <span>제주특별자치도 서귀포시</span>
+                        <span>5성급</span>
+                      </p>
+                      <p class="detail-name">스위트호텔 제주</p>
+                      <p class="detail-sub multiline">
+                        <span>슈페리어 더블 룸온리</span>
+                        <span>2024.09.09 ~ 09.11(2박)</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btn__wrap">
+                    <button type="button" class="btn-sm__primary">재오픈했어요!</button>
+                  </div>
+                </div>
+                <div class="box-gray__wrap">
+                  <div class="thumb__wrap">
+                    <p class="thumb__img medium"><img src="../../assets/images/demo/img_hotel_medium.png" alt=""></p>
+                    <div class="thumb__con">
+                      <p class="detail-sub">
+                        <span>제주특별자치도 서귀포시</span>
+                        <span>5성급</span>
+                      </p>
+                      <p class="detail-name">스위트호텔 제주</p>
+                      <p class="detail-sub multiline">
+                        <span>슈페리어 더블 룸온리</span>
+                        <span>2024.09.09 ~ 09.11(2박)</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btn__wrap">
+                    <button type="button" class="btn-sm__black">재오픈 알림끄기</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- //재오픈 알림 -->
+
+            <hr class="divide">
+
+            <!-- 알림이 꺼진 뭉클딜 -->
+            <section class="layout__wrap">
+              <div class="tit__wrap align__center">
+                <p class="ft-xl">알림이 꺼진 뭉클딜</p>
+              </div>
+              <div class="recommend-list__wrap">
+                <a href="" class="recommend-list">
+                  <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>4인가족</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>제주도</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>가성비 중요</span>
+                  </div>
+                </a>
+                <a href="" class="recommend-list">
+                  <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>4인가족</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>제주도</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>성수기</span>
+                  </div>
+                </a>
+              </div>
+              <!-- //나만의 뭉클딜 -->
+            </section>
+            <!-- //알림이 꺼진 뭉클딜 -->
+          </div>
+          <!-- //전체보기 탭 -->
+          <!-- 나만의 뭉클딜 탭 -->
+          <div class="tab-contents">
+            <section class="layout__wrap pt20">
+              <div class="btn__wrap btn-header">
+                <button type="button" class="btn-full__black btn-full__small">미완료된 뭉클딜이 있어요. 마저 작성할까요?</button>
+              </div>
+
+              <!-- 나만의 뭉클딜 -->
+              <div class="tit__wrap align__center">
+                <p class="ft-xl">나만의 뭉클딜</p>
+              </div>
+              <div class="recommend-list__wrap">
+                <a href="" class="recommend-list">
+                  <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>4인가족</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>제주도</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>가성비 중요</span>
+                  </div>
+                </a>
+                <a href="" class="recommend-list">
+                  <span class="num">1</span>
+                  <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>4인가족</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>제주도</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>성수기</span>
+                  </div>
+                </a>
+                <a href="" class="recommend-list">
+                  <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>4인가족</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>제주도</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>성수기</span>
+                  </div>
+                </a>
+              </div>
+              <!-- //나만의 뭉클딜 -->
+            </section>
+          </div>
+          <!-- //나만의 뭉클딜 탭 -->
+          <!-- 재오픈 알림 -->
+          <div class="tab-contents">
+            <section class="layout__wrap pt20">
+              <div class="btn__wrap btn-header">
+                <button type="button" class="btn-full__black btn-full__small">미완료된 뭉클딜이 있어요. 마저 작성할까요?</button>
+              </div>
+              <div class="tit__wrap align__center">
+                <p class="ft-xl">재오픈 알림</p>
+              </div>
+              <div class="box-gray__list">
+                <div class="box-gray__wrap">
+                  <div class="thumb__wrap">
+                    <p class="thumb__img medium"><img src="../../assets/images/demo/img_hotel_medium.png" alt=""></p>
+                    <div class="thumb__con">
+                      <p class="detail-sub">
+                        <span>제주특별자치도 서귀포시</span>
+                        <span>5성급</span>
+                      </p>
+                      <p class="detail-name">스위트호텔 제주</p>
+                      <p class="detail-sub multiline">
+                        <span>슈페리어 더블 룸온리</span>
+                        <span>2024.09.09 ~ 09.11(2박)</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btn__wrap">
+                    <button type="button" class="btn-sm__primary">재오픈했어요!</button>
+                  </div>
+                </div>
+                <div class="box-gray__wrap">
+                  <div class="thumb__wrap">
+                    <p class="thumb__img medium"><img src="../../assets/images/demo/img_hotel_medium.png" alt=""></p>
+                    <div class="thumb__con">
+                      <p class="detail-sub">
+                        <span>제주특별자치도 서귀포시</span>
+                        <span>5성급</span>
+                      </p>
+                      <p class="detail-name">스위트호텔 제주</p>
+                      <p class="detail-sub multiline">
+                        <span>슈페리어 더블 룸온리</span>
+                        <span>2024.09.09 ~ 09.11(2박)</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="btn__wrap">
+                    <button type="button" class="btn-sm__black">재오픈 알림끄기</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="no-contents__wrap">
+                <p class="title">재오픈 알림은 어떤 기능인가요?</p>
+                <p class="desc">
+                  혹시 가보고 싶은 날짜에 원하는 여행상품이 <br>
+                  이미 매진이 되어 속상하지 않으셨나요?<br>
+                  이제는 걱정마세요.<br><br>
+
+                  뭉클에서 재오픈 알림 신청만 해두면 취소 또는 추가 수량이<br>
+                  등록되면 가장 빠르게 알려드려요! <br>
+                  꼭 가보고 싶었던 여행, 이번엔 놓치지 마세요
+                </p>
+              </div>
+            </section>
+          </div>
+          <!-- //재오픈 알림 -->
+          <!-- 알림이 꺼진 뭉클딜 -->
+          <div class="tab-contents">
+            <section class="layout__wrap pt20">
+              <div class="btn__wrap btn-header">
+                <button type="button" class="btn-full__black btn-full__small">미완료된 뭉클딜이 있어요. 마저 작성할까요?</button>
+              </div>
+              <div class="tit__wrap align__center">
+                <p class="ft-xl">알림이 꺼진 뭉클딜</p>
+              </div>
+              <div class="recommend-list__wrap">
+                <a href="" class="recommend-list">
+                  <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>4인가족</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>제주도</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>가성비 중요</span>
+                  </div>
+                </a>
+                <a href="" class="recommend-list">
+                  <p class="ft-xxs">생성일: YYYY년 00월 00일</p>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>4인가족</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>제주도</span>
+                  </div>
+                  <div>
+                    <img src="../../assets/images/demo/img_recommend.png" alt="">
+                    <span>성수기</span>
+                  </div>
+                </a>
+              </div>
+              <!-- //나만의 뭉클딜 -->
+            </section>
+          </div>
+          <!-- //알림이 꺼진 뭉클딜 -->
+        </div>
+      </div>
+
+      <div class="bottom-navi__wrap">
+        <ul class="bottom-navi__list">
+          <li class="navi navi-home active">
+            <a href="#none">
+              <i class="ico ico-home"></i>
+              <span>홈</span>
+            </a>
+          </li>
+          <li class="navi navi-search">
+            <a href="#none">
+              <i class="ico ico-search"></i>
+              <span>검색</span>
+            </a>
+          </li>
+          <li class="navi navi-logo">
+            <a href="#none">
+              <i class="ico ico-logo"><p class="num">1</p></i>
+            </a>
+          </li>
+          <li class="navi navi-community">
+            <a href="#none">
+              <i class="ico ico-community"></i>
+              <span>커뮤니티</span>
+            </a>
+          </li>
+          <li class="navi navi-mypage">
+            <a href="#none">
+              <i class="ico ico-mypage"></i>
+              <span>마이</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 토스트팝업 -->
+    <div id="toastPopup" class="toast__wrap">
+      <div class="toast__container">
+        <i class="ico ico-info"></i>
+        <p>아직 뭉클딜이 도착하지 않았어요. 도착하면 알려드릴게요!</p>
+      </div>
+    </div>
+    <!-- //토스트팝업 -->
+  </div>
+
+  <script>
+    fnToastPop('toastPopup');
+  </script>
+
+</body>
+
+</html>

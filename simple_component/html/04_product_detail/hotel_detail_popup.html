@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-back"><span class="blind">뒤로가기</span></button>
+        <p class="header-product-name"></p>
+        <div class="btn__wrap">
+          <button class="btn-cart"><span class="blind">장바구니</span></button>
+          <button class="btn-share"><span class="blind">공유하기</span></button>
+        </div>
+      </div>
+    </header>
+
+    <div class="container__wrap">
+
+      <div class="product-detail__wrap">
+        <!-- 상품 이미지 슬라이드 -->
+        <div class="product-detail__img">
+          <div class="splide splide__product">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="slide-counter">
+              <span class="current-slide">1</span> / <span class="total-slides"></span>
+            </div>
+          </div>
+        </div>
+        <!-- //상품 이미지 슬라이드 -->
+        <!-- 상품 타이틀 -->
+        <div class="product-detail__tit">
+          <button type="button" class="btn-product__like type-black"><span class="blind">찜하기</span></button>
+          <a href="" class="seller-name">판매자명</a>
+          <div class="product-tit">
+            <p class="product-name">라마다앙코르 바이윈덤 김포한강호텔</p>
+            <p class="product-sub">
+              <span>5성급</span>
+              <a href="" class="place">경기 김포시</a>
+            </p>
+          </div>
+          <div class="flex-between">
+            <div class="product-category">
+              <p class="badge badge__yellow">상시상품</p>
+              <p class="ft-xxs">숙소</p>
+            </div>
+            <p class="review-con">
+              <i class="ico ico-star"></i>
+              <span class="rating-num">4.5</span>
+              <span class="review-num"><a href="">리뷰 <span>199</span>개</a></span>
+            </p>
+          </div>
+
+          <div class="box-gray__wrap">
+            <p class="ft-default ft-bold">평균 <span class="txt-primary">000,000원</span> 할인</p>
+            <button type="button" class="btn-sm__primary btn-sm__round">
+              <i class="ico ico-logo__tiny"></i>
+              뭉클딜받기
+            </button>
+          </div>
+        </div>
+        <!-- //상품 타이틀 -->
+        <!-- 뭉클한 혜택 -->
+        <div class="product-detail__benefit">
+          <div class="box-white__list">
+            <div class="box-white__wrap">
+              <p class="title">뭉클딜명 자리</p>
+              <div class="thumb__wrap">
+                <div class="thumb__gift">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="box-white__wrap flex-between">
+              <p class="ft-default ft-bold"><span class="txt-primary">50,000원</span> 선착순 쿠폰백 받기</p>
+              <button type="button" class="btn-sm__primary btn-sm__round">
+                <i class="ico ico-download"></i>
+                다운로드
+              </button>
+            </div>
+            <div class="box-white__wrap">
+              <div class="badge__wrap">
+                <div class="badge badge__gray">#8월 1일</div>
+                <div class="badge badge__gray">#8월 2일</div>
+                <div class="badge badge__gray">#2명</div>
+                <div class="badge badge__gray">#연인과</div>
+                <div class="badge badge__gray">#제주</div>
+                <div class="badge badge__gray">#여유로운 힐링</div>
+                <div class="badge badge__gray">#도심 속 호캉스</div>
+                <div class="badge badge__gray">#전망좋은 곳</div>
+              </div>
+            </div>
+          </div>
+          <p class="txt-warning mt8">뭉클딜은 상황에 따라 조기종료 될 수 있습니다.</p>
+        </div>
+        <!-- //뭉클한 혜택 -->
+        <!-- 뭉클포인트 -->
+        <div class="product-detail__point">
+          <div class="box-white__wrap">
+            <div class="tit__wrap">
+              <p class="title">뭉클포인트</p>
+              <p class="desc">
+                아이와 함께 가기 좋은 김포 호텔! 총 588개 11타입의 객실이 있는 매우 웅장한 호텔이기 때문에 취향에 따라, 함께 방문한 사람에 따라 골라서 예약해보세요!
+              </p>
+            </div>
+            <div class="splide splide__default">
+              <div class="splide__track">
+                <ul class="splide__list">
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_detail.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_detail.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_detail.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_detail.png" alt=""></li>
+                  <li class="splide__slide"><img src="../../assets/images/demo/img_detail.png" alt=""></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //뭉클포인트 -->
+        <!-- 상품 셀렉트 -->
+        <div class="product-detail__con">
+          <div class="tit__wrap">
+            <p class="ft-default">객실선택</p>
+          </div>
+          <!-- 검색 폼 -->
+          <div class="search-form__wrap fnStickyTop">
+            <div class="search-form">
+              <div class="search-form__con search-date fnOpenPop" data-name="popupDate">
+                <i class="ico ico-date__black"></i>
+                <p class="txt">
+                  <span>7.30 화 ~ 7.31 수</span>
+                  <span>·</span>
+                  <span>1박</span>
+                </p>
+              </div>
+              <div class="search-form__con search-guest fnOpenPop" data-name="popupGuest">
+                <i class="ico ico-person__black"></i>
+                <p class="txt">2명</p>
+              </div>
+            </div>
+          </div>
+          <!-- //검색 폼 -->
+          <!-- 룸 리스트 -->
+          <div class="room-list__wrap">
+            <div class="room-list__con">
+              <div class="splide splide__product">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="slide-counter">
+                  <span class="current-slide">1</span> / <span class="total-slides"></span>
+                </div>
+              </div>
+              <p class="room-name">디럭스 트윈 (오션뷰)</p>
+              <p class="room-num">남은 객실 <span>2개</span></p>
+              <ul class="room-option">
+                <li class="option-view">산 전망</li>
+                <li class="option-bed">싱글베드 2개</li>
+                <li class="option-people">기준 2명 / 최대 2명</li>
+              </ul>
+              <!-- 룸 타입 옵션 더보기 아코디언 -->
+              <div class="accordion__wrap">
+                <div class="room-type__wrap">
+                  <!-- 디폴트로 보여지는 룸타입 -->
+                  <div class="room-type__con">
+                    <div class="flex-between">
+                      <p class="room-type-name">룸온리</p>
+                      <div class="room-price">
+                        <span class="sale-percent">+ 30%</span>
+                        <span class="default-price">90,000원</span>
+                        <span class="sale-price"><em>50,000</em>원</span>
+                      </div>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-sm__line__gray"><i class="ico ico-cart"></i></button>
+                      <button type="button" class="btn-sm__primary">예약하기</button>
+                    </div>
+                  </div>
+                  <!-- //디폴트로 보여지는 룸타입 -->
+                  <!-- 숨겨진 룸타입 -->
+                  <div class="accordion__con">
+                    <div class="room-type__con">
+                      <div class="flex-between">
+                        <p class="room-type-name">룸온리</p>
+                        <div class="room-price">
+                          <span class="sale-percent">+ 30%</span>
+                          <span class="default-price">90,000원</span>
+                          <span class="sale-price"><em>50,000</em>원</span>
+                        </div>
+                      </div>
+                      <div class="btn__wrap">
+                        <button type="button" class="btn-sm__line__gray"><i class="ico ico-cart"></i></button>
+                        <button type="button" class="btn-sm__primary">예약하기</button>
+                      </div>
+                    </div>
+                    <div class="room-type__con">
+                      <div class="flex-between">
+                        <p class="room-type-name">룸온리</p>
+                        <div class="room-price">
+                          <span class="sale-percent">+ 30%</span>
+                          <span class="default-price">90,000원</span>
+                          <span class="sale-price"><em>50,000</em>원</span>
+                        </div>
+                      </div>
+                      <div class="btn__wrap">
+                        <button type="button" class="btn-sm__line__gray"><i class="ico ico-cart"></i></button>
+                        <button type="button" class="btn-sm__primary">예약하기</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //숨겨진 룸타입 -->
+                  <!-- 옵션 더보기 -->
+                  <div class="accordion__tit">
+                    <button type="button" class="btn-full__line__primary">옵션 더보기</button>
+                  </div>
+                  <!-- //옵션 더보기 -->
+                </div>
+              </div>
+              <!-- //룸 타입 옵션 더보기 아코디언 -->
+            </div>
+            <div class="room-list__con">
+              <div class="splide splide__product">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="slide-counter">
+                  <span class="current-slide">1</span> / <span class="total-slides"></span>
+                </div>
+              </div>
+              <p class="room-name">디럭스 트윈 (오션뷰)</p>
+              <p class="room-num">남은 객실 <span>2개</span></p>
+              <ul class="room-option">
+                <li class="option-view">산 전망</li>
+                <li class="option-bed">싱글베드 2개</li>
+                <li class="option-people">기준 2명 / 최대 2명</li>
+              </ul>
+              <div class="room-type__wrap">
+                <div class="room-type__con">
+                  <div class="flex-between">
+                    <p class="room-type-name">룸온리</p>
+                    <div class="room-price">
+                      <span class="sale-percent">+ 30%</span>
+                      <span class="default-price">90,000원</span>
+                      <span class="sale-price"><em>50,000</em>원</span>
+                    </div>
+                  </div>
+                  <div class="btn__wrap">
+                    <button type="button" class="btn-sm__line__gray"><i class="ico ico-cart"></i></button>
+                    <button type="button" class="btn-sm__primary">예약하기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="room-list__con">
+              <div class="splide splide__product">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="slide-counter">
+                  <span class="current-slide">1</span> / <span class="total-slides"></span>
+                </div>
+              </div>
+              <p class="room-name">디럭스 트윈 (오션뷰)</p>
+              <p class="room-num">남은 객실 <span>2개</span></p>
+              <ul class="room-option">
+                <li class="option-view">산 전망</li>
+                <li class="option-bed">싱글베드 2개</li>
+                <li class="option-people">기준 2명 / 최대 2명</li>
+              </ul>
+              <!-- 룸 타입 옵션 더보기 아코디언 -->
+              <div class="accordion__wrap">
+                <div class="room-type__wrap">
+                  <!-- 디폴트로 보여지는 룸타입 -->
+                  <div class="room-type__con">
+                    <div class="flex-between">
+                      <p class="room-type-name">룸온리</p>
+                      <div class="room-price">
+                        <span class="sale-percent">+ 30%</span>
+                        <span class="default-price">90,000원</span>
+                        <span class="sale-price"><em>50,000</em>원</span>
+                      </div>
+                    </div>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-sm__line__gray"><i class="ico ico-cart"></i></button>
+                      <button type="button" class="btn-sm__primary">예약하기</button>
+                    </div>
+                  </div>
+                  <!-- //디폴트로 보여지는 룸타입 -->
+                  <!-- 숨겨진 룸타입 -->
+                  <div class="accordion__con">
+                    <div class="room-type__con">
+                      <div class="flex-between">
+                        <p class="room-type-name">룸온리</p>
+                        <div class="room-price">
+                          <span class="sale-percent">+ 30%</span>
+                          <span class="default-price">90,000원</span>
+                          <span class="sale-price"><em>50,000</em>원</span>
+                        </div>
+                      </div>
+                      <div class="btn__wrap">
+                        <button type="button" class="btn-sm__line__gray"><i class="ico ico-cart"></i></button>
+                        <button type="button" class="btn-sm__primary">예약하기</button>
+                      </div>
+                    </div>
+                    <div class="room-type__con">
+                      <div class="flex-between">
+                        <p class="room-type-name">룸온리</p>
+                        <div class="room-price">
+                          <span class="sale-percent">+ 30%</span>
+                          <span class="default-price">90,000원</span>
+                          <span class="sale-price"><em>50,000</em>원</span>
+                        </div>
+                      </div>
+                      <div class="btn__wrap">
+                        <button type="button" class="btn-sm__line__gray"><i class="ico ico-cart"></i></button>
+                        <button type="button" class="btn-sm__primary">예약하기</button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- //숨겨진 룸타입 -->
+                  <!-- 옵션 더보기 -->
+                  <div class="accordion__tit">
+                    <button type="button" class="btn-full__line__primary">옵션 더보기</button>
+                  </div>
+                  <!-- //옵션 더보기 -->
+                </div>
+              </div>
+              <!-- //룸 타입 옵션 더보기 아코디언 -->
+            </div>
+            <div class="room-list__con">
+              <div class="splide splide__product">
+                <div class="splide__track">
+                  <ul class="splide__list">
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                  </ul>
+                </div>
+                <div class="slide-counter">
+                  <span class="current-slide">1</span> / <span class="total-slides"></span>
+                </div>
+              </div>
+              <p class="room-name">디럭스 트윈 (오션뷰)</p>
+              <p class="room-num">남은 객실 <span>2개</span></p>
+              <ul class="room-option">
+                <li class="option-view">산 전망</li>
+                <li class="option-bed">싱글베드 2개</li>
+                <li class="option-people">기준 2명 / 최대 2명</li>
+              </ul>
+              <div class="room-type__wrap">
+                <div class="room-type__con">
+                  <div class="flex-between">
+                    <p class="room-type-name">룸온리</p>
+                    <div class="room-price">
+                      <span class="sale-percent">+ 30%</span>
+                      <span class="default-price">90,000원</span>
+                      <span class="sale-price"><em>50,000</em>원</span>
+                    </div>
+                  </div>
+                  <div class="btn__wrap">
+                    <button type="button" class="btn-sm__line__gray"><i class="ico ico-cart"></i></button>
+                    <button type="button" class="btn-sm__primary">예약하기</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- //룸 리스트 -->
+          <div class="btn__wrap btn-product__more">
+            <button type="button" class="btn-full__black"><span>n</span>개 객실 더보기</button>
+          </div>
+        </div>
+        <!-- //상품 셀렉트 -->
+        <!-- 찾으시는 객실이 마감되었나요? -->
+        <div class="product-detail__close">
+          <div class="tit__wrap">
+            <p class="ft-default">찾으시는 객실이 마감되었나요?</p>
+          </div>
+          <div class="splide splide__default room-list__wrap">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="room-list__con">
+                    <div class="splide splide__product">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                        </ul>
+                      </div>
+                      <div class="slide-counter">
+                        <span class="current-slide">1</span> / <span class="total-slides"></span>
+                      </div>
+                    </div>
+                    <p class="room-name">디럭스 트윈 (오션뷰)</p>
+                    <p class="room-num">남은 객실 <span>0개</span></p>
+                    <ul class="room-option">
+                      <li class="option-view">산 전망</li>
+                      <li class="option-bed">싱글베드 2개</li>
+                      <li class="option-people">기준 2명 / 최대 2명</li>
+                    </ul>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-sm__black fnOpenPop" data-name="alertAlarm">재오픈 알림</button>
+                    </div>
+                    <!-- 룸 타입 옵션 더보기 아코디언 -->
+                    <div class="accordion__wrap">
+                      <div class="room-type__wrap">
+                        <!-- 디폴트로 보여지는 룸타입 -->
+                        <div class="room-type__con">
+                          <div class="flex-between">
+                            <p class="room-type-name">룸온리</p>
+                            <div class="room-price">
+                              <span class="sale-percent">+ 30%</span>
+                              <span class="default-price">90,000원</span>
+                              <span class="sale-price"><em>50,000</em>원</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //디폴트로 보여지는 룸타입 -->
+                        <!-- 숨겨진 룸타입 -->
+                        <div class="accordion__con">
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //숨겨진 룸타입 -->
+                        <!-- 옵션 더보기 -->
+                        <div class="accordion__tit">
+                          <button type="button" class="btn-full__line__primary">옵션 더보기</button>
+                        </div>
+                        <!-- //옵션 더보기 -->
+                      </div>
+                    </div>
+                    <!-- //룸 타입 옵션 더보기 아코디언 -->
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="room-list__con">
+                    <div class="splide splide__product">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                        </ul>
+                      </div>
+                      <div class="slide-counter">
+                        <span class="current-slide">1</span> / <span class="total-slides"></span>
+                      </div>
+                    </div>
+                    <p class="room-name">디럭스 트윈 (오션뷰)</p>
+                    <p class="room-num">남은 객실 <span>0개</span></p>
+                    <ul class="room-option">
+                      <li class="option-view">산 전망</li>
+                      <li class="option-bed">싱글베드 2개</li>
+                      <li class="option-people">기준 2명 / 최대 2명</li>
+                    </ul>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-sm__black fnOpenPop" data-name="alertAlarm">재오픈 알림</button>
+                    </div>
+                    <!-- 룸 타입 옵션 더보기 아코디언 -->
+                    <div class="accordion__wrap">
+                      <div class="room-type__wrap">
+                        <!-- 디폴트로 보여지는 룸타입 -->
+                        <div class="room-type__con">
+                          <div class="flex-between">
+                            <p class="room-type-name">룸온리</p>
+                            <div class="room-price">
+                              <span class="sale-percent">+ 30%</span>
+                              <span class="default-price">90,000원</span>
+                              <span class="sale-price"><em>50,000</em>원</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //디폴트로 보여지는 룸타입 -->
+                        <!-- 숨겨진 룸타입 -->
+                        <div class="accordion__con">
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //숨겨진 룸타입 -->
+                        <!-- 옵션 더보기 -->
+                        <div class="accordion__tit">
+                          <button type="button" class="btn-full__line__primary">옵션 더보기</button>
+                        </div>
+                        <!-- //옵션 더보기 -->
+                      </div>
+                    </div>
+                    <!-- //룸 타입 옵션 더보기 아코디언 -->
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="room-list__con">
+                    <div class="splide splide__product">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                        </ul>
+                      </div>
+                      <div class="slide-counter">
+                        <span class="current-slide">1</span> / <span class="total-slides"></span>
+                      </div>
+                    </div>
+                    <p class="room-name">디럭스 트윈 (오션뷰)</p>
+                    <p class="room-num">남은 객실 <span>0개</span></p>
+                    <ul class="room-option">
+                      <li class="option-view">산 전망</li>
+                      <li class="option-bed">싱글베드 2개</li>
+                      <li class="option-people">기준 2명 / 최대 2명</li>
+                    </ul>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-sm__black fnOpenPop" data-name="alertAlarm">재오픈 알림</button>
+                    </div>
+                    <!-- 룸 타입 옵션 더보기 아코디언 -->
+                    <div class="accordion__wrap">
+                      <div class="room-type__wrap">
+                        <!-- 디폴트로 보여지는 룸타입 -->
+                        <div class="room-type__con">
+                          <div class="flex-between">
+                            <p class="room-type-name">룸온리</p>
+                            <div class="room-price">
+                              <span class="sale-percent">+ 30%</span>
+                              <span class="default-price">90,000원</span>
+                              <span class="sale-price"><em>50,000</em>원</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //디폴트로 보여지는 룸타입 -->
+                        <!-- 숨겨진 룸타입 -->
+                        <div class="accordion__con">
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //숨겨진 룸타입 -->
+                        <!-- 옵션 더보기 -->
+                        <div class="accordion__tit">
+                          <button type="button" class="btn-full__line__primary">옵션 더보기</button>
+                        </div>
+                        <!-- //옵션 더보기 -->
+                      </div>
+                    </div>
+                    <!-- //룸 타입 옵션 더보기 아코디언 -->
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="room-list__con">
+                    <div class="splide splide__product">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                        </ul>
+                      </div>
+                      <div class="slide-counter">
+                        <span class="current-slide">1</span> / <span class="total-slides"></span>
+                      </div>
+                    </div>
+                    <p class="room-name">디럭스 트윈 (오션뷰)</p>
+                    <p class="room-num">남은 객실 <span>0개</span></p>
+                    <ul class="room-option">
+                      <li class="option-view">산 전망</li>
+                      <li class="option-bed">싱글베드 2개</li>
+                      <li class="option-people">기준 2명 / 최대 2명</li>
+                    </ul>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-sm__black fnOpenPop" data-name="alertAlarm">재오픈 알림</button>
+                    </div>
+                    <!-- 룸 타입 옵션 더보기 아코디언 -->
+                    <div class="accordion__wrap">
+                      <div class="room-type__wrap">
+                        <!-- 디폴트로 보여지는 룸타입 -->
+                        <div class="room-type__con">
+                          <div class="flex-between">
+                            <p class="room-type-name">룸온리</p>
+                            <div class="room-price">
+                              <span class="sale-percent">+ 30%</span>
+                              <span class="default-price">90,000원</span>
+                              <span class="sale-price"><em>50,000</em>원</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //디폴트로 보여지는 룸타입 -->
+                        <!-- 숨겨진 룸타입 -->
+                        <div class="accordion__con">
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //숨겨진 룸타입 -->
+                        <!-- 옵션 더보기 -->
+                        <div class="accordion__tit">
+                          <button type="button" class="btn-full__line__primary">옵션 더보기</button>
+                        </div>
+                        <!-- //옵션 더보기 -->
+                      </div>
+                    </div>
+                    <!-- //룸 타입 옵션 더보기 아코디언 -->
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="room-list__con">
+                    <div class="splide splide__product">
+                      <div class="splide__track">
+                        <ul class="splide__list">
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                          <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                        </ul>
+                      </div>
+                      <div class="slide-counter">
+                        <span class="current-slide">1</span> / <span class="total-slides"></span>
+                      </div>
+                    </div>
+                    <p class="room-name">디럭스 트윈 (오션뷰)</p>
+                    <p class="room-num">남은 객실 <span>0개</span></p>
+                    <ul class="room-option">
+                      <li class="option-view">산 전망</li>
+                      <li class="option-bed">싱글베드 2개</li>
+                      <li class="option-people">기준 2명 / 최대 2명</li>
+                    </ul>
+                    <div class="btn__wrap">
+                      <button type="button" class="btn-sm__black fnOpenPop" data-name="alertAlarm">재오픈 알림</button>
+                    </div>
+                    <!-- 룸 타입 옵션 더보기 아코디언 -->
+                    <div class="accordion__wrap">
+                      <div class="room-type__wrap">
+                        <!-- 디폴트로 보여지는 룸타입 -->
+                        <div class="room-type__con">
+                          <div class="flex-between">
+                            <p class="room-type-name">룸온리</p>
+                            <div class="room-price">
+                              <span class="sale-percent">+ 30%</span>
+                              <span class="default-price">90,000원</span>
+                              <span class="sale-price"><em>50,000</em>원</span>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //디폴트로 보여지는 룸타입 -->
+                        <!-- 숨겨진 룸타입 -->
+                        <div class="accordion__con">
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="room-type__con">
+                            <div class="flex-between">
+                              <p class="room-type-name">룸온리</p>
+                              <div class="room-price">
+                                <span class="sale-percent">+ 30%</span>
+                                <span class="default-price">90,000원</span>
+                                <span class="sale-price"><em>50,000</em>원</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- //숨겨진 룸타입 -->
+                        <!-- 옵션 더보기 -->
+                        <div class="accordion__tit">
+                          <button type="button" class="btn-full__line__primary">옵션 더보기</button>
+                        </div>
+                        <!-- //옵션 더보기 -->
+                      </div>
+                    </div>
+                    <!-- //룸 타입 옵션 더보기 아코디언 -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- //찾으시는 객실이 마감되었나요? -->
+        <!-- 숙소 공지사항 및 정보 -->
+        <div class="product-detail__notice">
+          <div class="bullet__wrap">
+            <p class="title">중요 공지사항</p>
+            <ul>
+              <li>객실 배정은 체크인 당일에 이뤄지며 호텔 내부 상황에 따라 배정되는 점 참고 부탁드립니다</li>
+              <li>고층이나 특정 뷰의 요청 사항은 반영이 되지 않습니다</li>
+              <li>선호 객실 (요트뷰 또는 욕조) 가능 시, 22,000원 추가 금액 발생 / 현장 결제</li>
+              <li>객실내 풍선, 스티커 등의 파티용품 부착금지 (부착으로 인한 손상 발생시 패널티 부과)</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">기본정보</p>
+            <table class="tb__wrap">
+              <colgroup>
+                <col width="50%">
+                <col width="50%">
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>체크인</th>
+                  <th>체크아웃</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>15:00 부터</td>
+                  <td>11:00 까지</td>
+                </tr>
+              </tbody>
+            </table>
+            <p class="desc">※ 체크인 : 15:00 이후 / 체크아웃 : 11:00 이전</p>
+            <ul>
+              <li>22시 이후 체크인 시 호텔 프론트 문의</li>
+              <li>무료 Wi-Fi</li>
+              <li>전 객실 금연</li>
+              <li>Bath Amenity (일회용품 사용 규제에 따라 일회용 칫솔, 치약은 제공되지 않습니다)</li>
+              <li>주차 가능 (객실 당 1대 무료, 추가 시 요금 발생 / 현장 결제)</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">취소 및 환불 규정</p>
+            <ul>
+              <li>입실 3일전 17:00까지 : 취소 비용 없음</li>
+              <li>입실 3일전 17:00부터~입실 2일전 17:00까지 : 첫날 객실료의 20% 수수료 발생</li>
+              <li>입실 2일전 17:00부터~입실 1일전 17:00까지 : 첫날 객실료의 50% 수수료 발생</li>
+              <li>입실 1일전 17:00부터~입실 당일까지 : 총 객실료의 100% 수수료 발생</li>
+              <li>노쇼 : 총 객실료의 100% 부과</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">편의시설</p>
+            <a href="" class="btn-txt__arrow">더보기</a>
+            <div class="amenities__list">
+              <ul>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>패밀리룸 보유(3인)</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>레스토랑</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>바(bar)라운지</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>장애인객실</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>조식운영</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>키즈카페/룸</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>피트니스 센터</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>비즈니스 센터</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">부대시설 정보</p>
+            <ul>
+              <li>비즈니스 센터 / 1층 / 00:00~24:00</li>
+              <li>피트니스 센터 / 지하 1층 / 00:00~24:00</li>
+              <li>코인세탁실 / 지하 1층 / 00:00~24:00</li>
+              <li>키즈존 / 2층 / 09:00~19:00 / 이용연령대 : 3세 ~ 9세 (부모 동반 필수) / 키즈존 내 음식물 반입 금지</li>
+              <li>편의점 / 지하 1층 / 금~일요일 18:00~23:00 / 호텔 내부 일정에 따라 편의점 주중 운영 예정</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">조식 정보</p>
+            <ul>
+              <li>레스토랑 (지하 1층) / 뷔페 / 07:00~10:00 (마지막 입장 09:30)</li>
+              <li>1인 18,700원(14세 이상~성인), 14,300원 (4세 이상~13세 이하)</li>
+              <li>* 현장결제</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">인원 정보</p>
+            <ul>
+              <li>전 객실 인원추가 불가 (영유아 포함 / 최대인원 초과 불가)</li>
+            </ul>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">공용공간 베리어프리 시설 및 서비스</p>
+            <ul>
+              <li>장애인 전용 주차</li>
+              <li>공용공간 장애인화장실</li>
+              <li>엘레베이터</li>
+              <li>휠체어 진입 가능한 중앙문(로비문)</li>
+              <li>부대시설에 휠체어 진입 가능</li>
+              <li>종합 점자안내판</li>
+              <li>엘레베이터 버튼 점자</li>
+              <li>휠체어 대여가능</li>
+              <li>아기침대 대여</li>
+              <li>침대가드 설치가능</li>
+            </ul>
+          </div>
+        </div>
+        <!-- //숙소 공지사항 및 정보 -->
+        <!-- 숙소 위치 정보 -->
+        <div class="product-detail__address">
+          <div class="tit__wrap">
+            <p class="title">숙소 위치정보</p>
+            <div class="flex-between">
+              <p class="address">경기 김포시 고촌읍 아라육로152번길 169</p>
+              <button type="button" class="btn-copy"><span class="blind">복사하기</span></button>
+            </div>
+          </div>
+          <div class="map__wrap">
+            <img src="../../assets/images/demo/img_map2.jpg" alt="">
+          </div>
+        </div>
+        <!-- //숙소 위치 정보 -->
+        <!-- 비슷한 숙소 -->
+        <div class="product-detail__similar">
+          <p class="title">비슷한 숙소</p>
+
+          <div class="splide splide__default">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="box-gray__wrap">
+                    <div class="thumb__wrap">
+                      <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                      <div class="thumb__con">
+                        <p class="detail-sub">
+                          <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                        </p>
+                        <p class="detail-name">스위트호텔 제주</p>
+                      </div>
+                      <div class="thumb__price">
+                        <div>
+                          <p class="sale-percent">80%</p>
+                          <p class="default-price">400,000원</p>
+                          <p class="sale-price">80,000원~</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+        </div>
+        <!-- //비슷한 숙소 -->
+      </div>
+
+      <!-- 하단 버튼 영역 -->
+      <div class="bottom-fixed__wrap">
+        <div class="btn__wrap">
+          <button class="btn-full__primary">객실 선택</button>
+        </div>
+      </div>
+      <!-- //하단 버튼 영역 -->
+    </div>
+
+    <!-- 바텀 팝업(뭉클한 혜택) -->
+    <div id="popupmkcle" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">뭉클한 혜택</p>
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          <div class="thumb__wrap">
+            <div class="thumb__gift type2">
+              <p class="ft-xl">뭉클딜명 자리</p>
+              <ul>
+                <li>조식 2인 무료권</li>
+                <li>추가 10% 할인</li>
+              </ul>
+              <p class="txt-primary">2024-09-25 (수) 17시까지 무료취소 가능 (숙박시설 현지시간 기준)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업(뭉클한 혜택) -->
+  </div>
+
+  <script>
+    fnOpenLayerPop('popupmkcle');
+
+    $('.accordion__tit').click(function () {
+      if ($(this).hasClass('active')) {
+        $('.btn-full__line__primary').text('옵션 더보기');
+      } else {
+        $('.btn-full__line__primary').text('옵션 접기');
+      }
+    })
+
+    $(window).scroll(function() {
+      var $prdNameTop = $('.product-detail__tit .product-name').offset().top - $('.header__wrap').height() + 1;
+      var $prdName = $('.product-detail__tit .product-name').text();
+      var $scrollTop = $(window).scrollTop();
+      if( $scrollTop >= $prdNameTop) {
+        $('.header-product-name').text($prdName);
+      } else {
+        $('.header-product-name').text('');
+      }
+    });
+  </script>
+
+</body>
+
+</html>

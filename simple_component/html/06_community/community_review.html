@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-back"><span class="blind">뒤로가기</span></button>
+        <p class="header-tit__center">뭉클딜 후기 작성</p>
+      </div>
+    </header>
+
+    <div class="container__wrap travelcart__wrap">
+      <section class="layout__wrap pt20">
+        <div class="tit__wrap">
+          <p class="ft-xl">다녀왔던 여행 후기를 공유해주세요.</p>
+        </div>
+        <!-- 후기 리스트 -->
+        <div class="travelcart-recommend__wrap mt16">
+          <a href="#none" class="travelcart-recommend__con">
+            <div class="box-gray__wrap">
+              <div class="product-name flex-start">
+                <div class="badge badge__lavender">숙소</div>
+                <p>호텔명</p>
+              </div>
+              <div class="thumb__wrap">
+                <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                <div class="thumb__con">
+                  <p class="detail-name">옵션명</p>
+                  <p class="detail-sub">
+                    <span>제주특별자치도 서귀포시</span><span>5성급</span>
+                  </p>
+                  <p class="detail-sub">
+                    <span>2024.10.10(화)~2024.10.11(수)</span><span>1박</span>
+                  </p>
+                </div>
+                <div class="thumb__gift mt16">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#none" class="travelcart-recommend__con active">
+            <div class="box-gray__wrap">
+              <div class="product-name flex-start">
+                <div class="badge badge__lavender">액티비티&체험</div>
+                <p>체험명</p>
+              </div>
+              <div class="thumb__wrap">
+                <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                <div class="thumb__con">
+                  <p class="detail-name">디옵션명</p>
+                  <p class="detail-sub">
+                    <span>도쿄</span><span>입장권</span>
+                  </p>
+                  <p class="detail-sub">
+                    2024.10.10(화)
+                  </p>
+                  <p class="detail-sub">
+                    성인 1명, 아동 1명, 유아 1명
+                  </p>
+                </div>
+                <div class="thumb__gift mt16">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="#none" class="travelcart-recommend__con">
+            <div class="box-gray__wrap">
+              <div class="product-name flex-start">
+                <div class="badge badge__lavender">투어</div>
+                <p>투어명</p>
+              </div>
+              <div class="thumb__wrap">
+                <p class="thumb__img large"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+                <div class="thumb__con">
+                  <p class="detail-name">옵션명</p>
+                  <p class="detail-sub">
+                    <span>탄자니아</span><span>6일</span>
+                  </p>
+                  <p class="detail-sub">2024.10.10(화) ~ 2024.10.12(목)</p>
+                  <p class="detail-sub">성인 1명, 아동 1명, 유아 1명</p>
+                </div>
+                <div class="thumb__gift mt16">
+                  <ul>
+                    <li>조식 2인 무료권</li>
+                    <li>추가 10% 할인</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <!-- //후기 리스트 -->
+      </section>
+    </div>
+  </div>
+
+  <script>
+    $('.travelcart-recommend__con').click(function () {
+      $(this).toggleClass('active');
+    });
+  </script>
+
+</body>
+
+</html>

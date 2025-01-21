@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-close"><span class="blind">닫기</span></button>
+        <p class="header-tit__center">뭉클딜 후기 수정</p>
+      </div>
+    </header>
+
+    <div class="container__wrap community-review__wrap">
+      <section class="layout__wrap pt20">
+        <div class="thumb__wrap">
+          <p class="thumb__img small"><img src="../../assets/images/demo/img_hotel_large.png" alt=""></p>
+          <div class="thumb__con">
+            <p class="detail-name">호텔명</p>
+            <p class="detail-sub">옵션명</p>
+          </div>
+        </div>
+        <div class="rating__wrap">
+          <!--
+            data-rating : 별점 
+            data-width : 별 크기
+            data-spacing : 별과 별 사이 간격
+          -->
+          <div data-rating="5" data-width="32" data-spacing="12" data-rateyo-read-only="false" class="rating" ></div>
+        </div>
+        <div class="textarea__wrap">
+          <label for="review_textarea" class="textarea-label">자세한 리뷰를 작성해주세요</label>
+          <textarea name="" id="review_textarea" class="textarea" placeholder="여행 경험, 서비스, 시설, 뭉클딜 혜택등에 대한 경험을 적어주세요"></textarea>
+        </div>
+        <div class="btn__wrap">
+          <button type="button" class="btn-full__line__primary">사진 첨부하기</button>
+        </div>
+        <div class="file__wrap">
+          <ul class="file__list">
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+            <li class="file__con">
+              <img src="../../assets/images/demo/img_hotel_large.png" alt="">
+              <a href="" class="btn-file__delete"><i class="ico ico-tag__delete"></i></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 하단 버튼 영역 -->
+      <div class="bottom-fixed__wrap">
+        <div class="btn__wrap">
+          <button class="btn-full__primary">수정 완료</button>
+        </div>
+      </div>
+      <!-- //하단 버튼 영역 -->
+    </div>
+  </div>
+
+  <script>
+    $('.travelcart-recommend__con').click(function () {
+      $(this).toggleClass('active');
+    });
+  </script>
+
+</body>
+
+</html>

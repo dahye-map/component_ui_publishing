@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../../assets/css/common.css">
+  <link rel="stylesheet" href="../../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../../assets/css/swiper.css">
+  <link rel="stylesheet" href="../../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../../assets/css/ui.css">
+
+  <script src="../../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../../assets/js/splide.min.js"></script>
+  <script src="../../assets/js/swiper.min.js"></script>
+  <script src="../../assets/js/flatpickr.js"></script>
+  <script src="../../assets/js/flatpickr.ko.js"></script>
+  <script src="../../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <header class="header__wrap">
+      <div class="header__inner">
+        <button class="btn-back"><span class="blind">뒤로가기</span></button>
+        <p class="header-tit__center">객실 상세</p>
+      </div>
+    </header>
+
+    <div class="container__wrap">
+
+      <div class="product-detail__wrap room-detail__wrap">
+        <!-- 상품 이미지 슬라이드 -->
+        <div class="product-detail__img">
+          <div class="splide splide__product">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+                <li class="splide__slide"><img src="../../assets/images/demo/img_product.jpg" alt=""></li>
+              </ul>
+            </div>
+            <div class="slide-counter">
+              <span class="current-slide">1</span> / <span class="total-slides"></span>
+            </div>
+          </div>
+        </div>
+        <!-- //상품 이미지 슬라이드 -->
+        <!-- 상품 타이틀 -->
+        <div class="product-detail__tit">
+          <div class="product-tit">
+            <p class="product-name">라마다앙코르 바이윈덤 김포한강호텔</p>
+          </div>
+          <ul class="room-option">
+            <li class="option-view">산 전망</li>
+            <li class="option-bed">싱글베드 2개</li>
+            <li class="option-area">30㎡</li>
+          </ul>
+          <!-- 이용인원 -->
+          <div class="product-detail__people">
+            <p class="title">이용인원</p>
+            <ul>
+              <li>
+                <p class="tit">기준인원</p>
+                <p class="desc">2명</p>
+              </li>
+              <li>
+                <p class="tit">최대인원</p>
+                <p class="desc">2명</p>
+              </li>
+              <li>
+                <p class="tit">추가인원요금<br>(현장결제)</p>
+                <p class="desc">
+                  성인 1명 (20,000원) <br>
+                  아동 1명 (10,000원) <br>
+                  유아 1명 (0원)
+                </p>
+              </li>
+            </ul>
+            <p class="txt-primary">* 객실 요금은 기준 인원에 대한 요금이며, 최대 인원까지 투숙은 가능하나 현장에서 추가인원요금이 발생할 수 있습니다.</p>
+          </div>
+          <!-- //이용인원 -->
+        </div>
+        <!-- //상품 타이틀 -->
+        <!-- 숙소 공지사항 및 정보 -->
+        <div class="product-detail__notice">
+          <div class="bullet__wrap">
+            <p class="title">편의시설</p>
+            <a href="" class="btn-txt__arrow">더보기</a>
+            <div class="amenities__list">
+              <ul>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>패밀리룸 보유(3인)</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>레스토랑</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>바(bar)라운지</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>장애인객실</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>조식운영</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>키즈카페/룸</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>피트니스 센터</span>
+                </li>
+                <li>
+                  <img src="../../assets/images/demo/img_recommend.png" alt="">
+                  <span>비즈니스 센터</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="bullet__wrap">
+            <p class="title">객실 내 베리어프리 시설 및 서비스</p>
+            <ul>
+              <li>장애인 전용 주차</li>
+              <li>공용공간 장애인화장실</li>
+              <li>엘레베이터</li>
+              <li>휠체어 진입 가능한 중앙문(로비문)</li>
+              <li>부대시설에 휠체어 진입 가능</li>
+              <li>종합 점자안내판</li>
+              <li>엘레베이터 버튼 점자</li>
+              <li>휠체어 대여가능</li>
+              <li>아기침대 대여</li>
+              <li>침대가드 설치가능</li>
+            </ul>
+          </div>
+        </div>
+        <!-- //숙소 공지사항 및 정보 -->
+
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

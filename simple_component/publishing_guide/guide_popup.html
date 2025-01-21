@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/splide.min.css">
+  <link rel="stylesheet" href="../assets/css/flatpickr.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.rateyo.min.css">
+  <link rel="stylesheet" href="../assets/css/ui.css">
+
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/splide.min.js"></script>
+  <script src="../assets/js/flatpickr.js"></script>
+  <script src="../assets/js/flatpickr.ko.js"></script>
+  <script src="../assets/js/jquery.rateyo.min.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <title>뭉클트립</title>
+</head>
+
+<body>
+
+  <div id="mobileWrap">
+    <div class="btn__wrap">
+      <!-- fnOpenPop class 추가 후 data-name="popupID" -->
+      <button type="button" class="btn-full__primary fnOpenPop" data-name="popupBottom">바텀 팝업</button>
+    </div>
+    <br>
+    <div class="btn__wrap">
+      <button type="button" class="btn-full__primary fnOpenPop" data-name="alert">알럿</button>
+    </div>
+    <br>
+    <div class="btn__wrap">
+      <button type="button" class="btn-full__primary fnOpenPop" data-name="popupCenter">센터 팝업</button>
+    </div>
+    <br>
+    <div class="btn__wrap">
+      <button type="button" class="btn-full__primary" onclick="fnToastPop('toastPopup')">토스트 팝업</button>
+    </div>
+
+
+    <!-- 바텀 팝업 -->
+    <div id="popupBottom" class="layerpop__wrap">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">바텀 팝업</p>
+          <!-- 닫기 버튼 fnClosePop class 추가 -->
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          바텀 팝업
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-txt__underline">초기화</button>
+            <button class="btn-full__primary">선택</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업 -->
+
+    <!-- 알럿 팝업 -->
+    <div id="alert" class="layerpop__wrap type-alert">
+      <div class="layerpop__container">
+        <div class="layerpop__contents">
+          <div class="tit__wrap">
+            <p class="title">재오픈되면 알림을 보내드릴까요?</p>
+            <p class="desc">
+              객실이 재오픈되면 푸시알림을 보내드려요. <br>
+              다시 마감되기 전에 서둘러 예약해보세요!
+            </p>
+          </div>
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <!-- 닫기 버튼 fnClosePop class 추가 -->
+            <button class="btn-full__secondary fnClosePop">아니요</button>
+            <button class="btn-full__primary">알림받기</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //알럿 팝업 -->
+
+    <!-- 바텀 팝업 -->
+    <div id="popupCenter" class="layerpop__wrap type-center">
+      <div class="layerpop__container">
+        <div class="layerpop__header">
+          <p class="title">센터 팝업</p>
+          <!-- 닫기 버튼 fnClosePop class 추가 -->
+          <a href="#none" class="fnClosePop"><i class="ico ico-close"></i></a>
+        </div>
+        <div class="layerpop__contents">
+          센터 팝업
+        </div>
+        <div class="layerpop__footer">
+          <div class="btn__wrap">
+            <button class="btn-full__primary">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업 -->
+
+    <!-- 토스트팝업 -->
+    <div id="toastPopup" class="toast__wrap">
+      <div class="toast__container">
+        <i class="ico ico-info"></i>
+        <p>언제 갈지 선택해주세요.</p>
+      </div>
+    </div>
+    <!-- //토스트팝업 -->
+  </div>
+
+</body>
+
+</html>

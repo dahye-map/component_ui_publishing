@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="../assets/css/swiper.css">
+  <link rel="stylesheet" href="../assets/css/common.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+  <script src="../assets/js/swiper.js"></script>
+  <script src="../assets/js/common.js"></script>
+  <title>우리WON인증서</title>
+</head>
+
+<body>
+
+  <main id="root">
+    
+
+    <!-- 바텀 팝업 -->
+    <div id="popupId" class="layerpop-wrap hasbtn-popup">
+      <div class="layerpop">
+        <div class="inner">
+
+          <div class="option-swiper-wrap">
+            <div class="option-swiper swiper-container" data-default="1">
+              <div class="swiper-wrapper">
+                <button type="button" class="swiper-slide">오전</button>
+                <button type="button" class="swiper-slide">오후</button>
+              </div>
+            </div>
+            <div class="option-swiper swiper-container" data-default="5">
+              <div class="swiper-wrapper">
+                <button type="button" class="swiper-slide">1시</button>
+                <button type="button" class="swiper-slide">2시</button>
+                <button type="button" class="swiper-slide">3시</button>
+                <button type="button" class="swiper-slide">4시</button>
+                <button type="button" class="swiper-slide">5시</button>
+                <button type="button" class="swiper-slide">6시</button>
+                <button type="button" class="swiper-slide">7시</button>
+                <button type="button" class="swiper-slide">8시</button>
+                <button type="button" class="swiper-slide">9시</button>
+                <button type="button" class="swiper-slide">10시</button>
+                <button type="button" class="swiper-slide">11시</button>
+                <button type="button" class="swiper-slide">12시</button>
+              </div>
+            </div>
+            <div class="option-swiper swiper-container" data-default="3">
+              <div class="swiper-wrapper">
+                <button type="button" class="swiper-slide">00분</button>
+                <button type="button" class="swiper-slide">10분</button>
+                <button type="button" class="swiper-slide">20분</button>
+                <button type="button" class="swiper-slide">30분</button>
+                <button type="button" class="swiper-slide">40분</button>
+                <button type="button" class="swiper-slide">50분</button>
+                <button type="button" class="swiper-slide">50분</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 하단 버튼 영역 -->
+          <div class="section-bottom-fixed">
+            <div class="btn-wrap">
+              <button class="btn-full-secondary fnClosePop">취소</button>
+              <button class="btn-full-primary">확인</button>
+            </div>
+          </div>
+          <!-- //하단 버튼 영역 -->
+        </div>
+      </div>
+    </div>
+    <!-- //바텀 팝업 -->
+
+  </main>
+</body>
+
+<script>
+  
+  fnOpenLayerPop('popupId');
+
+  $('.option-swiper').each(function(index) {
+    let $this = $(this);
+    let swiper = undefined;
+    $this.addClass("slider-"+index);
+    swiper = new Swiper('.slider-'+index, {
+      observer: true,
+      observeParents: true,
+      resistance: true,
+      direction: 'vertical',
+      slidesPerView: 5,
+      centeredSlides: true,
+      initialSlide: $this.attr("data-default"),
+    });
+  });
+  
+</script>
+
+</html>

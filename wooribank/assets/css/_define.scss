@@ -1,0 +1,69 @@
+$flex-map: (
+  // 배열 key : 값 형태
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  stretch: stretch,
+  center: center,
+);
+
+@function _get-flex-value($key) {
+  @return map-get($flex-map, $key);
+}
+
+@mixin flexbox($js: center, $ai: center) {
+  display: flex;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($js);
+}
+
+@mixin inline-flexbox($js: center, $ai: center) {
+  display: inline-flex;
+  align-items: _get-flex-value($ai);
+  justify-content: _get-flex-value($js);
+}
+
+@mixin column-flexbox($js: center) {
+  display: flex;
+  flex-direction: column;
+  justify-content: _get-flex-value($js);
+}
+
+@mixin bgimage($url:'', $size:100% auto, $repeat:no-repeat, $pos:center center) {
+  background-image: url($url);
+  background-size: $size;
+  background-repeat: $repeat;
+  background-position: $pos
+}
+
+$font_size_xxs: 1.2rem;
+$font_size_xs: 1.3rem;
+$font_size_s: 1.4rem;
+$font_size_m: 1.5rem;
+$font_size_default: 1.6rem;
+$font_size_l: 1.7rem;
+$font_size_xl: 1.8rem;
+$font_size_xxl: 2rem;
+$font_size_xxxl: 2.2rem;
+
+$gray_01: #151C22;
+$gray_02 : #333A40;
+$gray_03 : #4C5459;
+$gray_04 : #686E75;
+
+$primary_color: #1490EF;
+$primary_pressed: #1490EF;
+$primary_enable: #E4EAF2;
+$primary_disable: #D0E9FC;
+
+$bg_lightgray: #F2F5F9;
+
+$line_height: 1.56;
+$tit_line_height: 1.58;
+
+$image_root: '../images/';
+
+.txt-primary {
+  color: $primary_color;
+}
